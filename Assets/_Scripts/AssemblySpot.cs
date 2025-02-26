@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class AssemblySpot : Surface
+namespace _Scripts
 {
-    void OnMouseDown()
+    public class AssemblySpot : Surface
     {
-        if (Input.GetMouseButtonDown((int)Hands.Left) && !handLeft.IsEmpty)
+        void OnMouseDown()
         {
-            handLeft.DropItem(this);
+            if (Input.GetMouseButtonDown((int)Hands.Left) && !HandLeft.IsEmpty)
+            {
+                HandLeft.DropItem(this);
 
+            }
         }
     }
 }

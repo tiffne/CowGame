@@ -1,30 +1,33 @@
 using System.Collections;
 using UnityEngine;
 
-public class Burner : Surface
+namespace _Scripts
 {
-    Ingredient ingredientHeld = null;
-    void OnMouseDown()
+    public class Burner : Surface
     {
-        if (Input.GetMouseButtonDown((int)Hands.Left) && ingredientHeld == null)// && !handLeft.IsEmpty)
+        Ingredient _ingredientHeld = null;
+        void OnMouseDown()
         {
-            handLeft.DropItem(this);
+            if (Input.GetMouseButtonDown((int)Hands.Left) && _ingredientHeld == null)// && !handLeft.IsEmpty)
+            {
+                HandLeft.DropItem(this);
+            }
         }
-    }
 
-    public void Cook(Ingredient ingredient)
-    {
-        ingredientHeld = ingredient;
-        ingredientHeld.transform.parent = transform;
-        ingredientHeld.transform.position = transform.position + Vector3.back;
-        StartCoroutine(CookingRoutine());
-    }
+        public void Cook(Ingredient ingredient)
+        {
+            _ingredientHeld = ingredient;
+            _ingredientHeld.transform.parent = transform;
+            _ingredientHeld.transform.position = transform.position + Vector3.back;
+            StartCoroutine(CookingRoutine());
+        }
 
-    private IEnumerator CookingRoutine()
-    {
-        yield return new WaitForSeconds(5);
+        private IEnumerator CookingRoutine()
+        {
+            yield return new WaitForSeconds(5);
 
-        ingredientHeld.IsReady = true;
-        ingredientHeld = null;
+            _ingredientHeld.IsReady = true;
+            _ingredientHeld = null;
+        }
     }
 }

@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Order : Surface
 {
-    readonly List<string> recipe = new() { "Bun", "Cheese", "Patty" };
+    private readonly List<string> _recipe = new() { "Bun", "Cheese", "Patty" };
     public List<string> ingredientsInOrder = new();
 
     void OnMouseDown()
     {
-        if (!handLeft.IsEmpty)
+        if (!HandLeft.IsEmpty)
         {
-            handLeft.DropItem(this);
+            HandLeft.DropItem(this);
         }
     }
+
     public void CombineIngredient(Ingredient ingredient)
     {
         if (!ingredient.IsReady)
@@ -25,7 +26,8 @@ public class Order : Surface
         ingredientsInOrder.Sort();
         ingredient.GetComponent<Collider2D>().enabled = false;
         ingredient.transform.parent = transform;
-        ingredient.transform.position = transform.position + Vector3.forward + Vector3.up * (ingredientsInOrder.Count - 1);
+        ingredient.transform.position =
+            transform.position + Vector3.forward + Vector3.up * (ingredientsInOrder.Count - 1);
         if (IsOrderComplete())
         {
             StartCoroutine(CongratulateAndDestroy());
@@ -34,14 +36,14 @@ public class Order : Surface
 
     bool IsOrderComplete()
     {
-        if (ingredientsInOrder.Count != recipe.Count)
+        if (ingredientsInOrder.Count != _recipe.Count)
         {
             return false;
         }
 
-        for (int i = 0; i < recipe.Count; i++)
+        for (var i = 0; i < _recipe.Count; i++)
         {
-            if (ingredientsInOrder[i] != recipe[i])
+            if (ingredientsInOrder[i] != _recipe[i])
             {
                 return false;
             }

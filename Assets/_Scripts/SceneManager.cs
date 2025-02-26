@@ -1,17 +1,20 @@
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+namespace _Scripts
 {
-    void Start()
+    public class SceneManager : MonoBehaviour
     {
-
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        void Start()
         {
-            Application.Quit();
+
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
         }
     }
 }
