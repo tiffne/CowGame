@@ -649,6 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651986703}
   - component: {fileID: 651986704}
+  - component: {fileID: 651986705}
   m_Layer: 0
   m_Name: Hand Right
   m_TagString: Untagged
@@ -707,6 +708,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &651986705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651986702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f380192fa6bea44b191f65d9f77443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isEmpty: 1
+  orderPrefab: {fileID: 7568328774387914948, guid: acd1028180f6a40cca6bc4bbb49ad6b4, type: 3}
 --- !u!1 &740682315
 GameObject:
   m_ObjectHideFlags: 0

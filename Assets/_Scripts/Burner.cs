@@ -6,11 +6,16 @@ namespace _Scripts
     public class Burner : Surface
     {
         Ingredient _ingredientHeld = null;
-        void OnMouseDown()
+        void OnMouseOver()
         {
             if (Input.GetMouseButtonDown((int)Hands.Left) && _ingredientHeld == null)// && !handLeft.IsEmpty)
             {
                 HandLeft.DropItem(this);
+            }
+
+            else if (Input.GetMouseButtonDown((int)Hands.Right) && _ingredientHeld == null)// && !handLeft.IsEmpty)
+            {
+                HandRight.DropItem(this);
             }
         }
 
