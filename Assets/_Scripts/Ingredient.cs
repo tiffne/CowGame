@@ -41,7 +41,9 @@ using UnityEngine;
             }
         }
 
-        public void OnMouseDown()
+    public void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown((int)Hands.Left))
         {
             if (HandLeft.IsEmpty)
             {
@@ -52,6 +54,21 @@ using UnityEngine;
                 HandLeft.DropItem(this);
             }
         }
+
+        else if (Input.GetMouseButtonDown((int)Hands.Right))
+        {
+            if (HandRight.IsEmpty)
+            {
+                HandRight.GrabItem(this);
+            }
+            else
+            {
+                HandRight.DropItem(this);
+            }
+
+        }
+
+    }
 
         public void ReturnToPocket()
         {
