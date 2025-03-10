@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Scripts.Player
 {
@@ -11,11 +12,10 @@ namespace _Scripts.Player
             Right = 1,
         }
 
-        private GameObject _itemInHand = null;
-
         public int Index { get; private set; }
-
         private bool IsEmpty { get; set; } = true;
+        
+        private GameObject _itemInHand = null;
 
         private void Start()
         {
@@ -93,4 +93,3 @@ namespace _Scripts.Player
         //     _isEmpty = true;
     }
 }
-

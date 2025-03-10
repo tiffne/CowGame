@@ -9,6 +9,9 @@ TagManager:
   - Cheese
   - Bun
   - Patty
+  - Order
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX

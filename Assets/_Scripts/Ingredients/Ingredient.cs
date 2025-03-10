@@ -1,6 +1,4 @@
-using System;
 using _Scripts.Player;
-using JetBrains.Annotations;
 using UnityEngine;
 
 
