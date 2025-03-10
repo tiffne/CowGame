@@ -128,8 +128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139557371}
-  - component: {fileID: 139557373}
   - component: {fileID: 139557374}
+  - component: {fileID: 139557373}
   m_Layer: 0
   m_Name: Hand Left
   m_TagString: Untagged
@@ -146,11 +146,11 @@ Transform:
   m_GameObject: {fileID: 139557370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -3, z: 0}
+  m_LocalPosition: {x: -6, y: -3, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &139557373
 CircleCollider2D:
@@ -197,11 +197,66 @@ MonoBehaviour:
   m_GameObject: {fileID: 139557370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0148e8323758e844b8d46e5d82f67c0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 898bfb1c7dbf1ec48858aae7baedea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isEmpty: 1
-  orderPrefab: {fileID: 7568328774387914948, guid: acd1028180f6a40cca6bc4bbb49ad6b4, type: 3}
+--- !u!1001 &186476181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256988915992336978, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2947631802813252096, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+      propertyPath: m_Name
+      value: Steak
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
 --- !u!1 &366538995
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +305,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Player POV
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,7 +426,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 139557371}
+  - {fileID: 651986703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529364462
@@ -548,6 +605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08048a5bc315e40798a67be1b7637be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandLeft: {fileID: 0}
+  HandRight: {fileID: 0}
 --- !u!58 &630099561
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -666,11 +725,11 @@ Transform:
   m_GameObject: {fileID: 651986702}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -3, z: 0}
+  m_LocalPosition: {x: 6, y: -3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &651986704
 CircleCollider2D:
@@ -717,11 +776,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 651986702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f380192fa6bea44b191f65d9f77443, type: 3}
+  m_Script: {fileID: 11500000, guid: 898bfb1c7dbf1ec48858aae7baedea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isEmpty: 1
-  orderPrefab: {fileID: 7568328774387914948, guid: acd1028180f6a40cca6bc4bbb49ad6b4, type: 3}
 --- !u!1 &740682315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08048a5bc315e40798a67be1b7637be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandLeft: {fileID: 0}
+  HandRight: {fileID: 0}
 --- !u!58 &1647275683
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1633,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6e30f01395840868448a0e5bb6e138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hand: {fileID: 0}
 --- !u!4 &1742161415
 Transform:
   m_ObjectHideFlags: 0
@@ -2139,6 +2199,5 @@ SceneRoots:
   - {fileID: 1475428184}
   - {fileID: 1742161415}
   - {fileID: 366538996}
-  - {fileID: 139557371}
-  - {fileID: 651986703}
   - {fileID: 1158448018}
+  - {fileID: 186476181}

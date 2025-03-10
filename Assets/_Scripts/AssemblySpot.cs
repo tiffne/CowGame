@@ -1,20 +1,19 @@
+using UnityEditor;
 using UnityEngine;
 
 namespace _Scripts
 {
     public class AssemblySpot : Surface
     {
-        void OnMouseOver()
+        private void OnMouseOver()
         {
-            if (Input.GetMouseButtonDown((int)Hands.Left) && !HandLeft.IsEmpty)
+            if (Input.GetMouseButtonDown(HandLeft.Index))
             {
-                HandLeft.DropItem(this);
-
+                HandLeft.Interact(gameObject);
             }
-
-            else if (Input.GetMouseButtonDown((int)Hands.Right) && !HandRight.IsEmpty)
+            else if (Input.GetMouseButtonDown(HandRight.Index))
             {
-                HandRight.DropItem(this);
+                HandRight.Interact(gameObject);
             }
         }
     }

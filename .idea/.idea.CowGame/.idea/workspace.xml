@@ -5,16 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mono_crash.137d23b872.0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/burntPatty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/burntPatty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/pattyCooked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/pattyCooked.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/pattyRaw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/pattyRaw.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Burner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Burner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/HandLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/HandLeft.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Hand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Hand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/HandLeft.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/HandLeft.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/HandRight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/HandRight.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredient.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Order.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Surface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Surface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_Planning.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/_Planning.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +56,26 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/tiffne/CowGame.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:tiffne/CowGame.git&quot;,
     &quot;accountId&quot;: &quot;fda8e60e-51b3-4c80-af12-430c82da2140&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/HandLeft.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Order.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,19 +92,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "03-09-2025__HandRefactor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.32f1/Unity.app/Contents/MacOS/Unity" />
@@ -125,6 +160,8 @@
       <workItem from="1740547906397" duration="3000" />
       <workItem from="1740547915294" duration="262000" />
       <workItem from="1740548270516" duration="928000" />
+      <workItem from="1741403498569" duration="1440000" />
+      <workItem from="1741539843453" duration="22557000" />
     </task>
     <servers />
   </component>
