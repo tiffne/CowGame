@@ -1,21 +1,16 @@
+using _Scripts.Player;
 using UnityEngine;
 
-
+namespace _Scripts
+{
     public class Surface : MonoBehaviour
     {
-        protected HandLeft HandLeft;
-        protected HandRight HandRight;
+        protected Hand HandLeft, HandRight;
 
-        protected void Start()
+        private void Start()
         {
-            HandLeft = GameObject.Find("Hand Left").GetComponent<HandLeft>();
-            HandRight = GameObject.Find("Hand Right").GetComponent<HandRight>();
-    }
-
-        protected enum Hands
-        {
-            Left = 0,
-            Right = 1
+            HandLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
+            HandRight = GameObject.Find("Hand Right").GetComponent<Hand>();
         }
     }
-
+}
