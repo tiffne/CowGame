@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 namespace _Scripts.Ingredients
 {
     [CreateAssetMenu(fileName = "New Ingredient", menuName = "Scriptable Objects/Ingredient")]
-    public class IngredientScriptableObject : ScriptableObject
+    public abstract class IngredientScriptableObject : ScriptableObject
     {
         [SerializeField] private string ingredientName;
         public string IngredientName => ingredientName;
