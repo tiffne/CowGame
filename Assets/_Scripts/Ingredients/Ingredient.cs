@@ -23,6 +23,7 @@ namespace _Scripts.Ingredients
         private new void Start()
         {
             base.Start();
+            tag = "Ingredient";
             GoesInBlender = ingredient.GoesInBlender;
             GoesInBurner = ingredient.GoesInBurner;
             ingredientSprites = ingredient.IngredientSprites;
