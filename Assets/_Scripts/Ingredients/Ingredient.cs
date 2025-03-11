@@ -12,10 +12,10 @@ namespace _Scripts.Ingredients
 
         private string IngredientName => ingredient.IngredientName;
 
-        [SerializeField] private Sprite[] ingredientSprite;
+        [SerializeField] private Sprite[] ingredientSprites;
 
         protected bool GoesInBlender { get; set; }
-        protected bool GoesOnBurner { get; set; }
+        protected bool GoesInBurner { get; set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
@@ -24,7 +24,10 @@ namespace _Scripts.Ingredients
 
         private void Start()
         {
-            GetComponent<SpriteRenderer>().sprite = ingredientSprite[0];
+            GoesInBlender = ingredient.GoesInBlender;
+            GoesInBurner = ingredient.GoesInBurner;
+            ingredientSprites = ingredient.IngredientSprites;
+            GetComponent<SpriteRenderer>().sprite = ingredientSprites[0];
             _handLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
             _handRight = GameObject.Find("Hand Right").GetComponent<Hand>();
         }
