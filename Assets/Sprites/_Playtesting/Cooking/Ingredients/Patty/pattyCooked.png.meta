@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 7830f3b68e7924d38b5b97c4f9a4d7ed
+guid: 51ab42ad9adac41319d7be08673ff5b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 687035867109942034
-    second: cookedPatty_0
+      213: -5919778849487241949
+    second: pattyCooked_0
   - first:
-      213: -8475005115694428475
-    second: cookedPatty_1
+      213: -5470747866185093234
+    second: pattyCooked_1
   - first:
-      213: -2664480414964457531
-    second: cookedPatty_2
+      213: -6517041891747233310
+    second: pattyCooked_2
   - first:
-      213: -2569597427260495506
-    second: cookedPatty_3
+      213: 8332331835882594347
+    second: pattyCooked_3
   - first:
-      213: -903736847839202008
-    second: cookedPatty_4
+      213: -7385462939904048635
+    second: pattyCooked_4
   - first:
-      213: 5921003946702110763
-    second: cookedPatty_5
+      213: 5757524784548472621
+    second: pattyCooked_5
   - first:
-      213: -7734725003683427984
-    second: cookedPatty_6
+      213: 5585855831475709094
+    second: pattyCooked_6
   - first:
-      213: -4291218625111169469
-    second: cookedPatty_7
+      213: -3507266507502444768
+    second: pattyCooked_7
   - first:
-      213: -7703554592208774342
-    second: cookedPatty_8
+      213: 6197235443805090027
+    second: pattyCooked_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cookedPatty_0
+      name: pattyCooked_0
       rect:
         serializedVersion: 2
         x: 568
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2136a072b77d88900800000000000000
-      internalID: 687035867109942034
+      spriteID: 32d317f2088b8dda0800000000000000
+      internalID: -5919778849487241949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_1
+      name: pattyCooked_1
       rect:
         serializedVersion: 2
         x: 1433
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ce4a61ffbbb26a80800000000000000
-      internalID: -8475005115694428475
+      spriteID: e8faf4c0dcff314b0800000000000000
+      internalID: -5470747866185093234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_2
+      name: pattyCooked_2
       rect:
         serializedVersion: 2
         x: 1071
@@ -209,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cfde0bfd2dd50bd0800000000000000
-      internalID: -2664480414964457531
+      spriteID: 2e10110ade0de85a0800000000000000
+      internalID: -6517041891747233310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_3
+      name: pattyCooked_3
       rect:
         serializedVersion: 2
         x: 1104
@@ -231,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e69616411c4f65cd0800000000000000
-      internalID: -2569597427260495506
+      spriteID: b20e57c78a362a370800000000000000
+      internalID: 8332331835882594347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_4
+      name: pattyCooked_4
       rect:
         serializedVersion: 2
         x: 1170
@@ -253,14 +253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 825fc1600284573f0800000000000000
-      internalID: -903736847839202008
+      spriteID: 50205350690918990800000000000000
+      internalID: -7385462939904048635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_5
+      name: pattyCooked_5
       rect:
         serializedVersion: 2
         x: 1197
@@ -275,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b208ddcf7b1ab2250800000000000000
-      internalID: 5921003946702110763
+      spriteID: d27e4807946d6ef40800000000000000
+      internalID: 5757524784548472621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_6
+      name: pattyCooked_6
       rect:
         serializedVersion: 2
         x: 1330
@@ -297,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0790e18e69cb8a490800000000000000
-      internalID: -7734725003683427984
+      spriteID: 6a467a99842f48d40800000000000000
+      internalID: 5585855831475709094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_7
+      name: pattyCooked_7
       rect:
         serializedVersion: 2
         x: 1182
@@ -319,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34665b475678274c0800000000000000
-      internalID: -4291218625111169469
+      spriteID: 02f11b791bfa35fc0800000000000000
+      internalID: -3507266507502444768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cookedPatty_8
+      name: pattyCooked_8
       rect:
         serializedVersion: 2
         x: 1201
@@ -341,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3b119fd9e9771590800000000000000
-      internalID: -7703554592208774342
+      spriteID: be076714dc0010650800000000000000
+      internalID: 6197235443805090027
       vertices: []
       indices: 
       edges: []

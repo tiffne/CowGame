@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30bdfa48725b94453b5d42aee55f1943
+guid: 2ae856117f045437c899b6f583833627
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5179965713060479554
-    second: cookedFries_0
+      213: -8081598367321323223
+    second: friesCooked_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cookedFries_0
+      name: friesCooked_0
       rect:
         serializedVersion: 2
         x: 857
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebdb35ce0a01d18b0800000000000000
-      internalID: -5179965713060479554
+      spriteID: 9298f626a1568df80800000000000000
+      internalID: -8081598367321323223
       vertices: []
       indices: 
       edges: []

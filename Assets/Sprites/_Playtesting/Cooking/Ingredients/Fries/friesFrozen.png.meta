@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b9456da635d5048e081fcdd3ba72b48d
+guid: 7b9c8c76e4a654b0f87991ba057e6758
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7130711520101291485
-    second: frozenFries_0
+      213: -5310715413063946208
+    second: friesFrozen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frozenFries_0
+      name: friesFrozen_0
       rect:
         serializedVersion: 2
         x: 857
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32aa39017af9a0d90800000000000000
-      internalID: -7130711520101291485
+      spriteID: 020b12d187c8c46b0800000000000000
+      internalID: -5310715413063946208
       vertices: []
       indices: 
       edges: []
