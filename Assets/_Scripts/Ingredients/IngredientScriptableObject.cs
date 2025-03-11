@@ -6,13 +6,13 @@ using UnityEngine.Serialization;
 namespace _Scripts.Ingredients
 {
     [CreateAssetMenu(fileName = "New Ingredient", menuName = "Scriptable Objects/Ingredient")]
-    public abstract class IngredientScriptableObject : ScriptableObject
+    public class IngredientScriptableObject : ScriptableObject
     {
         [SerializeField] private string ingredientName;
         public string IngredientName => ingredientName;
 
-        [SerializeField] private Sprite ingredientSprite;
-        public Sprite IngredientSprite => ingredientSprite;
+        [SerializeField] private Sprite[] ingredientSprites;
+        public Sprite[] IngredientSprites => ingredientSprites;
 
         [SerializeField] private bool goesInBlender;
         public bool GoesInBlender => goesInBlender;
