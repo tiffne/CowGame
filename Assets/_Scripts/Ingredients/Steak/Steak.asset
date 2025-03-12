@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Steak
   m_EditorClassIdentifier: 
   ingredientName: Steak
-  ingredientSprite: {fileID: -165381306550957385, guid: e557cbba26bc14849bd0dfc46379c2c0, type: 3}
+  ingredientSprites:
+  - {fileID: -6894695900325857597, guid: 1ba76d98fb6f74d93951ea5d3a67c97f, type: 3}
+  - {fileID: 3999090560222424582, guid: 1cee33d8cef034b298d5a0a876aae478, type: 3}
+  - {fileID: -4482867155660389777, guid: df493646809444b25bd53519f1ef21d2, type: 3}
   goesInBlender: 1
   goesInBurner: 1

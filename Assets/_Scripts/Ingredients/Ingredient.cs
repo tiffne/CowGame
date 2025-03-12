@@ -6,39 +6,28 @@ namespace _Scripts.Ingredients
 {
     public class Ingredient : Surface
     {
-        private Hand _handLeft, _handRight;
-
         [SerializeField] protected IngredientScriptableObject ingredient;
 
-        private string IngredientName => ingredient.IngredientName;
+        private string IngredientName => name;
 
-        [SerializeField] private Sprite[] ingredientSprite;
+        [SerializeField] private Sprite[] ingredientSprites;
 
         protected bool GoesInBlender { get; set; }
-        protected bool GoesOnBurner { get; set; }
+        protected bool GoesInBurner { get; set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
         protected bool IsBurned { get; set; } = false;
         protected bool IsMelted { get; set; } = false;
 
-        private void Start()
+        private new void Start()
         {
-            GetComponent<SpriteRenderer>().sprite = ingredientSprite[0];
-            _handLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
-            _handRight = GameObject.Find("Hand Right").GetComponent<Hand>();
-        }
-
-        private void OnMouseOver()
-        {
-            if (Input.GetMouseButtonDown(_handLeft.Index))
-            {
-                _handLeft.Interact(gameObject);
-            }
-            else if (Input.GetMouseButtonDown(_handRight.Index))
-            {
-                _handRight.Interact(gameObject);
-            }
+            base.Start();
+            tag = "Ingredient";
+            GoesInBlender = ingredient.GoesInBlender;
+            GoesInBurner = ingredient.GoesInBurner;
+            ingredientSprites = ingredient.IngredientSprites;
+            GetComponent<SpriteRenderer>().sprite = ingredientSprites[0];
         }
     }
 }

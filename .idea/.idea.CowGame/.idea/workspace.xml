@@ -26,20 +26,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Order.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +50,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;03-09-2025__HandRefactor&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main-copy&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -129,6 +117,9 @@
       <workItem from="1741403498569" duration="1440000" />
       <workItem from="1741539843453" duration="23670000" />
       <workItem from="1741617617176" duration="3632000" />
+      <workItem from="1741745380866" duration="3180000" />
+      <workItem from="1741791482554" duration="3242000" />
+      <workItem from="1741795861855" duration="117000" />
     </task>
     <servers />
   </component>
