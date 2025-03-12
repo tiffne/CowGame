@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      friesFrozen_0: -5310715413063946208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pattyRaw_0: -165381306550957385
+      pattyRaw_1: 7902893978305287883
+      pattyRaw_2: -464413800006417441
+      pattyRaw_3: -3392728505259624689
+      pattyRaw_4: -2399120606376875621
+      pattyRaw_5: -7020851274831444618
+      pattyRaw_6: -4461765288925202283
+      pattyRaw_7: -826053148744596449
+      pattyRaw_8: 6611579382235802538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

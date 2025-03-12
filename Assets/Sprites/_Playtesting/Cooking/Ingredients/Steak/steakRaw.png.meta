@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      steakRaw_0: -6894695900325857597
+      steakRaw_1: -4445826142325077427
+      steakRaw_2: 7099759052855435277
+      steakRaw_3: -6609402373206265421
+      steakRaw_4: -690949600253404267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

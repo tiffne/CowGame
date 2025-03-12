@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pattyCooked_0: -5919778849487241949
+      pattyCooked_1: -5470747866185093234
+      pattyCooked_2: -6517041891747233310
+      pattyCooked_3: 8332331835882594347
+      pattyCooked_4: -7385462939904048635
+      pattyCooked_5: 5757524784548472621
+      pattyCooked_6: 5585855831475709094
+      pattyCooked_7: -3507266507502444768
+      pattyCooked_8: 6197235443805090027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
