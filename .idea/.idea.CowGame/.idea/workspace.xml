@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assembly Spot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assembly Spot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +120,7 @@
       <workItem from="1741403498569" duration="1440000" />
       <workItem from="1741539843453" duration="23670000" />
       <workItem from="1741617617176" duration="3632000" />
+      <workItem from="1741745380866" duration="3180000" />
     </task>
     <servers />
   </component>
