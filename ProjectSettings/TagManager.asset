@@ -4,14 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - AssemblyZone
   - Ingredient
   - Cheese
   - Bun
   - Patty
-  - Order
-  - Left
-  - Right
+  - AssemblySpot
   layers:
   - Default
   - TransparentFX

@@ -8,9 +8,6 @@ namespace _Scripts.Ingredients
     [CreateAssetMenu(fileName = "New Ingredient", menuName = "Scriptable Objects/Ingredient")]
     public class IngredientScriptableObject : ScriptableObject
     {
-        [SerializeField] private string ingredientName;
-        public string IngredientName => ingredientName;
-
         [SerializeField] private Sprite[] ingredientSprites;
         public Sprite[] IngredientSprites => ingredientSprites;
 

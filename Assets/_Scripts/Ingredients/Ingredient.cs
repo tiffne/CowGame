@@ -8,7 +8,7 @@ namespace _Scripts.Ingredients
     {
         [SerializeField] protected IngredientScriptableObject ingredient;
 
-        private string IngredientName => ingredient.IngredientName;
+        private string IngredientName => name;
 
         [SerializeField] private Sprite[] ingredientSprites;
 

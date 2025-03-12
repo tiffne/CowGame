@@ -1,27 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MainMenuController : MonoBehaviour
+namespace _Scripts
 {
-
-    void Update()
+    public class MainMenuController : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+        void Update()
         {
-            ExitGame();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ExitGame();
+            }
         }
-    }
 
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("Main");
-    }
+        public void PlayGame()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+        }
 
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
 
+    }
 }

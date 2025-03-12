@@ -12,10 +12,11 @@ namespace _Scripts.Player
             Right = 1,
         }
 
-        public int Index { get; private set; }
         private bool IsEmpty { get; set; } = true;
-        
-        private GameObject _itemInHand = null;
+        private bool CanInteract { get; set; } = true;
+        public int Index { get; private set; }
+        private GameObject _itemInHand;
+
 
         private void Start()
         {
@@ -23,17 +24,19 @@ namespace _Scripts.Player
             {
                 "Hand Left" => (int)Hands.Left,
                 "Hand Right" => (int)Hands.Right,
-                _ => throw new ArgumentException("Invalid hand name")
+                _ => throw new ArgumentException("Invalid hand name.")
             };
         }
 
         private void Update()
         {
             if (transform.childCount == 0) IsEmpty = true;
+            if (!CanInteract) CanInteract = true;
         }
 
         public void Interact(GameObject target)
         {
+            if (!CanInteract) return;
             if (target.CompareTag("Ingredient"))
             {
                 GrabItem(target);
@@ -42,7 +45,7 @@ namespace _Scripts.Player
 
             switch (target.tag)
             {
-                case "AssemblyZone":
+                case "AssemblySpot":
                     DropItem(target);
                     break;
             }
@@ -54,6 +57,7 @@ namespace _Scripts.Player
             _itemInHand = item;
             _itemInHand.transform.parent = transform;
             _itemInHand.transform.position = transform.position;
+            CanInteract = false;
             IsEmpty = false;
         }
 
