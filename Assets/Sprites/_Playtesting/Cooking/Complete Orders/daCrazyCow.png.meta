@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      daCrazyCow_0: 8653461997907691413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
