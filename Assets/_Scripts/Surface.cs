@@ -14,7 +14,7 @@ namespace _Scripts
             _handRight = GameObject.Find("Hand Right").GetComponent<Hand>();
         }
         
-        private void OnMouseOver()
+        protected void OnMouseOver()
         {
             if (Input.GetMouseButtonDown(_handLeft.Index))
             {

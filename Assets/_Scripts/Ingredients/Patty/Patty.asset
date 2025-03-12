@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
   m_Name: Patty
   m_EditorClassIdentifier: 
-  ingredientName: 
-  ingredientSprites: []
+  ingredientName: Patty
+  ingredientSprites:
+  - {fileID: -165381306550957385, guid: 4ffdc299a4f414df989476fe33cc4fff, type: 3}
+  - {fileID: -5919778849487241949, guid: 51ab42ad9adac41319d7be08673ff5b2, type: 3}
+  - {fileID: 2456094395991791998, guid: 08b990d1dbc094d41a5cf80044241b4f, type: 3}
   goesInBlender: 0
-  goesInBurner: 0
+  goesInBurner: 1

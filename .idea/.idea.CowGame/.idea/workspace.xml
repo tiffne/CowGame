@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="" />
+    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,20 +29,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/AssemblySpot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Burner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/HandLeft.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/vitorbetmann/CowGame/Assets/_Scripts/Ingredient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Order.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;03-09-2025__HandRefactor&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main-copy&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
