@@ -4,8 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - handLeft: {fileID: 4668487010231479685, guid: e382a62afe9644912bc555664c9172ba, type: 3}
-  - handRight: {fileID: 5655898046482816113, guid: 6900c7236067543b68949a003147227c, type: 3}
+  - orderPrefab: {fileID: 1595249168160343414, guid: 7d2ce1e04f38849ffb7fa4e753f629c2, type: 3}
   - ingredient: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

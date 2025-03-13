@@ -1,4 +1,5 @@
 using System;
+using _Scripts.Ingredients;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -17,7 +18,6 @@ namespace _Scripts.Player
         public int Index { get; private set; }
         private GameObject _itemInHand;
 
-
         private void Start()
         {
             Index = transform.name switch
@@ -34,19 +34,32 @@ namespace _Scripts.Player
             if (!CanInteract) CanInteract = true;
         }
 
+        /// <summary>
+        /// Picks Up/Drops an Item from/on a Surface (e.g. Assembly Spots, Orders, Ingredients...). 
+        /// <example>
+        /// For example, if hand is empty and an Item is clicked, it will position that Item in the hand.
+        /// If hand is not empty and a surface is clicked, it will position the Item on that Surface.
+        /// The most common way to use it is:
+        /// <code>
+        /// handExample.Interact(gameObject);
+        /// </code>
+        /// </example>
+        /// </summary>
+        /// <param name="target"></param>
         public void Interact(GameObject target)
         {
             if (!CanInteract) return;
-            if (target.CompareTag("Ingredient"))
-            {
-                GrabItem(target);
-                return;
-            }
+            CanInteract = false;
 
             switch (target.tag)
             {
                 case "AssemblySpot":
                     DropItem(target);
+                    break;
+                case "Ingredient":
+                case "Order":
+                    if (IsEmpty) GrabItem(target);
+                    else DropItem(target);
                     break;
             }
         }
@@ -57,7 +70,6 @@ namespace _Scripts.Player
             _itemInHand = item;
             _itemInHand.transform.parent = transform;
             _itemInHand.transform.position = transform.position;
-            CanInteract = false;
             IsEmpty = false;
         }
 
@@ -68,32 +80,5 @@ namespace _Scripts.Player
             _itemInHand.transform.parent = target.transform;
             _itemInHand = null;
         }
-
-        // if (!IsEmpty)
-        // {
-        //     if (_itemInHand.TryGetComponent(out Ingredient ingredient))
-        //     {
-        //         if (surface.TryGetComponent(out AssemblySpot assemblySpot))
-        //         {
-        //             order = Instantiate(orderPrefab).GetComponent<Order>();
-        //             order.transform.position = assemblySpot.transform.position + Vector3.back;
-        //             order.CombineIngredient(ingredient);
-        //         }
-        //         else if (surface.TryGetComponent(out Order clickedOrder) && ingredient.IsReady)
-        //         {
-        //             clickedOrder.CombineIngredient(ingredient);
-        //         }
-        //         else if (surface.TryGetComponent(out Burner burner) && !ingredient.IsReady)
-        //         {
-        //             burner.Cook(ingredient);
-        //         }
-        //         else
-        //         {
-        //             return;
-        //         }
-        //     }
-        //
-        //     _itemInHand = null;
-        //     _isEmpty = true;
     }
 }

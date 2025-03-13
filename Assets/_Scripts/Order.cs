@@ -1,3 +1,11 @@
+namespace _Scripts
+{
+    public class Order : Surface
+    {
+    
+    }
+}
+
 // using System.Collections;
 // using System.Collections.Generic;
 // using _Scripts.Ingredients;
@@ -9,13 +17,6 @@
 //     private readonly List<string> _recipe = new() { "Bun", "Cheese", "Patty" };
 //     public List<string> ingredientsInOrder = new();
 //
-//     void OnMouseDown()
-//     {
-//         if (!HandLeft.IsEmpty)
-//         {
-//             HandLeft.DropItem(this);
-//         }
-//     }
 //
 //     public void CombineIngredient(Ingredient ingredient)
 //     {

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc019f07ad32481d850cca625e3f317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orderPrefab: {fileID: 1595249168160343414, guid: 7d2ce1e04f38849ffb7fa4e753f629c2, type: 3}
   ingredient: {fileID: 11400000, guid: acfb2f480d178459d925af4e24255eb4, type: 2}
   ingredientSprites: []
 --- !u!212 &2132103032466894664

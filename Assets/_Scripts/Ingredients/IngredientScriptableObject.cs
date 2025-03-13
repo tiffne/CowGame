@@ -11,10 +11,13 @@ namespace _Scripts.Ingredients
         [SerializeField] private Sprite[] ingredientSprites;
         public Sprite[] IngredientSprites => ingredientSprites;
 
-        [SerializeField] private bool goesInBlender;
-        public bool GoesInBlender => goesInBlender;
+        [SerializeField] private bool canBlend;
+        public bool CanBlend => canBlend;
 
-        [SerializeField] private bool goesInBurner;
-        public bool GoesInBurner => goesInBurner;
+        [SerializeField] private bool canCook;
+        public bool CanCook => canCook;
+
+        [SerializeField] private bool canMelt;
+        public bool CanMelt => canMelt;
     }
 }

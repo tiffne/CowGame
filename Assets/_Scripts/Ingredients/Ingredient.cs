@@ -1,33 +1,58 @@
 using _Scripts.Player;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.Serialization;
 
 
 namespace _Scripts.Ingredients
 {
     public class Ingredient : Surface
     {
+        [SerializeField] private Order orderPrefab;
         [SerializeField] protected IngredientScriptableObject ingredient;
-
-        private string IngredientName => name;
-
         [SerializeField] private Sprite[] ingredientSprites;
 
-        protected bool GoesInBlender { get; set; }
-        protected bool GoesInBurner { get; set; }
+        private string IngredientName => name;
+        protected bool CanBlend { get; set; }
+        protected bool CanCook { get; set; }
+        protected bool CanMelt { get; set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
         protected bool IsBurned { get; set; } = false;
         protected bool IsMelted { get; set; } = false;
-
+            
         private new void Start()
         {
             base.Start();
             tag = "Ingredient";
-            GoesInBlender = ingredient.GoesInBlender;
-            GoesInBurner = ingredient.GoesInBurner;
+            CanBlend = ingredient.CanBlend;
+            CanCook = ingredient.CanCook;
+            CanMelt = ingredient.CanMelt;
             ingredientSprites = ingredient.IngredientSprites;
             GetComponent<SpriteRenderer>().sprite = ingredientSprites[0];
+        }
+
+        private void Update()
+        {
+            if (transform.childCount == 0) return;
+            MergeIntoOrder(transform.GetChild(0).gameObject);
+        }
+
+        public void MergeIntoOrder(GameObject target)
+        {
+            var order = Instantiate(orderPrefab).gameObject;
+
+            order.transform.parent = transform.parent;
+            order.transform.position = transform.position;
+            
+            target.transform.parent = order.transform;
+            gameObject.transform.parent = order.transform;
+            
+            target.GetComponent<Collider>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+
         }
     }
 }
