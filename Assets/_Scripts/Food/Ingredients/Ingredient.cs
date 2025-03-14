@@ -1,11 +1,6 @@
-using _Scripts.Player;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Serialization;
 
-
-namespace _Scripts.Ingredients
+namespace _Scripts.Food.Ingredients
 {
     public class Ingredient : Surface
     {
@@ -13,16 +8,21 @@ namespace _Scripts.Ingredients
         [SerializeField] protected IngredientScriptableObject ingredient;
         [SerializeField] private Sprite[] ingredientSprites;
 
-        private string IngredientName => name;
-        protected bool CanBlend { get; set; }
-        protected bool CanCook { get; set; }
-        protected bool CanMelt { get; set; }
+        public string IngredientName => name;
+
+        public bool CanBlend { get; set; }
+        public bool CanCook { get; set; }
+        public bool CanMelt { get; set; }
+
+        public float TimeToBlend { get; set; }
+        public float TimeToCook { get; set; }
+        public float TimeToMelt { get; set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
         protected bool IsBurned { get; set; } = false;
         protected bool IsMelted { get; set; } = false;
-            
+
         private new void Start()
         {
             base.Start();
@@ -30,6 +30,11 @@ namespace _Scripts.Ingredients
             CanBlend = ingredient.CanBlend;
             CanCook = ingredient.CanCook;
             CanMelt = ingredient.CanMelt;
+
+            TimeToBlend = ingredient.TimeToBlend;
+            TimeToCook = ingredient.TimeToCook;
+            TimeToMelt = ingredient.TimeToMelt;
+
             ingredientSprites = ingredient.IngredientSprites;
             GetComponent<SpriteRenderer>().sprite = ingredientSprites[0];
         }
@@ -40,19 +45,15 @@ namespace _Scripts.Ingredients
             MergeIntoOrder(transform.GetChild(0).gameObject);
         }
 
-        public void MergeIntoOrder(GameObject target)
+        private void MergeIntoOrder(GameObject target)
         {
-            var order = Instantiate(orderPrefab).gameObject;
+            var order = Instantiate(orderPrefab).gameObject.GetComponent<Order>();
+            order.MergeIngredients(new[] {gameObject, target});
+        }
 
-            order.transform.parent = transform.parent;
-            order.transform.position = transform.position;
-            
-            target.transform.parent = order.transform;
-            gameObject.transform.parent = order.transform;
-            
-            target.GetComponent<Collider>().enabled = false;
-            GetComponent<Collider>().enabled = false;
-
+        public void SayByeBye() // transform this in a method that returns the ingredients to the pantry
+        {
+            Destroy(gameObject);
         }
     }
 }

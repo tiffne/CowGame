@@ -1,7 +1,6 @@
 using System;
-using UnityEngine;
 
-namespace _Scripts.Ingredients.Interfaces
+namespace _Scripts.Food.Ingredients.Interfaces
 {
     public interface IBlendable
     {

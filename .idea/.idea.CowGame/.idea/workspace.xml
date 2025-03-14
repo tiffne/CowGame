@@ -6,13 +6,44 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Patty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Patty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assembly Spot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assembly Spot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Order Ticket.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Order Ticket.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Order.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Order.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Patty.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Patty.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Steak.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/_Playtesting/Cooking/Complete Orders/burgerDone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/_Playtesting/Cooking/Complete Orders/burgerDone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/IngredientScriptableObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/IBlendable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/IBlendable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/ICookable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/ICookable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/IMeltable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Interfaces/IMeltable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Patty/Patty.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ingredients/Steak/Steak.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Order.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +66,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/RecipesDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Order.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,7 +160,7 @@
       <workItem from="1741745380866" duration="3180000" />
       <workItem from="1741791482554" duration="3242000" />
       <workItem from="1741795861855" duration="117000" />
-      <workItem from="1741880751597" duration="13018000" />
+      <workItem from="1741880751597" duration="31917000" />
     </task>
     <servers />
   </component>

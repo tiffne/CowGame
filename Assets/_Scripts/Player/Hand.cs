@@ -1,5 +1,5 @@
 using System;
-using _Scripts.Ingredients;
+using _Scripts.Food.Ingredients;
 using UnityEngine;
 using UnityEngine.Serialization;
 
