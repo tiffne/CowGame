@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256988915992336978}
-  - component: {fileID: -2055021743097963961}
-  - component: {fileID: 2132103032466894664}
+  - component: {fileID: 6817966371521193090}
+  - component: {fileID: -270320381342049196}
   - component: {fileID: 2471241489817919317}
   m_Layer: 0
   m_Name: Steak
@@ -34,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2055021743097963961
+--- !u!114 &6817966371521193090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,8 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderPrefab: {fileID: 1595249168160343414, guid: 7d2ce1e04f38849ffb7fa4e753f629c2, type: 3}
   ingredient: {fileID: 11400000, guid: acfb2f480d178459d925af4e24255eb4, type: 2}
-  ingredientSprites: []
---- !u!212 &2132103032466894664
+--- !u!212 &-270320381342049196
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,15 +92,15 @@ SpriteRenderer:
   m_SortingLayerID: -676444253
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6894695900325857597, guid: 1ba76d98fb6f74d93951ea5d3a67c97f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.580002, y: 11.7}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!65 &2471241489817919317

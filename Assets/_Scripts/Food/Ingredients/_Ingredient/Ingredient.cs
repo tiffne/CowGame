@@ -1,14 +1,32 @@
+using System;
 using UnityEngine;
 
-namespace _Scripts.Food.Ingredients
+namespace _Scripts.Food.Ingredients._Ingredient
 {
-    public class Ingredient : Surface
+    public class Ingredient : Surface, IComparable
     {
         [SerializeField] private Order orderPrefab;
         [SerializeField] protected IngredientScriptableObject ingredient;
-        [SerializeField] private Sprite[] ingredientSprites;
+
+        private Sprite _ingredientRawSprite;
+        private Sprite _ingredientBlendedSprite;
+        private Sprite _ingredientCookedSprite;
+        private Sprite _ingredientBurnedSprite;
+        private Sprite _ingredientMeltedSprite;
 
         public string IngredientName => name;
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null) throw new NullReferenceException("Can't compare null ingredients.");
+            var otherIngredient = obj as Ingredient;
+            if (otherIngredient)
+            {
+                return string.CompareOrdinal(IngredientName, otherIngredient.IngredientName);
+            }
+
+            throw new ArgumentException("Object not an Ingredient.");
+        }
 
         public bool CanBlend { get; set; }
         public bool CanCook { get; set; }
@@ -35,20 +53,25 @@ namespace _Scripts.Food.Ingredients
             TimeToCook = ingredient.TimeToCook;
             TimeToMelt = ingredient.TimeToMelt;
 
-            ingredientSprites = ingredient.IngredientSprites;
-            GetComponent<SpriteRenderer>().sprite = ingredientSprites[0];
+            _ingredientRawSprite = ingredient.IngredientRawSprite;
+            _ingredientBlendedSprite = ingredient.IngredientBlendedSprite;
+            _ingredientCookedSprite = ingredient.IngredientCookedSprite;
+            _ingredientBurnedSprite = ingredient.IngredientBurnedSprite;
+            _ingredientMeltedSprite = ingredient.IngredientMeltedSprite;
+
+            GetComponent<SpriteRenderer>().sprite = _ingredientRawSprite;
         }
 
         private void Update()
         {
             if (transform.childCount == 0) return;
-            MergeIntoOrder(transform.GetChild(0).gameObject);
+            GenerateNewOrder(transform.GetChild(0).gameObject);
         }
 
-        private void MergeIntoOrder(GameObject target)
+        private void GenerateNewOrder(GameObject target)
         {
-            var order = Instantiate(orderPrefab).gameObject.GetComponent<Order>();
-            order.MergeIngredients(new[] {gameObject, target});
+            var order = Instantiate(orderPrefab, transform.parent).gameObject.GetComponent<Order>();
+            order.MergeIngredients(new[] { gameObject, target });
         }
 
         public void SayByeBye() // transform this in a method that returns the ingredients to the pantry
