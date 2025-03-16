@@ -9,12 +9,12 @@ namespace _Scripts.Food.Recipes
     [CreateAssetMenu(fileName = "New Recipe", menuName = "Scriptable Objects/Recipe")]
     public class RecipeScriptableObject : ScriptableObject
     {
+        public string RecipeName => name;
+        
         [SerializeField] private List<Ingredient> ingredients;
         public List<Ingredient> Ingredients => ingredients;
 
         [SerializeField] private Sprite recipeSprite;
         public Sprite RecipeSprite => recipeSprite;
-
-        public string RecipeName => name;
     }
 }

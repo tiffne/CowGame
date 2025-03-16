@@ -4,11 +4,10 @@ namespace _Scripts.Player
 {
     public class PointOfView : MonoBehaviour
     {
-        [SerializeField] private Sprite sprite;
+        // [SerializeField] private Sprite sprite;
 
-        public Transform[] views;
-        float transitionSpeed = 5f;
-
+        private Transform[] views;
+        private const float TransitionSpeed = 5f;
         private int currentViewIndex = 0;
 
         void Start()
@@ -32,7 +31,7 @@ namespace _Scripts.Player
             if (views.Length > 0 && views[currentViewIndex] != null)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(views[currentViewIndex].position - transform.position);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * transitionSpeed);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * TransitionSpeed);
             }
         }
     }

@@ -18,6 +18,7 @@ namespace _Scripts.Food
             base.Start();
             foreach (var recipe in recipes.Recipes)
             {
+                recipe.Ingredients.Sort();
                 _spritesDict[recipe.RecipeName] = recipe.RecipeSprite;
             }
         }
@@ -68,7 +69,6 @@ namespace _Scripts.Food
         {
             if (recipe.Ingredients.Count != _ingredients.Count) return false;
             
-            recipe.Ingredients.Sort();
             _ingredients.Sort();
             for (var i = 0; i < recipe.Ingredients.Count; i++)
             {

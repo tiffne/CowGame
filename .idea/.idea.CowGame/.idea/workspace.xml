@@ -6,32 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/Patty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Food/Patty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/Steak.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Food/Steak.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/_Order.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Food/_Order.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Ingredient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Ingredient.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/IngredientScriptableObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/IngredientScriptableObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/IBlendable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/IBlendable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/ICookable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/ICookable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/IMeltable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Interfaces/IMeltable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/Burger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/Burger.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/IngredientScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/IngredientScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/RecipeScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/RecipeScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Order.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Order.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MainMenuController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PointOfView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PointOfView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Ok-now-for-real,-fix-orders&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Ok-now-for-real,-fix-orders",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.32f1/Unity.app/Contents/MacOS/Unity" />
@@ -151,6 +133,8 @@
       <workItem from="1741795861855" duration="117000" />
       <workItem from="1741880751597" duration="32520000" />
       <workItem from="1741992007875" duration="10869000" />
+      <workItem from="1742058349437" duration="124000" />
+      <workItem from="1742058502083" duration="10433000" />
     </task>
     <servers />
   </component>
@@ -178,5 +162,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

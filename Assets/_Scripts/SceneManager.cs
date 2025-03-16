@@ -4,12 +4,7 @@ namespace _Scripts
 {
     public class SceneManager : MonoBehaviour
     {
-        void Start()
-        {
-
-        }
-
-        void Update()
+        private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

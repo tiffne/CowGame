@@ -1,9 +1,5 @@
 using System;
-using _Scripts.Food.Ingredients;
-using _Scripts.Food.Ingredients._Ingredient;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Scripts.Player
 {
@@ -66,10 +62,10 @@ namespace _Scripts.Player
             }
         }
 
-        private void GrabItem(GameObject item)
+        private void GrabItem(GameObject target)
         {
             if (!IsEmpty) return;
-            _itemInHand = item;
+            _itemInHand = target;
             _itemInHand.transform.parent = transform;
             _itemInHand.transform.position = transform.position;
             IsEmpty = false;

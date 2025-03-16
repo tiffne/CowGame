@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _Scripts.Food.Ingredients._Ingredient
 {
-    public class Ingredient : Surface, IComparable
+    public abstract class Ingredient : Surface, IComparable
     {
         [SerializeField] private Order orderPrefab;
         [SerializeField] protected IngredientScriptableObject ingredient;
@@ -16,25 +16,13 @@ namespace _Scripts.Food.Ingredients._Ingredient
 
         public string IngredientName => name;
 
-        public int CompareTo(object obj)
-        {
-            if (obj == null) throw new NullReferenceException("Can't compare null ingredients.");
-            var otherIngredient = obj as Ingredient;
-            if (otherIngredient)
-            {
-                return string.CompareOrdinal(IngredientName, otherIngredient.IngredientName);
-            }
-
-            throw new ArgumentException("Object not an Ingredient.");
-        }
-
         public bool CanBlend { get; set; }
         public bool CanCook { get; set; }
         public bool CanMelt { get; set; }
 
-        public float TimeToBlend { get; set; }
-        public float TimeToCook { get; set; }
-        public float TimeToMelt { get; set; }
+        public float TimeToBlend { get; private set; }
+        public float TimeToCook { get; private set; }
+        public float TimeToMelt { get; private set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
@@ -77,6 +65,18 @@ namespace _Scripts.Food.Ingredients._Ingredient
         public void SayByeBye() // transform this in a method that returns the ingredients to the pantry
         {
             Destroy(gameObject);
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null) throw new NullReferenceException("Can't compare null ingredients.");
+            var otherIngredient = obj as Ingredient;
+            if (otherIngredient)
+            {
+                return string.CompareOrdinal(IngredientName, otherIngredient.IngredientName);
+            }
+
+            throw new ArgumentException("Object not an Ingredient.");
         }
     }
 }
