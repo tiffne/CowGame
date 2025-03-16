@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using _Scripts.Food.Ingredients;
 using _Scripts.Food.Ingredients._Ingredient;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts.Food.Recipes

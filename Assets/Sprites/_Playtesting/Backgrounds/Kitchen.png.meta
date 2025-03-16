@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: da8a420b1223e7c4eb938da0ef903dd4
+guid: 2730b8b1347f6e841a0e3fb1ed29a482
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7755418692990079324
-    second: Storage_Room_0
+      213: -7127815578132815392
+    second: Kitchen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Storage_Room_0
+      name: Kitchen_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5119181638c0ab60800000000000000
-      internalID: 7755418692990079324
+      spriteID: 0e1e5e81f79e41d90800000000000000
+      internalID: -7127815578132815392
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Storage_Room_0: 7755418692990079324
+      Kitchen_0: -7127815578132815392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

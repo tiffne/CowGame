@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 namespace _Scripts.Food.Ingredients._Ingredient
