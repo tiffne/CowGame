@@ -4,12 +4,14 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Ingredient
   - Cheese
   - Bun
   - Patty
   - AssemblySpot
+  - Steak
+  - Ingredient
   - Order
+  - Pocket
   layers:
   - Default
   - TransparentFX

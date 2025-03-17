@@ -5,24 +5,24 @@ namespace _Scripts
 {
     public class Surface : MonoBehaviour
     {
-        protected Hand HandLeft;
-        protected Hand HandRight;
+        private Hand handLeft;
+        private Hand handRight;
 
         protected void Start()
         {
-            HandLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
-            HandRight = GameObject.Find("Hand Right").GetComponent<Hand>();
+            handLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
+            handRight = GameObject.Find("Hand Right").GetComponent<Hand>();
         }
         
         protected void OnMouseOver()
         {
-            if (Input.GetMouseButtonDown(HandLeft.Index))
+            if (Input.GetMouseButtonDown(handLeft.Index))
             {
-                HandLeft.Interact(gameObject);
+                handLeft.Interact(gameObject);
             }
-            else if (Input.GetMouseButtonDown(HandRight.Index))
+            else if (Input.GetMouseButtonDown(handRight.Index))
             {
-                HandRight.Interact(gameObject);
+                handRight.Interact(gameObject);
             }
         }
     }

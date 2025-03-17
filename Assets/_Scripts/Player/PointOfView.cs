@@ -8,9 +8,8 @@ namespace _Scripts.Player
         [SerializeField] private Sprite sprite;
 
         [SerializeField] private Transform[] views;
-        float transitionSpeed = 5f;
-
-        private int currentViewIndex = 0;
+        private const float TransitionSpeed = 5.0f;
+        private int currentViewIndex;
 
         void Start()
         {
@@ -19,26 +18,26 @@ namespace _Scripts.Player
 
         void Update()
         {
-            // float scroll = Input.GetAxis("Mouse ScrollWheel");
-            //
-            // if (scroll > 0f)
-            // {
-            //     currentViewIndex = Mathf.Clamp(currentViewIndex + 1, 0, views.Length - 1);
-            // }
-            // else if (scroll < 0f)
-            // {
-            //     currentViewIndex = Mathf.Clamp(currentViewIndex - 1, 0, views.Length - 1);
-            // }
-            //
-            // if (views.Length > 0 && views[currentViewIndex] != null)
-            // {
-            //     Quaternion targetRotation = Quaternion.LookRotation(views[currentViewIndex].position - transform.position);
-            //     transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * transitionSpeed);
-            // }
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
 
-            if (Input.GetKeyDown(KeyCode.E)) transform.Rotate(90 * Vector3.up);
-            if (Input.GetKeyDown(KeyCode.Q)) transform.Rotate(90 * Vector3.down);
+            //if (scroll > 0f)
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                currentViewIndex = Mathf.Clamp(currentViewIndex + 1, 0, views.Length - 1);
+            }
+            //else if (scroll < 0f)
+            else if (Input.GetKeyDown(KeyCode.Q))
+            {
+                currentViewIndex = Mathf.Clamp(currentViewIndex - 1, 0, views.Length - 1);
+            }
 
+            if (views.Length > 0 && views[currentViewIndex])
+            {
+                Quaternion targetRotation =
+                    Quaternion.LookRotation(views[currentViewIndex].position - transform.position);
+                transform.rotation =
+                    Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * TransitionSpeed);
+            }
         }
     }
 }

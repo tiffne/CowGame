@@ -10,14 +10,21 @@ namespace _Scripts.Fixed_Surfaces.Storing
         [SerializeField] private GameObject steakPrefab;
         [SerializeField] private GameObject bunPrefab;
         [SerializeField] private GameObject pattyPrefab;
-        
-        private void Update()
+
+        private new void Start()
         {
-        if (transform.childCount != 0) return;
-        PopulateShelves();
+            AmountLeft = 2;
         }
 
-        private void PopulateShelves()
+        private void Update()
+        {
+            if (transform.childCount != 0) return;
+
+            if (AmountLeft > 0) PopulateShelf();
+            else Destroy(gameObject);
+        }
+
+        private void PopulateShelf()
         {
             GameObject temp;
             switch (tag)
@@ -34,7 +41,7 @@ namespace _Scripts.Fixed_Surfaces.Storing
                     temp = Instantiate(pattyPrefab, transform.position, transform.rotation, transform);
                     temp.name = tag;
                     break;
-                case "Bun":
+                case "Bun": //TODO Need to fill out the rest of the pantry with more ingredients 
                     break;
             }
         }

@@ -1,6 +1,6 @@
 using System;
 
-namespace _Scripts.Food.Ingredients.Interfaces
+namespace _Scripts.Food.Ingredients._Ingredient.Interfaces
 {
     public interface IBlendable
     {

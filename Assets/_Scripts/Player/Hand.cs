@@ -1,4 +1,5 @@
 using System;
+using _Scripts.Fixed_Surfaces.Storing;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -56,8 +57,21 @@ namespace _Scripts.Player
                     break;
                 case "Ingredient":
                 case "Order":
-                    if (IsEmpty) GrabItem(target);
-                    else if (target.transform.parent.CompareTag("AssemblySpot")) DropItem(target);
+                    var parent = target.transform.parent;
+                    switch (IsEmpty)
+                    {
+                        case true:
+                            if (parent.name.Equals("Shelf Spot")) parent.GetComponent<ShelfSpot>().ReduceAmountLeft();
+                            GrabItem(target);
+                            break;
+                        case false:
+                            if (parent.CompareTag("AssemblySpot")) DropItem(target);
+                            break;
+                    }
+
+                    break;
+                case "Pocket":
+                    DropItem(target);
                     break;
             }
         }
