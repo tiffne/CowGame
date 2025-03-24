@@ -1,5 +1,6 @@
 using System;
 using _Scripts.Fixed_Surfaces.Storing;
+using _Scripts.Food.Ingredients._Ingredient;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -55,8 +56,9 @@ namespace _Scripts.Player
                 case "AssemblySpot":
                     DropItem(target);
                     break;
-                case "Ingredient":
-                case "Order":
+                case "Ingredient": // if type of item in hand equals ingredient, add ingredient
+                                   // if order, add the ingredient to order
+                case "Order":      // if ingredient, add to order, else if order, break down order and add
                     var parent = target.transform.parent;
                     switch (IsEmpty)
                     {
@@ -71,6 +73,7 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
+                case "Garbage":
                     DropItem(target);
                     break;
             }

@@ -41,7 +41,9 @@ namespace _Scripts.Fixed_Surfaces.Storing
                     temp = Instantiate(pattyPrefab, transform.position, transform.rotation, transform);
                     temp.name = tag;
                     break;
-                case "Bun": //TODO Need to fill out the rest of the pantry with more ingredients 
+                case "Bun": 
+                    temp = Instantiate(bunPrefab, transform.position, transform.rotation, transform);
+                    temp.name = tag;
                     break;
             }
         }
