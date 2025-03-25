@@ -25,11 +25,6 @@ namespace _Scripts
                 handRight.Interact(gameObject);
             }
         }
-
-        public void SayByeBye()
-        {
-            Destroy(gameObject);
-        }
     }
     
 
