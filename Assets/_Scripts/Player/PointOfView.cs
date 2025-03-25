@@ -5,18 +5,18 @@ namespace _Scripts.Player
 {
     public class PointOfView : MonoBehaviour
     {
-        [SerializeField] private Texture2D sprite;
+        [SerializeField] private Sprite sprite;
 
         [SerializeField] private Transform[] views;
         private const float TransitionSpeed = 5.0f;
         private int currentViewIndex;
 
-        private void Start()
+        void Start()
         {
-            Cursor.SetCursor(sprite, Vector2.zero, CursorMode.Auto);
+            //Cursor.SetCursor(sprite.texture, Vector2.zero, CursorMode.Auto);
         }
 
-        private void Update()
+        void Update()
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
 
