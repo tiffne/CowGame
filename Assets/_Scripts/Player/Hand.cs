@@ -1,5 +1,7 @@
 using System;
+using System.Net;
 using _Scripts.Fixed_Surfaces.Storing;
+using _Scripts.Food;
 using _Scripts.Food.Ingredients._Ingredient;
 using UnityEngine;
 
@@ -57,8 +59,8 @@ namespace _Scripts.Player
                     DropItem(target);
                     break;
                 case "Ingredient": // if type of item in hand equals ingredient, add ingredient
-                                   // if order, add the ingredient to order
-                case "Order":      // if ingredient, add to order, else if order, break down order and add
+                // if order, add the ingredient to order
+                case "Order": // if ingredient, add to order, else if order, break down order and add
                     var parent = target.transform.parent;
                     switch (IsEmpty)
                     {
@@ -67,7 +69,11 @@ namespace _Scripts.Player
                             GrabItem(target);
                             break;
                         case false:
-                            if (parent.CompareTag("AssemblySpot")) DropItem(target);
+                            if (parent.CompareTag("AssemblySpot"))
+                            {
+                                if (!(target.TryGetComponent<Order>(out var order) && order._isReady)) DropItem(target);
+                            }
+
                             break;
                     }
 
