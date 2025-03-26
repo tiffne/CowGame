@@ -12,6 +12,7 @@ TagManager:
   - Ingredient
   - Order
   - Pocket
+  - Garbage
   layers:
   - Default
   - TransparentFX
