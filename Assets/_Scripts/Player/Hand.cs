@@ -71,7 +71,7 @@ namespace _Scripts.Player
                         case false:
                             if (parent.CompareTag("AssemblySpot"))
                             {
-                                if (!(target.TryGetComponent<Order>(out var order) && order._isReady)) DropItem(target);
+                                if (!(target.TryGetComponent<Order>(out var order) && order.isReady)) DropItem(target);
                             }
 
                             break;

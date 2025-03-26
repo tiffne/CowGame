@@ -8,11 +8,14 @@ namespace _Scripts.Food.Recipes
     public class RecipeScriptableObject : ScriptableObject
     {
         public string RecipeName => name;
-        
+
         [SerializeField] private List<Ingredient> ingredients;
         public List<Ingredient> Ingredients => ingredients;
 
         [SerializeField] private Sprite recipeSprite;
         public Sprite RecipeSprite => recipeSprite;
+
+        [SerializeField] private float price;
+        public float Price => price;
     }
 }

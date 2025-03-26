@@ -4,6 +4,7 @@ using _Scripts.Food.Ingredients._Ingredient;
 using _Scripts.Food.Recipes;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Scripts.Food
 {
@@ -13,7 +14,7 @@ namespace _Scripts.Food
         private readonly List<Ingredient> _ingredients = new();
         private RecipeScriptableObject _matchedRecipe;
         private readonly Dictionary<string, Sprite> _spritesDict = new();
-        public bool _isReady;
+        public bool isReady;
 
         private new void Start()
         {
@@ -27,7 +28,7 @@ namespace _Scripts.Food
 
         private void Update()
         {
-            if (_isReady) return;
+            if (isReady) return;
             if (!IsOrderComplete()) return;
             for (var i = 0; i < transform.childCount; i++)
             {
@@ -35,7 +36,7 @@ namespace _Scripts.Food
             }
 
             transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[_matchedRecipe.name];
-            _isReady = true;
+            isReady = true;
         }
 
         public void MergeIngredients(GameObject[] ingredients)
