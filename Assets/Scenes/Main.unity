@@ -135,10 +135,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Steak
       objectReference: {fileID: 0}
-    - target: {fileID: 5724029489254494043, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
-      propertyPath: bunPrefab
-      value: 
-      objectReference: {fileID: 193683562228049565, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
     - target: {fileID: 8857436965311226099, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
@@ -1443,10 +1439,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Patty
       objectReference: {fileID: 0}
-    - target: {fileID: 5724029489254494043, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
-      propertyPath: bunPrefab
-      value: 
-      objectReference: {fileID: 193683562228049565, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
     - target: {fileID: 8857436965311226099, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
@@ -2431,10 +2423,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Cheese
       objectReference: {fileID: 0}
-    - target: {fileID: 5724029489254494043, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
-      propertyPath: bunPrefab
-      value: 
-      objectReference: {fileID: 193683562228049565, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
     - target: {fileID: 8857436965311226099, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5
@@ -2642,10 +2630,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf Spot
       objectReference: {fileID: 0}
-    - target: {fileID: 5724029489254494043, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
-      propertyPath: bunPrefab
-      value: 
-      objectReference: {fileID: 193683562228049565, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
     - target: {fileID: 8857436965311226099, guid: 99e6c551022a04eb0879016aa35f3714, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5

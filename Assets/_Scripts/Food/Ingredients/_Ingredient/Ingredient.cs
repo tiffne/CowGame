@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace _Scripts.Food.Ingredients._Ingredient
 {
@@ -15,7 +14,9 @@ namespace _Scripts.Food.Ingredients._Ingredient
         private Sprite _ingredientCookedSprite;
         private Sprite _ingredientBurnedSprite;
         private Sprite _ingredientMeltedSprite;
-        
+
+        public string IngredientName => name;
+
         public bool CanBlend { get; set; }
         public bool CanCook { get; set; }
         public bool CanMelt { get; set; }
@@ -50,16 +51,22 @@ namespace _Scripts.Food.Ingredients._Ingredient
             GetComponent<SpriteRenderer>().sprite = _ingredientRawSprite;
         }
 
+        private void Update()
+        {
+            if (transform.childCount == 0) return;
+            GenerateNewOrder(transform.GetChild(0).gameObject);
+        }
+
         private void GenerateNewOrder(GameObject target)
         {
             var order = Instantiate(orderPrefab, transform.parent).gameObject.GetComponent<Order>();
             order.MergeIngredients(new[] { gameObject, target });
         }
 
-        // public void SayByeBye() // TODO: transform this in a method that returns the ingredients to the pantry
-        // {
-        //     Destroy(gameObject);
-        // }
+        public void SayByeBye() // transform this in a method that returns the ingredients to the pantry
+        {
+            Destroy(gameObject);
+        }
 
         public int CompareTo(object obj)
         {
@@ -67,16 +74,10 @@ namespace _Scripts.Food.Ingredients._Ingredient
             var otherIngredient = obj as Ingredient;
             if (otherIngredient)
             {
-                return string.CompareOrdinal(name, otherIngredient.name);
+                return string.CompareOrdinal(IngredientName, otherIngredient.IngredientName);
             }
 
             throw new ArgumentException("Object not an Ingredient.");
-        }
-
-        private new void OnMouseOver()
-        {
-            base.OnMouseOver();
-            if (transform.childCount == 1) GenerateNewOrder(transform.GetChild(0).gameObject);
         }
     }
 }

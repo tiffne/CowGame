@@ -6,14 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/Bun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Food/Bun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/_Order.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/_Order.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Bun/Bun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Bun/Bun.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/_Playtesting/Cooking/Ingredients/Buns/buns.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/_Playtesting/Cooking/Ingredients/Buns/buns.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/Burger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/Burger.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Surface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Surface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +144,7 @@
       <workItem from="1742419358778" duration="311000" />
       <workItem from="1742534655810" duration="508000" />
       <workItem from="1742605566405" duration="2514000" />
-      <workItem from="1742832718422" duration="11942000" />
+      <workItem from="1742832718422" duration="1200000" />
     </task>
     <servers />
   </component>
