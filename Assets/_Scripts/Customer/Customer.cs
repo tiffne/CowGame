@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using _Scripts.Food.Recipes;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace _Scripts.Customer
@@ -16,11 +17,13 @@ namespace _Scripts.Customer
             Done
         }
 
-        [SerializeField] private CustomersInfo infoPool;
-        private Sprite customersBody;
-        private Sprite customersHat;
-        private Sprite customersShirt;
-        public string Species { get; private set; }
+        [FormerlySerializedAs("infoPool")] [SerializeField] private CustomersDatabase customersDatabase;
+        private Sprite customerSprite;
+        private Sprite customersAccessory;
+        private Sprite customersTop;
+        private AnimalScriptableObject chosenAnimal;
+        public string Species => chosenAnimal.name;
+        private Sprite currentSprite; 
 
         [SerializeField] private RecipesDatabase recipesDatabase;
         private RecipeScriptableObject Order { get; set; }
@@ -29,10 +32,10 @@ namespace _Scripts.Customer
 
         private new void Start()
         {
-            //Species = infoPool.Species[Random.Range(0, infoPool.Species.Count)];
-            // customersBody = infoPool.CustomersBodies[Random.Range(0, infoPool.CustomersBodies.Count)];
-            // customersHat = infoPool.CustomersHats[Random.Range(0, infoPool.CustomersHats.Count)];
-            // customersShirt = infoPool.CustomersShirts[Random.Range(0, infoPool.CustomersShirts.Count)];
+            chosenAnimal = customersDatabase.Species[Random.Range(0, customersDatabase.Species.Count)];
+            currentSprite = chosenAnimal.PatientSprite;
+            customersAccessory = customersDatabase.Accessories[Random.Range(0, customersDatabase.Accessories.Count)];
+            customersTop = customersDatabase.Tops[Random.Range(0, customersDatabase.Tops.Count)];
             Order = recipesDatabase.Recipes[Random.Range(0, recipesDatabase.Recipes.Count)];
             Debug.Log($"I am {Enum.GetName(typeof(PatienceState), patienceLevel)}");
             tag = "Customer";

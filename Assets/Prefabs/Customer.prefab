@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1074839310488449237}
   m_Layer: 0
-  m_Name: Customer's Hat
+  m_Name: Customer's Accessory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3419320610106547289}
   m_Layer: 0
-  m_Name: Customer's Shirt
+  m_Name: Customer's Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
