@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
   m_Name: Wolf
   m_EditorClassIdentifier: 
-  patientSprite: {fileID: 0}
-  neutralSprite: {fileID: 0}
-  irritatedSprite: {fileID: 0}
+  patientSprite: {fileID: -4887001866502520173, guid: c17c2428b0bbc49fa8343dc957e99b2e, type: 3}
+  neutralSprite: {fileID: -3401450912534279077, guid: f7f18c5ca77bd4a87b243cbf8eb0db8c, type: 3}
+  irritatedSprite: {fileID: 1723521728923333442, guid: 5cd8e05f57b6843a19f7c386b854ab7d, type: 3}

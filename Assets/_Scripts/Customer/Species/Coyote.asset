@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
   m_Name: Coyote
   m_EditorClassIdentifier: 
-  patientSprite: {fileID: 0}
-  neutralSprite: {fileID: 0}
-  irritatedSprite: {fileID: 0}
+  patientSprite: {fileID: -6809125948364882087, guid: 01f8ae418e29e4c219bbb244296a9a3b, type: 3}
+  neutralSprite: {fileID: -8360224220374876579, guid: 7b26151a7bc274add9b42b214897fcf8, type: 3}
+  irritatedSprite: {fileID: 3354372653374801555, guid: 7b06232dbdbc444d481573b45fb43841, type: 3}

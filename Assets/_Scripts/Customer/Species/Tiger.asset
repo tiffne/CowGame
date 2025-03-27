@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
   m_Name: Tiger
   m_EditorClassIdentifier: 
-  patientSprite: {fileID: 0}
-  neutralSprite: {fileID: 0}
-  irritatedSprite: {fileID: 0}
+  patientSprite: {fileID: 1111323513888115071, guid: 0470f0dcd2f784165b9b82f7f871b161, type: 3}
+  neutralSprite: {fileID: 5583243687606494395, guid: 258d7db0cb4764fc5a38cbaf39daa8e0, type: 3}
+  irritatedSprite: {fileID: 8128439508732211424, guid: 2cb0932ad21cc4d4d8da4c7536cc2958, type: 3}

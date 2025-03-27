@@ -13,6 +13,11 @@ TagManager:
   - Order
   - Pocket
   - Garbage
+  - Wolf
+  - Lion
+  - Bear
+  - Coyote
+  - Tiger
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
   m_Name: Bear
   m_EditorClassIdentifier: 
-  patientSprite: {fileID: 0}
-  neutralSprite: {fileID: 0}
-  irritatedSprite: {fileID: 0}
+  patientSprite: {fileID: -4147768167756179153, guid: 00fc66e45d52d40c4b519a253fa00ec6, type: 3}
+  neutralSprite: {fileID: -3147702872207626232, guid: f68c8fd84e9f54aab93950cd282ad191, type: 3}
+  irritatedSprite: {fileID: 1003971629752312660, guid: 9a58c531bb6a64297a7aca61f07ae2a9, type: 3}
