@@ -14,7 +14,7 @@ namespace _Scripts.Food
         private readonly List<Ingredient> _ingredients = new();
         private RecipeScriptableObject _matchedRecipe;
         private readonly Dictionary<string, Sprite> _spritesDict = new();
-        public bool isReady;
+        public bool IsReady { get; private set; } = false;
 
         private new void Start()
         {
@@ -28,7 +28,7 @@ namespace _Scripts.Food
 
         private void Update()
         {
-            if (isReady) return;
+            if (IsReady) return;
             if (!IsOrderComplete()) return;
             for (var i = 0; i < transform.childCount; i++)
             {
@@ -36,7 +36,7 @@ namespace _Scripts.Food
             }
 
             transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[_matchedRecipe.name];
-            isReady = true;
+            IsReady = true;
         }
 
         public void MergeIngredients(GameObject[] ingredients)
