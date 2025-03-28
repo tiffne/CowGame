@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static _Scripts.Customer.Customer.PatienceState;
 
 namespace _Scripts.Customer
 {
@@ -9,9 +11,9 @@ namespace _Scripts.Customer
     {
         private static class LineOfCustomers
         {
-            private const int MaxLineSize = 5;
+            private const int MaxLineSize = 3;
             public static List<GameObject> Line { get; } = new();
-            private static bool IsFull => Line.Count >= MaxLineSize;
+            public static bool IsFull => Line.Count >= MaxLineSize;
 
             public static void AddCustomerToLine(GameObject customer)
             {
@@ -26,30 +28,42 @@ namespace _Scripts.Customer
         }
 
         [SerializeField] private GameObject customerPrefab;
-        private bool CanAddNewCustomer { get; set; } = false;
+        private bool CanAddNewCustomer { get; set; } = true;
 
         private void Update()
         {
             if (CanAddNewCustomer) StartCoroutine(AddCustomerCountdown());
+            CheckOnCustomers();
         }
 
         private void CheckOnCustomers()
         {
-            List <GameObject> customersToLeave = new();
+            List<GameObject> customersToLeave = new();
             foreach (var customer in LineOfCustomers.Line)
             {
-                if (customer.GetComponent<Customer>().patienceLevel == 4)
+                if (customer.GetComponent<Customer>().patienceLevel == (int)Done)
                 {
                     customersToLeave.Add(customer);
-                    
                 }
             }
+
+            if (customersToLeave.Count == 0) return;
+            foreach (var customer in customersToLeave)
+            {
+                LineOfCustomers.RemoveCustomerFromLine(customer);
+                customer.GetComponent<Customer>().SayByeBye();
+            }
+
+            CanAddNewCustomer = true;
         }
 
         private IEnumerator AddCustomerCountdown()
         {
-            yield return new WaitForSeconds(5);
-            LineOfCustomers.AddCustomerToLine(Instantiate(customerPrefab));
+            CanAddNewCustomer = false;
+            yield return new WaitForSeconds(3);
+            var tempCustomer = Instantiate(customerPrefab, transform, false);
+            LineOfCustomers.AddCustomerToLine(tempCustomer);
+            CanAddNewCustomer = !LineOfCustomers.IsFull;
         }
     }
 }

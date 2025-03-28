@@ -9,13 +9,13 @@ namespace _Scripts.Customer
 {
     public class Customer : Surface
     {
-        private enum PatienceState
+        public enum PatienceState
         {
             Patient,
             Neutral,
             Irritated,
             Done
-        }
+        } 
 
         [SerializeField] private RecipesDatabase recipesDatabase;
         [SerializeField] private CustomersDatabase customersDatabase;
@@ -131,8 +131,6 @@ namespace _Scripts.Customer
                     break;
                 case (int)PatienceState.Irritated:
                     Debug.Log("See you in hell!");
-                    
-                    Destroy(gameObject);
                     break;
             }
 
