@@ -64,6 +64,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Customer Body
+    uniqueID: 599009299
+    locked: 0
+  - name: Customer Apparel
+    uniqueID: 1526368253
+    locked: 0
   - name: Background
     uniqueID: 2838707417
     locked: 0

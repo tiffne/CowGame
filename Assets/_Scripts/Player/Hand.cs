@@ -76,7 +76,7 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady) DropItem(target);
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady)) DropItem(target);
 
                     break;
                 case "Garbage":
