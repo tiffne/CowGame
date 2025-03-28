@@ -6,9 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Backgrounds/Counter_Counter.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Backgrounds/Counter_Counter.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Customer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Customer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Beanie.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Beanie.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Earrings.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Earrings.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Glasses.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Accessories/Glasses.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/DressShirt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/DressShirt.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Hoodie.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Hoodie.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Sweater.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Sweater.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/TShirt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/TShirt.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Tank.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Customers/Tops/Tank.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customers Database.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customers Database.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Coyote.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Coyote.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Lion.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Lion.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Tiger.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Tiger.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Wolf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Species/Wolf.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +39,12 @@
     &quot;assignee&quot;: &quot;vitorbetmann&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tiffne/CowGame.git",
-    "accountId": "fda8e60e-51b3-4c80-af12-430c82da2140"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tiffne/CowGame.git&quot;,
+    &quot;accountId&quot;: &quot;fda8e60e-51b3-4c80-af12-430c82da2140&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Assembly/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,20 +65,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Create-Customer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Create-Customer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.32f1/Unity.app/Contents/MacOS/Unity" />
@@ -139,7 +154,8 @@
       <workItem from="1742534655810" duration="508000" />
       <workItem from="1742605566405" duration="2514000" />
       <workItem from="1742832718422" duration="11942000" />
-      <workItem from="1743027240670" duration="13382000" />
+      <workItem from="1743027240670" duration="14008000" />
+      <workItem from="1743090656866" duration="5166000" />
     </task>
     <servers />
   </component>

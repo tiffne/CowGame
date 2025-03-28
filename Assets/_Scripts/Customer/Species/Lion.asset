@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
   m_Name: Lion
   m_EditorClassIdentifier: 
-  patientSprite: {fileID: 762935182501590203, guid: aab769b3b0cb3464ea09d08f93de061a, type: 3}
-  neutralSprite: {fileID: -164878844689979691, guid: 63bbc61386fde4778a7684b557636991, type: 3}
-  irritatedSprite: {fileID: 7215368001691268470, guid: 8cbc5b2f9e11c4199bc44c2e89990ed4, type: 3}
+  patientSprite: {fileID: 7551994689760651325, guid: aab769b3b0cb3464ea09d08f93de061a, type: 3}
+  neutralSprite: {fileID: -6577921404667126268, guid: 63bbc61386fde4778a7684b557636991, type: 3}
+  irritatedSprite: {fileID: -8249276795913006860, guid: 8cbc5b2f9e11c4199bc44c2e89990ed4, type: 3}

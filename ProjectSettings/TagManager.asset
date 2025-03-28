@@ -18,6 +18,15 @@ TagManager:
   - Bear
   - Coyote
   - Tiger
+  - Customer
+  - Earrings
+  - Beanie
+  - Glasses
+  - DressShirt
+  - Hoodie
+  - Sweater
+  - Tank
+  - TShirt
   layers:
   - Default
   - TransparentFX

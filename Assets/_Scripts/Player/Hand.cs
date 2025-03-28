@@ -68,7 +68,7 @@ namespace _Scripts.Player
                         case false:
                             if (parent.CompareTag("AssemblySpot"))
                             {
-                                if (!(target.TryGetComponent<Order>(out var order) && order.IsReady)) DropItem(target);
+                                if (!(target.TryGetComponent<Order>(out var foo) && foo.IsReady)) DropItem(target);
                             }
 
                             break;
@@ -76,7 +76,7 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!_itemInHand.TryGetComponent<Order>(out var foo) || !foo.IsReady) DropItem(target);
+                    if (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady) DropItem(target);
 
                     break;
                 case "Garbage":
