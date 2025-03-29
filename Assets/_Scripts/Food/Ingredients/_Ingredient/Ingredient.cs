@@ -15,19 +15,33 @@ namespace _Scripts.Food.Ingredients._Ingredient
         private Sprite _ingredientCookedSprite;
         private Sprite _ingredientBurnedSprite;
         private Sprite _ingredientMeltedSprite;
-        
-        public bool CanBlend { get; set; }
-        public bool CanCook { get; set; }
-        public bool CanMelt { get; set; }
+
+        public bool CanBlend { get; private set; }
+        public bool CanCook { get; private set; }
+        public bool CanMelt { get; private set; }
 
         public float TimeToBlend { get; private set; }
-        public float TimeToCook { get; private set; }
+        protected float TimeToCook { get; private set; }
         public float TimeToMelt { get; private set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
         protected bool IsBurned { get; set; } = false;
         protected bool IsMelted { get; set; } = false;
+
+        protected SpriteRenderer SpriteRenderer;
+
+        protected enum State
+        {
+            Raw,
+            Cooked,
+            Burned,
+            Melted,
+            Blended,
+        }
+
+        protected Enum CurrentState;
+        protected bool IsReady { get; set; }
 
         private new void Start()
         {
@@ -37,9 +51,16 @@ namespace _Scripts.Food.Ingredients._Ingredient
             CanCook = ingredient.CanCook;
             CanMelt = ingredient.CanMelt;
 
-            TimeToBlend = ingredient.TimeToBlend;
-            TimeToCook = ingredient.TimeToCook;
-            TimeToMelt = ingredient.TimeToMelt;
+
+            TimeToBlend = ingredient.TimeToBlend >= 0
+                ? ingredient.TimeToBlend
+                : throw new ArgumentException("Time to Blend can't be negative");
+            TimeToCook = ingredient.TimeToCook >= 0
+                ? ingredient.TimeToCook
+                : throw new ArgumentException("Time to Cook can't be negative");
+            TimeToMelt = ingredient.TimeToMelt >= 0
+                ? ingredient.TimeToMelt
+                : throw new ArgumentException("TimeToMelt can't be negative");
 
             _ingredientRawSprite = ingredient.IngredientRawSprite;
             _ingredientBlendedSprite = ingredient.IngredientBlendedSprite;
@@ -47,7 +68,9 @@ namespace _Scripts.Food.Ingredients._Ingredient
             _ingredientBurnedSprite = ingredient.IngredientBurnedSprite;
             _ingredientMeltedSprite = ingredient.IngredientMeltedSprite;
 
-            GetComponent<SpriteRenderer>().sprite = _ingredientRawSprite;
+            SpriteRenderer = GetComponent<SpriteRenderer>();
+            SpriteRenderer.sprite = _ingredientRawSprite;
+            CurrentState = State.Raw;
         }
 
         private void GenerateNewOrder(GameObject target)

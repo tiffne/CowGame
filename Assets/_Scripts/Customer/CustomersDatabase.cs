@@ -13,7 +13,7 @@ namespace _Scripts.Customer
         [SerializeField] private List<Sprite> accessories;
         public List<Sprite> Accessories => accessories;
 
-[SerializeField] private List<Sprite> tops;
+        [SerializeField] private List<Sprite> tops;
         public List<Sprite> Tops => tops;
     }
 }

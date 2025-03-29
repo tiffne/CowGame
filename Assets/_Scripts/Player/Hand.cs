@@ -1,6 +1,9 @@
 using System;
 using _Scripts.Fixed_Surfaces.Storing;
 using _Scripts.Food;
+using _Scripts.Food.Ingredients._Ingredient;
+using _Scripts.Food.Ingredients.Steak;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -76,7 +79,8 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady)) DropItem(target);
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady))
+                        DropItem(target);
 
                     break;
                 case "Garbage":
@@ -85,6 +89,21 @@ namespace _Scripts.Player
 
                 case "Customer":
                     target.GetComponent<Customer.Customer>().DoSomething();
+                    break;
+
+                case "Burner":
+                    if (!IsEmpty && _itemInHand.GetComponent<Ingredient>().CanCook)
+                    {
+                        switch (_itemInHand.name)
+                        {
+                            case "Steak":
+                                _itemInHand.GetComponent<Steak>().IsCooking = true;
+                                DropItem(target);
+
+                                break;
+                        }
+                    }
+
                     break;
             }
         }
