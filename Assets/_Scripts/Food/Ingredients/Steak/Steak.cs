@@ -17,7 +17,6 @@ namespace _Scripts.Food.Ingredients.Steak
         private const float TimeInApplianceIncrement = 0.1f;
 
 
-        private float timerStart;
         private Coroutine coroutine;
         private float amountOfTimeCooked;
         private float amountOfTimeBlended;

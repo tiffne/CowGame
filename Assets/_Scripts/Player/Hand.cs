@@ -2,8 +2,6 @@ using System;
 using _Scripts.Fixed_Surfaces.Storing;
 using _Scripts.Food;
 using _Scripts.Food.Ingredients._Ingredient;
-using _Scripts.Food.Ingredients.Steak;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -71,7 +69,13 @@ namespace _Scripts.Player
                         case false:
                             if (parent.CompareTag("AssemblySpot"))
                             {
-                                if (!(target.TryGetComponent<Order>(out var foo) && foo.IsReady)) DropItem(target);
+                                // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
+                                if (((_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady) ||
+                                     (_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady)) &&
+                                    !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
+                                {
+                                    DropItem(target);
+                                }
                             }
 
                             break;
@@ -79,7 +83,7 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady))
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.IsReady))
                         DropItem(target);
 
                     break;
@@ -92,20 +96,19 @@ namespace _Scripts.Player
                     break;
 
                 case "Burner":
-                    if (!IsEmpty && _itemInHand.GetComponent<Ingredient>().CanCook)
+                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var foo) && foo.CanCook)
                     {
                         DropItem(target);
                     }
 
                     break;
                 case "Blender":
-                    if (!IsEmpty && _itemInHand.GetComponent<Ingredient>().CanBlend)
+                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var boo) && boo.CanBlend)
                     {
                         DropItem(target);
                     }
 
                     break;
-                
             }
         }
 
