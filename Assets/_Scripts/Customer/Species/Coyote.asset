@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
+  m_Name: Coyote
+  m_EditorClassIdentifier: 
+  patientSprite: {fileID: -1514561073003480787, guid: 01f8ae418e29e4c219bbb244296a9a3b, type: 3}
+  neutralSprite: {fileID: -904618248630728590, guid: 7b26151a7bc274add9b42b214897fcf8, type: 3}
+  irritatedSprite: {fileID: -1195237717698660708, guid: 7b06232dbdbc444d481573b45fb43841, type: 3}

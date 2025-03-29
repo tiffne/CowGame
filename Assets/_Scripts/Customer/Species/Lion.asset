@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
+  m_Name: Lion
+  m_EditorClassIdentifier: 
+  patientSprite: {fileID: 7551994689760651325, guid: aab769b3b0cb3464ea09d08f93de061a, type: 3}
+  neutralSprite: {fileID: -6577921404667126268, guid: 63bbc61386fde4778a7684b557636991, type: 3}
+  irritatedSprite: {fileID: -8249276795913006860, guid: 8cbc5b2f9e11c4199bc44c2e89990ed4, type: 3}

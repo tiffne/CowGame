@@ -13,6 +13,20 @@ TagManager:
   - Order
   - Pocket
   - Garbage
+  - Wolf
+  - Lion
+  - Bear
+  - Coyote
+  - Tiger
+  - Customer
+  - Earrings
+  - Beanie
+  - Glasses
+  - DressShirt
+  - Hoodie
+  - Sweater
+  - Tank
+  - TShirt
   layers:
   - Default
   - TransparentFX
@@ -49,6 +63,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Customer Body
+    uniqueID: 599009299
+    locked: 0
+  - name: Customer Apparel
+    uniqueID: 1526368253
     locked: 0
   - name: Background
     uniqueID: 2838707417
