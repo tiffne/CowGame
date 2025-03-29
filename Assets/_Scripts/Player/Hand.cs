@@ -94,14 +94,7 @@ namespace _Scripts.Player
                 case "Burner":
                     if (!IsEmpty && _itemInHand.GetComponent<Ingredient>().CanCook)
                     {
-                        switch (_itemInHand.name)
-                        {
-                            case "Steak":
-                                _itemInHand.GetComponent<Steak>().IsCooking = true;
-                                DropItem(target);
-
-                                break;
-                        }
+                        DropItem(target);
                     }
 
                     break;
