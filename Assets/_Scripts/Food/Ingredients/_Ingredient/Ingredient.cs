@@ -10,6 +10,8 @@ namespace _Scripts.Food.Ingredients._Ingredient
         [SerializeField] private Order orderPrefab;
         [SerializeField] protected IngredientScriptableObject ingredient;
 
+        public bool IsReady { get; protected set; }
+
         private Sprite _ingredientRawSprite;
         private Sprite _ingredientBlendedSprite;
         private Sprite _ingredientCookedSprite;
@@ -20,9 +22,9 @@ namespace _Scripts.Food.Ingredients._Ingredient
         public bool CanCook { get; private set; }
         public bool CanMelt { get; private set; }
 
-        public float TimeToBlend { get; private set; }
+        protected float TimeToBlend { get; private set; }
         protected float TimeToCook { get; private set; }
-        public float TimeToMelt { get; private set; }
+        protected float TimeToMelt { get; private set; }
 
         protected bool IsBlended { get; set; } = false;
         protected bool IsCooked { get; set; } = false;
@@ -41,7 +43,7 @@ namespace _Scripts.Food.Ingredients._Ingredient
         }
 
         protected Enum CurrentState;
-        protected bool IsReady { get; set; }
+
 
         private new void Start()
         {
@@ -50,6 +52,7 @@ namespace _Scripts.Food.Ingredients._Ingredient
             CanBlend = ingredient.CanBlend;
             CanCook = ingredient.CanCook;
             CanMelt = ingredient.CanMelt;
+            IsReady = ingredient.IsReady;
 
 
             TimeToBlend = ingredient.TimeToBlend >= 0
