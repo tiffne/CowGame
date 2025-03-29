@@ -28,6 +28,7 @@ TagManager:
   - Tank
   - TShirt
   - Burner
+  - Blender
   layers:
   - Default
   - TransparentFX

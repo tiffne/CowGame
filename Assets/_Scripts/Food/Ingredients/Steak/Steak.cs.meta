@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - orderPrefab: {fileID: 1595249168160343414, guid: 7d2ce1e04f38849ffb7fa4e753f629c2, type: 3}
   - ingredient: {fileID: 11400000, guid: acfb2f480d178459d925af4e24255eb4, type: 2}
+  - pattyPrefab: {fileID: 380943295957268122, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
