@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b9c8c76e4a654b0f87991ba057e6758
+guid: f52b7ac9a7c50414e8397071b00cd70e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5310715413063946208
-    second: friesFrozen_0
+      213: -6744137338430482155
+    second: PawCursor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 900
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 32
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: friesFrozen_0
+      name: PawCursor_0
       rect:
         serializedVersion: 2
-        x: 857
-        y: 1104
-        width: 1111
-        height: 806
+        x: 178
+        y: 342
+        width: 2644
+        height: 2604
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 020b12d187c8c46b0800000000000000
-      internalID: -5310715413063946208
+      spriteID: 519176a92d20862a0800000000000000
+      internalID: -6744137338430482155
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      friesFrozen_0: -5310715413063946208
+      PawCursor_0: -6744137338430482155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

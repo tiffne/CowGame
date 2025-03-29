@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a6b8ed836dc8642d6bedc191b1af3e9c
+guid: 16320e2f9794c46d38d2825b5b07db3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1092000257596711410
-    second: LeftPawDraft_0
+      213: 6565475291032328902
+    second: Lion_RightPaw_0
+  - first:
+      213: -7498300657983950939
+    second: Lion_RightPaw_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +129,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeftPawDraft_0
+      name: Lion_RightPaw_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 186
         y: 0
-        width: 2931
-        height: 2910
+        width: 3064
+        height: 3000
       alignment: 9
-      pivot: {x: 0.7, y: 0.7}
+      pivot: {x: 0.2, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f1efa8d270972f00800000000000000
-      internalID: 1092000257596711410
+      spriteID: 5afe9cd774fa0f790800000000000000
+      internalID: -7498300657983950939
       vertices: []
       indices: 
       edges: []
@@ -151,7 +154,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: da1680be26aa84ee3aa47d016891346e
+    spriteID: 3366c40c9e4864f018ad5c5c9fd924d6
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +164,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LeftPawDraft_0: 1092000257596711410
+      Lion_RightPaw_0: 6565475291032328902
+      Lion_RightPaw_1: -7498300657983950939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

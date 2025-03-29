@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b9c8c76e4a654b0f87991ba057e6758
+guid: 1be945579eea54e34848ce9031a19848
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5310715413063946208
-    second: friesFrozen_0
+      213: 8596179672037386828
+    second: Lion_LeftPaw_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: friesFrozen_0
+      name: Lion_LeftPaw_0
       rect:
         serializedVersion: 2
-        x: 857
-        y: 1104
-        width: 1111
-        height: 806
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 126
+        y: 0
+        width: 2952
+        height: 2921
+      alignment: 9
+      pivot: {x: 0.7, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 020b12d187c8c46b0800000000000000
-      internalID: -5310715413063946208
+      spriteID: c4ae8310ed3cb4770800000000000000
+      internalID: 8596179672037386828
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd885b11e64aa43789e7082886aa76f1
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      friesFrozen_0: -5310715413063946208
+      Lion_LeftPaw_0: 8596179672037386828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
