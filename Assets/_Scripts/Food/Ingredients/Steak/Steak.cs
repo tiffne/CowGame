@@ -6,35 +6,37 @@ namespace _Scripts.Food.Ingredients.Steak
 {
     public class Steak : Ingredient
     {
-        public bool IsCooking { get; set; }
         private bool CanCookAgain { get; set; } = true;
         private float timerStart;
         private Coroutine coroutine;
-        private float i;
+        private float amountOfTimeCooked;
 
 
         private void Update()
         {
-            if (!IsCooking) return;
-            if (CanCookAgain)
+            //if (!IsCooking) return;
+            if (CanCookAgain && transform.parent.CompareTag("Burner"))
             {
                 coroutine = StartCoroutine(Cook());
             }
             else if (!transform.parent.CompareTag("Burner"))
             {
-                IsCooking = false;
                 CanCookAgain = true;
-                StopCoroutine(coroutine);
+                if (coroutine != null) StopCoroutine(coroutine);
             }
         }
 
         private IEnumerator Cook()
         {
             CanCookAgain = false;
-            while (i < TimeToCook)
+            Debug.Log(amountOfTimeCooked);
+
+            while (amountOfTimeCooked < TimeToCook)
             {
                 yield return new WaitForSeconds(1.0f);
-                i++;
+                amountOfTimeCooked++;
+                Debug.Log(amountOfTimeCooked);
+
             }
 
             switch (CurrentState)
@@ -51,11 +53,11 @@ namespace _Scripts.Food.Ingredients.Steak
                     break;
             }
 
-            i = 0.0f;
+            amountOfTimeCooked = 0.0f;
 
             CanCookAgain = true;
         }
-        
+
         private IEnumerator Blend()
         {
             yield return null;
