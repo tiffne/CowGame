@@ -7,13 +7,15 @@
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Fries/friesFrozen.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Fries/friesFrozen.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/CursorDraft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/CursorDraft.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/LeftPawDraft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/LeftPawDraft.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/RightPawDraft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/RightPawDraft.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Patty/Patty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Interfaces/IBlendable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Interfaces/IBlendable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Interfaces/ICookable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Interfaces/ICookable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Assembly/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Cheese/Cheese.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,20 +58,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Create-Customer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Create-Interfaces",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.32f1/Unity.app/Contents/MacOS/Unity" />
@@ -150,7 +153,7 @@
       <workItem from="1743166092404" duration="1383000" />
       <workItem from="1743168820993" duration="635000" />
       <workItem from="1743187547711" duration="4472000" />
-      <workItem from="1743209784691" duration="1137000" />
+      <workItem from="1743209784691" duration="10426000" />
     </task>
     <servers />
   </component>

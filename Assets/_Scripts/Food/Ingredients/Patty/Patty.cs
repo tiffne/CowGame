@@ -1,9 +1,12 @@
 using _Scripts.Food.Ingredients._Ingredient;
-using _Scripts.Food.Ingredients.Interfaces;
 
 namespace _Scripts.Food.Ingredients.Patty
 {
-    public class Patty : Ingredient, ICookable
+    public class Patty : Ingredient
     {
+        public void Cook()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
