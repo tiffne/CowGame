@@ -1,42 +1,54 @@
 using System.Collections;
 using _Scripts.Food.Ingredients._Ingredient;
+using Unity.VisualScripting.Dependencies.NCalc;
+using UnityEditor.Searcher;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Scripts.Food.Ingredients.Steak
 {
     public class Steak : Ingredient
     {
+        [SerializeField] private GameObject pattyPrefab;
+
         private bool CanCookAgain { get; set; } = true;
+        private bool CanBlendAgain { get; set; } = true;
+
+        private const float TimeInApplianceIncrement = 0.1f;
+
+
         private float timerStart;
         private Coroutine coroutine;
         private float amountOfTimeCooked;
+        private float amountOfTimeBlended;
 
 
         private void Update()
         {
-            //if (!IsCooking) return;
-            if (CanCookAgain && transform.parent.CompareTag("Burner"))
+            if (!transform.parent) return;
+            switch (transform.parent.tag)
             {
-                coroutine = StartCoroutine(Cook());
-            }
-            else if (!transform.parent.CompareTag("Burner"))
-            {
-                CanCookAgain = true;
-                if (coroutine != null) StopCoroutine(coroutine);
+                case "Blender":
+                    if (CanBlendAgain) coroutine = StartCoroutine(Blend());
+                    break;
+                case "Burner":
+                    if (CanCookAgain) coroutine = StartCoroutine(Cook());
+                    break;
+                default:
+                    CanBlendAgain = true;
+                    CanCookAgain = true;
+                    if (coroutine != null) StopCoroutine(coroutine);
+                    break;
             }
         }
 
         private IEnumerator Cook()
         {
             CanCookAgain = false;
-            Debug.Log(amountOfTimeCooked);
-
             while (amountOfTimeCooked < TimeToCook)
             {
-                yield return new WaitForSeconds(1.0f);
-                amountOfTimeCooked++;
-                Debug.Log(amountOfTimeCooked);
-
+                yield return new WaitForSeconds(TimeInApplianceIncrement);
+                amountOfTimeCooked += TimeInApplianceIncrement;
             }
 
             switch (CurrentState)
@@ -60,7 +72,17 @@ namespace _Scripts.Food.Ingredients.Steak
 
         private IEnumerator Blend()
         {
-            yield return null;
+            CanBlendAgain = false;
+
+            while (amountOfTimeBlended < TimeToBlend)
+            {
+                yield return new WaitForSeconds(TimeInApplianceIncrement);
+                amountOfTimeBlended += TimeInApplianceIncrement;
+            }
+
+            var patty = Instantiate(pattyPrefab, transform.position, transform.rotation, transform.parent);
+            patty.name = "Patty";
+            SayByeBye();
         }
     }
 }

@@ -98,6 +98,14 @@ namespace _Scripts.Player
                     }
 
                     break;
+                case "Blender":
+                    if (!IsEmpty && _itemInHand.GetComponent<Ingredient>().CanBlend)
+                    {
+                        DropItem(target);
+                    }
+
+                    break;
+                
             }
         }
 
