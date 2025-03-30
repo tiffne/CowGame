@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Cheese
   - Bun
   - Patty
   - AssemblySpot
-  - Steak
   - Ingredient
   - Order
   - Pocket
@@ -27,6 +25,9 @@ TagManager:
   - Sweater
   - Tank
   - TShirt
+  - Burner
+  - Blender
+  - Shelf Spot
   layers:
   - Default
   - TransparentFX
@@ -78,6 +79,9 @@ TagManager:
     locked: 0
   - name: Hands
     uniqueID: 1964402999
+    locked: 0
+  - name: Tableware
+    uniqueID: 242597119
     locked: 0
   - name: Mobile Surfaces
     uniqueID: 3618523043

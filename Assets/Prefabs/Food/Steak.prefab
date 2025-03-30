@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderPrefab: {fileID: 1595249168160343414, guid: 7d2ce1e04f38849ffb7fa4e753f629c2, type: 3}
   ingredient: {fileID: 11400000, guid: acfb2f480d178459d925af4e24255eb4, type: 2}
+  pattyPrefab: {fileID: 380943295957268122, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
 --- !u!212 &-270320381342049196
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -676444253
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -17,9 +17,10 @@ MonoBehaviour:
   ingredientCookedSprite: {fileID: 0}
   ingredientBurnedSprite: {fileID: 0}
   ingredientMeltedSprite: {fileID: 0}
+  isReady: 1
   canBlend: 0
-  timeToBlend: 0
   canCook: 0
-  timeToCook: 0
   canMelt: 0
+  timeToBlend: 0
+  timeToCook: 0
   timeToMelt: 0

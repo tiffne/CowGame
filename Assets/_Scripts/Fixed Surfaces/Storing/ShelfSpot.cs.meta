@@ -8,6 +8,8 @@ MonoImporter:
   - steakPrefab: {fileID: 2947631802813252096, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
   - bunPrefab: {fileID: 193683562228049565, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
   - pattyPrefab: {fileID: 380943295957268122, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
+  - platePrefab: {fileID: 7329865111967418794, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
+  - cupPrefab: {fileID: 2192431304490773295, guid: fefd37b51563043449daa62a10244520, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

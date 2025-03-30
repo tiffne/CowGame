@@ -1,6 +1,7 @@
 using System;
 using _Scripts.Fixed_Surfaces.Storing;
 using _Scripts.Food;
+using _Scripts.Food.Ingredients._Ingredient;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -13,7 +14,16 @@ namespace _Scripts.Player
             Right = 1,
         }
 
-        private bool IsEmpty { get; set; } = true;
+
+        private bool IsEmpty { get; set; }
+        // [SerializeField] private bool _isEmpty = true;
+        //
+        // private bool IsEmpty
+        // {
+        //     get => _isEmpty;
+        //     private set => _isEmpty = value;
+        // }
+
         private bool CanInteract { get; set; } = true;
         public int Index { get; private set; }
         private GameObject _itemInHand;
@@ -53,30 +63,37 @@ namespace _Scripts.Player
 
             switch (target.tag)
             {
+                case "Shelf Spot":
+                    if (IsEmpty) GrabItem(target.GetComponent<ShelfSpot>().GetRespectiveItem());
+                    break;
                 case "AssemblySpot":
                     DropItem(target);
                     break;
                 case "Ingredient":
                 case "Order":
-                    var parent = target.transform.parent;
-                    switch (IsEmpty)
+                    if (IsEmpty) GrabItem(target);
+                    else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
-                        case true:
-                            if (parent.name.Equals("Shelf Spot")) parent.GetComponent<ShelfSpot>().ReduceAmountLeft();
-                            GrabItem(target);
-                            break;
-                        case false:
-                            if (parent.CompareTag("AssemblySpot"))
+                        // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
+                        if (((_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady) ||
+                             (_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady)) &&
+                            !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
+                        {
+                            if ((_itemInHand.name.Equals("Plate") || (order1 != null && order1.HasTableware)) &&
+                                ((order2 != null && order2.HasTableware) || target.name.Equals("Plate")))
                             {
-                                if (!(target.TryGetComponent<Order>(out var foo) && foo.IsReady)) DropItem(target);
+                                Debug.Log("I'm sorry Dave, I'm afraid I can't do that.");
+                                return;
                             }
 
-                            break;
+                            DropItem(target);
+                        }
                     }
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var boo) || !boo.IsReady)) DropItem(target);
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.IsReady))
+                        DropItem(target);
 
                     break;
                 case "Garbage":
@@ -85,6 +102,21 @@ namespace _Scripts.Player
 
                 case "Customer":
                     target.GetComponent<Customer.Customer>().DoSomething();
+                    break;
+
+                case "Burner":
+                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var foo) && foo.CanCook)
+                    {
+                        DropItem(target);
+                    }
+
+                    break;
+                case "Blender":
+                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var boo) && boo.CanBlend)
+                    {
+                        DropItem(target);
+                    }
+
                     break;
             }
         }
