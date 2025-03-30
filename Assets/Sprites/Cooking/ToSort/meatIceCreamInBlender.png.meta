@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meatIceCreamInBlender_0: -2934309481347202503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

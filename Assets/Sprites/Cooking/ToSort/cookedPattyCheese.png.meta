@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cookedPattyCheese_0: -8137998798319613755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

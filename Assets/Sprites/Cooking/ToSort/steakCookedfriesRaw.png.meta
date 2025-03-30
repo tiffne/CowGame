@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      steakCookedfriesRaw_0: -5618932579548938914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

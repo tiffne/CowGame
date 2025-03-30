@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Order_Slips_0: 1955477491364746767
+      Order_Slips_1: 8749192072714742814
+      Order_Slips_2: -5258073838054167905
+      Order_Slips_3: -8328198564929625635
+      Order_Slips_4: -4245297178324842640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

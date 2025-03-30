@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cookedSteakBurntFriesIceCream_0: -6730101052960841894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
