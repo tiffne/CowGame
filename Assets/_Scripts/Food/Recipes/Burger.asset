@@ -16,6 +16,6 @@ MonoBehaviour:
   - {fileID: 5642226567063596017, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
   - {fileID: 5889439402767968796, guid: 066eba54485f04c18aacde1c2996805a, type: 3}
   - {fileID: 3625681684126240574, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
-  - {fileID: 3625681684126240574, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
+  - {fileID: 8413865533782203572, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
   recipeSprite: {fileID: -2881315834405905641, guid: a2a41072a2d7d445f83a900d62e88d5a, type: 3}
-  price: 0
+  price: 5.6
