@@ -75,10 +75,17 @@ namespace _Scripts.Player
                     else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
                         // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
-                        if (((_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady) ||
-                             (_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady)) &&
+                        if (((_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady) ||
+                             (_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady)) &&
                             !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
                         {
+                            if ((_itemInHand.name.Equals("Plate") || (order1 != null && order1.HasTableware)) &&
+                                ((order2 != null && order2.HasTableware) || target.name.Equals("Plate")))
+                            {
+                                Debug.Log("I'm sorry Dave, I'm afraid I can't do that.");
+                                return;
+                            }
+
                             DropItem(target);
                         }
                     }
