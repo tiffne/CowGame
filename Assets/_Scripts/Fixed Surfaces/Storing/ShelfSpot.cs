@@ -11,40 +11,40 @@ namespace _Scripts.Fixed_Surfaces.Storing
         [SerializeField] private GameObject bunPrefab;
         [SerializeField] private GameObject pattyPrefab;
 
-        private new void Start()
-        {
-            AmountLeft = 2;
-        }
+        [SerializeField] private GameObject platePrefab;
+        [SerializeField] private GameObject cupPrefab;
 
-        private void Update()
-        {
-            if (transform.childCount != 0) return;
-
-            if (AmountLeft > 0) PopulateShelf();
-            else Destroy(gameObject);
-        }
-
-        private void PopulateShelf()
+        public GameObject GetRespectiveItem()
         {
             GameObject temp;
-            switch (tag)
+            switch (name)
             {
                 case "Cheese":
                     temp = Instantiate(cheesePrefab, transform.position, transform.rotation, transform);
-                    temp.name = tag;
-                    break;
+                    temp.name = name;
+                    return temp;
                 case "Steak":
                     temp = Instantiate(steakPrefab, transform.position, transform.rotation, transform);
-                    temp.name = tag;
-                    break;
+                    temp.name = name;
+                    return temp;
                 case "Patty":
                     temp = Instantiate(pattyPrefab, transform.position, transform.rotation, transform);
-                    temp.name = tag;
-                    break;
-                case "Bun": 
+                    temp.name = name;
+                    return temp;
+                case "Bun":
                     temp = Instantiate(bunPrefab, transform.position, transform.rotation, transform);
-                    temp.name = tag;
-                    break;
+                    temp.name = name;
+                    return temp;
+                case "Plate":
+                    temp = Instantiate(platePrefab, transform.position, transform.rotation, transform);
+                    temp.name = name;
+                    return temp;
+                case "Cup":
+                    temp = Instantiate(cupPrefab, transform.position, transform.rotation, transform);
+                    temp.name = name;
+                    return temp;
+                default:
+                    return null;
             }
         }
     }

@@ -14,7 +14,16 @@ namespace _Scripts.Player
             Right = 1,
         }
 
-        private bool IsEmpty { get; set; } = true;
+
+        private bool IsEmpty { get; set; }
+        // [SerializeField] private bool _isEmpty = true;
+        //
+        // private bool IsEmpty
+        // {
+        //     get => _isEmpty;
+        //     private set => _isEmpty = value;
+        // }
+
         private bool CanInteract { get; set; } = true;
         public int Index { get; private set; }
         private GameObject _itemInHand;
@@ -54,31 +63,24 @@ namespace _Scripts.Player
 
             switch (target.tag)
             {
+                case "Shelf Spot":
+                    if (IsEmpty) GrabItem(target.GetComponent<ShelfSpot>().GetRespectiveItem());
+                    break;
                 case "AssemblySpot":
                     DropItem(target);
                     break;
                 case "Ingredient":
                 case "Order":
-                    var parent = target.transform.parent;
-                    switch (IsEmpty)
+                    if (IsEmpty) GrabItem(target);
+                    else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
-                        case true:
-                            if (parent.name.Equals("Shelf Spot")) parent.GetComponent<ShelfSpot>().ReduceAmountLeft();
-                            GrabItem(target);
-                            break;
-                        case false:
-                            if (parent.CompareTag("AssemblySpot"))
-                            {
-                                // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
-                                if (((_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady) ||
-                                     (_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady)) &&
-                                    !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
-                                {
-                                    DropItem(target);
-                                }
-                            }
-
-                            break;
+                        // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
+                        if (((_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady) ||
+                             (_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady)) &&
+                            !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
+                        {
+                            DropItem(target);
+                        }
                     }
 
                     break;
