@@ -14,7 +14,8 @@ namespace _Scripts.Food
         private readonly List<Ingredient> _ingredients = new();
         private RecipeScriptableObject _matchedRecipe;
         private readonly Dictionary<string, Sprite> _spritesDict = new();
-        public bool IsReady { get; private set; } = false;
+        public bool IsReady { get; private set; }
+        public bool HasTableware { get; private set; }
 
         private new void Start()
         {
@@ -32,7 +33,9 @@ namespace _Scripts.Food
             if (!IsOrderComplete()) return;
             for (var i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).GetComponent<Ingredient>().SayByeBye();
+                var child = transform.GetChild(i).GetComponent<Ingredient>();
+                if (child.gameObject.name.Equals("Plate")) continue;
+                child.SayByeBye();
             }
 
             transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[_matchedRecipe.name];
@@ -47,6 +50,7 @@ namespace _Scripts.Food
 
             foreach (var ingredient in ingredients)
             {
+                if (ingredient.name.Equals("Plate") || ingredient.name.Equals("Cup")) HasTableware = true;
                 ingredient.transform.parent = transform;
                 ingredient.GetComponent<Collider>().enabled = false;
                 _ingredients.Add(ingredient.GetComponent<Ingredient>());
@@ -78,6 +82,8 @@ namespace _Scripts.Food
             _ingredients.Sort();
             for (var i = 0; i < recipe.Ingredients.Count; i++)
             {
+                var ingName = _ingredients[i].name;
+                var ingRecName = recipe.Ingredients[i].name;
                 if (_ingredients[i].name != recipe.Ingredients[i].name) return false;
             }
 
