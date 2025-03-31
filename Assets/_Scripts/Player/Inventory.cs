@@ -8,7 +8,7 @@ namespace _Scripts.Player
     public class Inventory : MonoBehaviour
     {
         private const int InventoryMaxY = -4;
-        private const float InventoryMinY = -5.3f;
+        private const float InventoryMinY = -5.6f;
         private bool movingUp;
 
         private const float InventoryMoveSpeed = 6.0f;
