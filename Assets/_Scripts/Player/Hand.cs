@@ -84,8 +84,10 @@ namespace _Scripts.Player
                              (_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady)) &&
                             !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
                         {
-                            if ((_itemInHand.name.Equals("Plate") || (order1 != null && order1.HasTableware)) &&
-                                ((order2 != null && order2.HasTableware) || target.name.Equals("Plate")))
+                            if ((_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup") ||
+                                 (order1 != null && order1.HasTableware)) &&
+                                (order2 != null && order2.HasTableware || target.name.Equals("Plate") ||
+                                 target.name.Equals("Cup")))
                             {
                                 return;
                             }
