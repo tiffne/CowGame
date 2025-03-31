@@ -76,10 +76,11 @@ namespace _Scripts.Food.Ingredients._Ingredient
             CurrentState = State.Raw;
         }
 
-        private void GenerateNewOrder(GameObject target)
+        public void GenerateNewOrder(GameObject target)
         {
+            var ingsToMerge = target ? new[] { gameObject, target } : new[] { gameObject };
             var order = Instantiate(orderPrefab, transform.parent).gameObject.GetComponent<Order>();
-            order.MergeIngredients(new[] { gameObject, target });
+            order.MergeIngredients(ingsToMerge);
         }
 
         // public void SayByeBye() // TODO: transform this in a method that returns the ingredients to the pantry
