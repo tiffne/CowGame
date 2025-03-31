@@ -6,6 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Assembly Spot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Assembly Spot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Shelf Spot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Shelf Spot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Glasses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Glasses.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Order_Slips.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Order_Slips.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Plate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Plate.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Plates.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/Plates.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Crockery/glass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Assembly/AssemblySpot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Assembly/AssemblySpot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Garbage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Garbage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Storing/ShelfSpot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Create-Interfaces&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Implementing-Tableware-Logic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.32f1/Unity.app/Contents/MacOS/Unity" />
@@ -147,6 +167,7 @@
       <workItem from="1743228012022" duration="133000" />
       <workItem from="1743228329197" duration="271000" />
       <workItem from="1743263831579" duration="28481000" />
+      <workItem from="1743440137936" duration="6951000" />
     </task>
     <servers />
   </component>

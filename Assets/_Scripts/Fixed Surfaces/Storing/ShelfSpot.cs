@@ -1,3 +1,4 @@
+using _Scripts.Fixed_Surfaces.Openable;
 using Unity.VisualScripting;
 using UnityEditorInternal;
 using UnityEngine;
@@ -14,32 +15,34 @@ namespace _Scripts.Fixed_Surfaces.Storing
         [SerializeField] private GameObject platePrefab;
         [SerializeField] private GameObject cupPrefab;
 
+        private new void OnMouseOver()
+        {
+            if (transform.parent.TryGetComponent<Fridge>(out var container)) container.OnMouseEnter();
+            base.OnMouseOver();
+        }
+
         public GameObject GetRespectiveItem()
         {
             GameObject temp;
             switch (name)
             {
-                case "Cheese":
+                case "Cheeses":
                     temp = Instantiate(cheesePrefab, transform.position, transform.rotation, transform);
                     temp.name = name;
                     return temp;
-                case "Steak":
+                case "Steaks":
                     temp = Instantiate(steakPrefab, transform.position, transform.rotation, transform);
                     temp.name = name;
                     return temp;
-                case "Patty":
-                    temp = Instantiate(pattyPrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
-                    return temp;
-                case "Bun":
+                case "Buns":
                     temp = Instantiate(bunPrefab, transform.position, transform.rotation, transform);
                     temp.name = name;
                     return temp;
-                case "Plate":
+                case "Plates":
                     temp = Instantiate(platePrefab, transform.position, transform.rotation, transform);
                     temp.name = name;
                     return temp;
-                case "Cup":
+                case "Cups":
                     temp = Instantiate(cupPrefab, transform.position, transform.rotation, transform);
                     temp.name = name;
                     return temp;

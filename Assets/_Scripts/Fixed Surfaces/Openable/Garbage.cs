@@ -1,6 +1,6 @@
-namespace _Scripts.Fixed_Surfaces
+namespace _Scripts.Fixed_Surfaces.Openable
 {
-    public class Garbage : Surface
+    public class Garbage : OpenableContainer
     {
         private void Update()
         {
