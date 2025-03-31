@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blender interactable_0: -5547378589617016933
+      blender interactable_1: -7862344624503840080
+      blender interactable_2: 4680935258436040317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
