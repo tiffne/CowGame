@@ -937,7 +937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDisplay: {fileID: 968777399}
-  dayDurationInMinutes: 1
+  dayDurationInMinutes: 3
 --- !u!1 &261124151
 GameObject:
   m_ObjectHideFlags: 0
