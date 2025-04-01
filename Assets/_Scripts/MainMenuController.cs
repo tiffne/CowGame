@@ -4,7 +4,7 @@ namespace _Scripts
 {
     public class MainMenuController : MonoBehaviour
     {
-        private void Update()
+        void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -12,12 +12,12 @@ namespace _Scripts
             }
         }
 
-        private void PlayGame()
+        public void PlayGame()
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
         }
 
-        private void ExitGame()
+        public void ExitGame()
         {
             Application.Quit();
         }
