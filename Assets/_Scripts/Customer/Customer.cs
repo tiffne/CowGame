@@ -22,7 +22,7 @@ namespace _Scripts.Customer
 
         public int patienceLevel = (int)PatienceState.Patient;
 
-        public RecipeScriptableObject Order { get; set; }
+        public RecipeScriptableObject Order { get; private set; }
         public bool IsServed { get; set; }
         public string Species => chosenAnimal.name;
         public float TipAmount => Order.Price * (3 - patienceLevel);
@@ -136,6 +136,7 @@ namespace _Scripts.Customer
             }
 
             patienceLevel++;
+            Debug.Log($"I am {Enum.GetName(typeof(PatienceState), patienceLevel)}");
         }
     }
 }

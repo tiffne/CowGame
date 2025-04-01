@@ -8,12 +8,12 @@ namespace _Scripts.Fixed_Surfaces.Serving_Spot
     public class ServingSpot : Surface
     {
         private CustomersManager customersManager;
-        private BoxCollider col;
+        private BoxCollider2D col;
 
         private new void Start()
         {
             base.Start();
-            col = GetComponent<BoxCollider>();
+            col = GetComponent<BoxCollider2D>();
         }
 
         private void Update()
@@ -32,6 +32,7 @@ namespace _Scripts.Fixed_Surfaces.Serving_Spot
                     !cstmr.Order.name.Equals(order.name)) continue;
                 cstmr.IsServed = true;
                 order.SayByeBye();
+                //RemoveCustomerFromLine(cstmr.gameObject);
                 break;
             }
         }

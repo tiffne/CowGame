@@ -41,7 +41,14 @@ namespace _Scripts.Customer
             List<GameObject> customersToLeave = new();
             foreach (var customer in LineOfCustomers.Line)
             {
-                if (customer.GetComponent<Customer>().patienceLevel == (int)Done)
+                var cstmr = customer.GetComponent<Customer>();
+                if (cstmr.IsServed)
+                {
+                    MoneyManager.Instance.AddTip(cstmr);
+                    customersToLeave.Add(customer);
+                } 
+                
+                else if (cstmr.patienceLevel == (int)Done)
                 {
                     customersToLeave.Add(customer);
                 }
