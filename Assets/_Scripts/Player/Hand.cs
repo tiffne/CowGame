@@ -102,7 +102,8 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.IsReady))
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.HasTableware)
+                                 && !(_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup")))
                         DropItem(target);
 
                     break;
