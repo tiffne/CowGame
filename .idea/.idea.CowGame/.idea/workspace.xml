@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="" />
+    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +52,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Implementing-Tableware-Logic",
+    "git-widget-placeholder": "Fix-Orders",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,7 +147,7 @@
       <workItem from="1743228012022" duration="133000" />
       <workItem from="1743228329197" duration="271000" />
       <workItem from="1743263831579" duration="28481000" />
-      <workItem from="1743440137936" duration="7359000" />
+      <workItem from="1743440137936" duration="13061000" />
     </task>
     <servers />
   </component>

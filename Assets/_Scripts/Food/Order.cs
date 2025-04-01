@@ -94,29 +94,29 @@ namespace _Scripts.Food
         {
             base.OnMouseOver();
 
-            Transform lastChild;
+            Transform orderChild;
             try
             {
-                lastChild = transform.GetChild(transform.childCount - 1);
+                orderChild = transform.GetChild(transform.childCount - 1);
             }
             catch (UnityException)
             {
                 return;
             }
+            
+            if (!orderChild.CompareTag("Order")) return;
 
-            if (!lastChild.CompareTag("Order")) return;
+            var ingredientsToBeMerged = new GameObject[orderChild.childCount];
+            var ingredientsInChildren = orderChild.GetComponentsInChildren<Transform>();
 
-            var ingredientsToBeMerged = new GameObject[lastChild.childCount];
-            var ingredientsInChildren = lastChild.GetComponentsInChildren<Transform>();
-
-            for (var i = 0; i < lastChild.childCount; i++)
+            for (var i = 0; i < orderChild.childCount; i++)
             {
                 ingredientsToBeMerged[i] = ingredientsInChildren[i + 1].gameObject;
             }
 
             MergeIngredients(ingredientsToBeMerged);
-            lastChild.transform.parent = null;
-            lastChild.GetComponent<Order>().SayByeBye();
+            orderChild.transform.parent = null;
+            orderChild.GetComponent<Order>().SayByeBye();
         }
     }
 }

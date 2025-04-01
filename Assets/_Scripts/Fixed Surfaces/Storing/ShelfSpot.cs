@@ -28,23 +28,23 @@ namespace _Scripts.Fixed_Surfaces.Storing
             {
                 case "Cheeses":
                     temp = Instantiate(cheesePrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
+                    temp.name = "Cheese";
                     return temp;
                 case "Steaks":
                     temp = Instantiate(steakPrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
+                    temp.name = "Steak";
                     return temp;
                 case "Buns":
                     temp = Instantiate(bunPrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
+                    temp.name = "Bun";
                     return temp;
                 case "Plates":
                     temp = Instantiate(platePrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
+                    temp.name = "Plate";
                     return temp;
                 case "Cups":
                     temp = Instantiate(cupPrefab, transform.position, transform.rotation, transform);
-                    temp.name = name;
+                    temp.name = "Cup";
                     return temp;
                 default:
                     return null;

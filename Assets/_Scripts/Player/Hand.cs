@@ -72,6 +72,11 @@ namespace _Scripts.Player
                 case "Ingredient":
                 case "Order":
                     if (IsEmpty) GrabItem(target);
+                    else if (target.TryGetComponent<Ingredient>(out var ing3) &&
+                             _itemInHand.TryGetComponent<Order>(out var ord3))
+                    {
+                        ing3.GenerateNewOrder(null);
+                    }
                     else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
                         // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
@@ -79,10 +84,11 @@ namespace _Scripts.Player
                              (_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady)) &&
                             !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
                         {
-                            if ((_itemInHand.name.Equals("Plate") || (order1 != null && order1.HasTableware)) &&
-                                ((order2 != null && order2.HasTableware) || target.name.Equals("Plate")))
+                            if ((_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup") ||
+                                 (order1 != null && order1.HasTableware)) &&
+                                (order2 != null && order2.HasTableware || target.name.Equals("Plate") ||
+                                 target.name.Equals("Cup")))
                             {
-                                Debug.Log("I'm sorry Dave, I'm afraid I can't do that.");
                                 return;
                             }
 
