@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static _Scripts.Customer.Customer.PatienceState;
@@ -49,8 +50,8 @@ namespace _Scripts.Customer
                 {
                     MoneyManager.Instance.AddTip(cstmr);
                     customersToLeave.Add(customer);
-                } 
-                
+                }
+
                 else if (cstmr.patienceLevel == (int)Done)
                 {
                     customersToLeave.Add(customer);
@@ -62,6 +63,7 @@ namespace _Scripts.Customer
             {
                 customerDoneSound.Play();
                 LineOfCustomers.RemoveCustomerFromLine(customer);
+                customer.transform.parent = null;
                 customer.GetComponent<Customer>().SayByeBye();
             }
 
@@ -75,6 +77,13 @@ namespace _Scripts.Customer
             customerEnterSound.Play();
             var tempCustomer = Instantiate(customerPrefab, transform, false);
             LineOfCustomers.AddCustomerToLine(tempCustomer);
+
+            for (var i = 0; i < LineOfCustomers.Line.Count; i++)
+            {
+                var zPos = 7 - 7 * i;
+                LineOfCustomers.Line[i].transform.position = new Vector3(transform.position.x, 1.4f, -10 + zPos);
+            }
+
             CanAddNewCustomer = !LineOfCustomers.IsFull;
         }
     }
