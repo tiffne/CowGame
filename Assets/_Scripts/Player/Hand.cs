@@ -63,6 +63,10 @@ namespace _Scripts.Player
 
             switch (target.tag)
             {
+                case "Serving Spot":
+                    if (IsEmpty) GrabItem(target);
+                    else DropItem(target);
+                    break;
                 case "Shelf Spot":
                     if (IsEmpty) GrabItem(target.GetComponent<ShelfSpot>().GetRespectiveItem());
                     break;
@@ -98,7 +102,8 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.IsReady))
+                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.HasTableware)
+                                 && !(_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup")))
                         DropItem(target);
 
                     break;
