@@ -21,6 +21,8 @@ namespace _Scripts.Food.Ingredients.Steak
         private float amountOfTimeCooked;
         private float amountOfTimeBlended;
 
+        [SerializeField] private AudioClip burnerSoundClip;
+        private AudioSource burnerSound;
 
         private void Update()
         {
@@ -43,6 +45,7 @@ namespace _Scripts.Food.Ingredients.Steak
 
         private IEnumerator Cook()
         {
+            burnerSound.PlayOneShot(burnerSoundClip);
             CanCookAgain = false;
             while (amountOfTimeCooked < TimeToCook)
             {

@@ -7,6 +7,8 @@ public class MoneyManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI moneyDisplay;
 
+    [SerializeField] private AudioSource moneySound;
+
     public static MoneyManager Instance { get; private set; }
     
     public float totalTips { get; private set; }
@@ -33,6 +35,7 @@ public class MoneyManager : MonoBehaviour
         //          $"(Patience: {customer.patienceLevel}). " +
         //          $"Total tips: {totalTips}");
         UpdateMoneyDisplay();
+        moneySound.Play();
     }
 
     private void UpdateMoneyDisplay()

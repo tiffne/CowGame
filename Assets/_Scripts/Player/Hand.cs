@@ -28,6 +28,8 @@ namespace _Scripts.Player
         public int Index { get; private set; }
         private GameObject _itemInHand;
 
+        [SerializeField] private AudioSource pickUpSound;
+
         private void Start()
         {
             Index = transform.name switch
@@ -139,6 +141,7 @@ namespace _Scripts.Player
             _itemInHand.transform.parent = transform;
             _itemInHand.transform.position = transform.position;
             IsEmpty = false;
+            pickUpSound.Play();
         }
 
         private void DropItem(GameObject target)
