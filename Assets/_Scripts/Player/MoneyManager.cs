@@ -36,6 +36,6 @@ public class MoneyManager : MonoBehaviour
 
     private void UpdateMoneyDisplay()
     {
-        moneyDisplay.text = $"${totalTips}";
+        moneyDisplay.text = $"{totalTips:C}";
     }
 }
