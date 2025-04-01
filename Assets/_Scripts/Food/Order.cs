@@ -38,8 +38,7 @@ namespace _Scripts.Food
                 child.SayByeBye();
             }
 
-            name = _matchedRecipe.name;
-            transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name];
+            transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[_matchedRecipe.name];
             IsReady = true;
         }
 
@@ -104,7 +103,7 @@ namespace _Scripts.Food
             {
                 return;
             }
-
+            
             if (!orderChild.CompareTag("Order")) return;
 
             var ingredientsToBeMerged = new GameObject[orderChild.childCount];

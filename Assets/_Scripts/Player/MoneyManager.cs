@@ -29,9 +29,10 @@ public class MoneyManager : MonoBehaviour
         float tip = customer.TipAmount;
         totalTips += tip;
         
-        Debug.Log($"Added {tip} tip from {customer.Species} " +
-                 $"(Patience: {customer.patienceLevel}). " +
-                 $"Total tips: {totalTips}");
+        // Debug.Log($"Added {tip} tip from {customer.Species} " +
+        //          $"(Patience: {customer.patienceLevel}). " +
+        //          $"Total tips: {totalTips}");
+        UpdateMoneyDisplay();
     }
 
     private void UpdateMoneyDisplay()
