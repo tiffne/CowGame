@@ -63,6 +63,16 @@ namespace _Scripts.Customer
             yield return new WaitForSeconds(3);
             var tempCustomer = Instantiate(customerPrefab, transform, false);
             LineOfCustomers.AddCustomerToLine(tempCustomer);
+
+            for (int i = 0; i < LineOfCustomers.Line.Count; i++)
+            {
+                var SpriteRenderer = LineOfCustomers.Line[i].GetComponent<SpriteRenderer>();
+                if (SpriteRenderer != null)
+                {
+                    SpriteRenderer.sortingOrder = LineOfCustomers.Line.Count - 1 - i;
+                }
+            }
+
             CanAddNewCustomer = !LineOfCustomers.IsFull;
         }
     }
