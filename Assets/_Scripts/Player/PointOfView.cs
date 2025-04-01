@@ -10,6 +10,7 @@ namespace _Scripts.Player
         [SerializeField] private Transform[] views;
         private const float TransitionSpeed = 5.0f;
         private int currentViewIndex;
+        [SerializeField] private AudioSource switchSound;
 
         private void Start()
         {
@@ -20,14 +21,14 @@ namespace _Scripts.Player
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
 
-            //if (scroll > 0f)
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || (scroll > 0f))
             {
+                switchSound.Play();
                 currentViewIndex = Mathf.Clamp(currentViewIndex + 1, 0, views.Length - 1);
             }
-            //else if (scroll < 0f)
-            else if (Input.GetKeyDown(KeyCode.Q))
+            else if (Input.GetKeyDown(KeyCode.Q) || (scroll < 0f))
             {
+                switchSound.Play();
                 currentViewIndex = Mathf.Clamp(currentViewIndex - 1, 0, views.Length - 1);
             }
 

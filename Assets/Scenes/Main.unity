@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 144197990}
   - component: {fileID: 144197991}
   m_Layer: 0
-  m_Name: FridgeClose
+  m_Name: _FridgeClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 455072036}
   - component: {fileID: 455072037}
   m_Layer: 0
-  m_Name: FridgeOpen
+  m_Name: _FridgeOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 501618892}
   - component: {fileID: 501618893}
   m_Layer: 0
-  m_Name: CustomerOrderDone
+  m_Name: _CustomerOrderDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1649,6 +1649,7 @@ MonoBehaviour:
   - {fileID: 1933856763}
   - {fileID: 1310948902}
   - {fileID: 261124152}
+  switchSound: {fileID: 547209382}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1726,7 +1727,7 @@ GameObject:
   - component: {fileID: 547209381}
   - component: {fileID: 547209382}
   m_Layer: 0
-  m_Name: RoomSwitch
+  m_Name: _RoomSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2804,7 +2805,7 @@ GameObject:
   - component: {fileID: 1001794428}
   - component: {fileID: 1001794429}
   m_Layer: 0
-  m_Name: PickUp
+  m_Name: _PickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3091,6 +3092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2863da98809e74cfaa0f06cf1217cb98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burnerSound: {fileID: 1903479915}
 --- !u!4 &1123543591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4095454457497066766, guid: 01378aafbfefe4d16bd3364ee82b3dc7, type: 3}
@@ -3264,6 +3266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecac06d23e9b14358b4a7574ce36b54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openSound: {fileID: 455072037}
+  closeSound: {fileID: 144197991}
 --- !u!1 &1175177283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,6 +3510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closed: {fileID: -5157615530038806827, guid: 5286aa2ca47ae49c48653efe2f0aa8eb, type: 3}
   open: {fileID: -7789830171372869939, guid: 1e7a96ee7302947bca53f893b6c4cd91, type: 3}
+  trashSound: {fileID: 1665013058}
 --- !u!212 &1294591057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3994,6 +3999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyDisplay: {fileID: 939976705}
+  moneySound: {fileID: 1559865215}
 --- !u!1 &1558013735
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,7 +4098,7 @@ GameObject:
   - component: {fileID: 1559865214}
   - component: {fileID: 1559865215}
   m_Layer: 0
-  m_Name: Register
+  m_Name: _Register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4520,7 +4526,7 @@ GameObject:
   - component: {fileID: 1665013057}
   - component: {fileID: 1665013058}
   m_Layer: 0
-  m_Name: Trash
+  m_Name: _Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4654,7 +4660,7 @@ GameObject:
   - component: {fileID: 1708627990}
   - component: {fileID: 1708627991}
   m_Layer: 0
-  m_Name: CustomerEnter
+  m_Name: _CustomerEnter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5634,6 +5640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bca50439b8c4eb8a1bba017a315934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customerEnterSound: {fileID: 1708627991}
+  customerDoneSound: {fileID: 501618893}
   customerPrefab: {fileID: 8425020235157304, guid: a883dc39db545452da754add01abd166, type: 3}
 --- !u!1 &2086272074 stripped
 GameObject:
@@ -5952,6 +5960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898bfb1c7dbf1ec48858aae7baedea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpSound: {fileID: 1001794429}
 --- !u!4 &6693913808409054398
 Transform:
   m_ObjectHideFlags: 0
@@ -5979,6 +5988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898bfb1c7dbf1ec48858aae7baedea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpSound: {fileID: 1001794429}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

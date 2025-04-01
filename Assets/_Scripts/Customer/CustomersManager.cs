@@ -9,6 +9,9 @@ namespace _Scripts.Customer
 {
     public class CustomersManager : MonoBehaviour
     {
+        [SerializeField] private AudioSource customerEnterSound;
+        [SerializeField] private AudioSource customerDoneSound;
+        
         public static class LineOfCustomers
         {
             private const int MaxLineSize = 3;
@@ -57,6 +60,7 @@ namespace _Scripts.Customer
             if (customersToLeave.Count == 0) return;
             foreach (var customer in customersToLeave)
             {
+                customerDoneSound.Play();
                 LineOfCustomers.RemoveCustomerFromLine(customer);
                 customer.GetComponent<Customer>().SayByeBye();
             }
@@ -68,6 +72,7 @@ namespace _Scripts.Customer
         {
             CanAddNewCustomer = false;
             yield return new WaitForSeconds(3);
+            customerEnterSound.Play();
             var tempCustomer = Instantiate(customerPrefab, transform, false);
             LineOfCustomers.AddCustomerToLine(tempCustomer);
             CanAddNewCustomer = !LineOfCustomers.IsFull;
