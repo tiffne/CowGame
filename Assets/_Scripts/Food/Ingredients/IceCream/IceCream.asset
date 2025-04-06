@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
-  m_Name: Patty
+  m_Name: IceCream
   m_EditorClassIdentifier: 
-  ingredientRawSprite: {fileID: -165381306550957385, guid: 4ffdc299a4f414df989476fe33cc4fff, type: 3}
+  ingredientRawSprite: {fileID: -5755410639089308127, guid: 3f8a4e1e36d92486aa30d00643766e5d, type: 3}
   ingredientBlendedSprite: {fileID: 0}
-  ingredientCookedSprite: {fileID: -5919778849487241949, guid: 51ab42ad9adac41319d7be08673ff5b2, type: 3}
-  ingredientBurnedSprite: {fileID: 2456094395991791998, guid: 08b990d1dbc094d41a5cf80044241b4f, type: 3}
-  ingredientMeltedSprite: {fileID: 0}
+  ingredientCookedSprite: {fileID: 0}
+  ingredientBurnedSprite: {fileID: 0}
+  ingredientMeltedSprite: {fileID: 2282252462763507936, guid: 5d04672ba8dc24815ad4aaaa28343739, type: 3}
   isReady: 0
   canBlend: 0
-  canCook: 1
-  canMelt: 0
+  canCook: 0
+  canMelt: 1
   timeToBlend: 0
-  timeToCook: 6
-  timeToMelt: 0
+  timeToCook: 0
+  timeToMelt: 4

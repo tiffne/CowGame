@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 1cee33d8cef034b298d5a0a876aae478
+guid: edb0603c60d614c84a49bce975b908a0
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3999090560222424582
     second: steakCooked_0
-  - first:
-      213: 5212378815183545761
-    second: steakCooked_1
-  - first:
-      213: -5852649582589933715
-    second: steakCooked_2
-  - first:
-      213: -370508114670115679
-    second: steakCooked_3
-  - first:
-      213: -2546605913711031006
-    second: steakCooked_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,32 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,10 +103,10 @@ TextureImporter:
       name: steakCooked_0
       rect:
         serializedVersion: 2
-        x: 539
-        y: 723
-        width: 1858
-        height: 1170
+        x: 635
+        y: 586
+        width: 1747
+        height: 655
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,94 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 60eecaa2daf9f7730800000000000000
       internalID: 3999090560222424582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steakCooked_1
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 1884
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a569c18ae6165840800000000000000
-      internalID: 5212378815183545761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steakCooked_2
-      rect:
-        serializedVersion: 2
-        x: 724
-        y: 1892
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6783ea963637cea0800000000000000
-      internalID: -5852649582589933715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steakCooked_3
-      rect:
-        serializedVersion: 2
-        x: 729
-        y: 1886
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a420be25d0bbdaf0800000000000000
-      internalID: -370508114670115679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steakCooked_4
-      rect:
-        serializedVersion: 2
-        x: 2030
-        y: 1208
-        width: 420
-        height: 206
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22d485af963a8acd0800000000000000
-      internalID: -2546605913711031006
       vertices: []
       indices: 
       edges: []
@@ -262,10 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       steakCooked_0: 3999090560222424582
-      steakCooked_1: 5212378815183545761
-      steakCooked_2: -5852649582589933715
-      steakCooked_3: -370508114670115679
-      steakCooked_4: -2546605913711031006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
