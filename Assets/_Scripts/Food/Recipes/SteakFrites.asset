@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76e52f17bf58349a184ae9ba6eb44444, type: 3}
-  m_Name: Burger
+  m_Name: SteakFrites
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 5642226567063596017, guid: 9dfae056db5f14b2a8bd0bde08a23412, type: 3}
-  - {fileID: 5889439402767968796, guid: 066eba54485f04c18aacde1c2996805a, type: 3}
-  - {fileID: 3625681684126240574, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
   - {fileID: 8413865533782203572, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
-  recipeSprite: {fileID: -2881315834405905641, guid: 5a9f00b1784e14ab9b4149aad65f65eb, type: 3}
-  price: 5.6
-  servable: 1
+  - {fileID: 6817966371521193090, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
+  - {fileID: 3625681684126240574, guid: 55019bba377737a4590b38ba0108d6e4, type: 3}
+  recipeSprite: {fileID: 4278407022510576628, guid: 1073b44c85c084db8b19b9cbdc0f5341, type: 3}
+  price: 0

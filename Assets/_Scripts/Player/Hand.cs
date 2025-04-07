@@ -2,6 +2,7 @@ using System;
 using _Scripts.Fixed_Surfaces.Storing;
 using _Scripts.Food;
 using _Scripts.Food.Ingredients._Ingredient;
+using UnityEditorInternal;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -131,6 +132,7 @@ namespace _Scripts.Player
                     }
 
                     break;
+      
             }
         }
 
@@ -139,7 +141,9 @@ namespace _Scripts.Player
             if (!IsEmpty) return;
             _itemInHand = target;
             _itemInHand.transform.parent = transform;
-            _itemInHand.transform.position = transform.position;
+            //Following 2 lines have been adjusted so that 1) Items sit closer to center of paw, and 2) Items increase in scale to emulate perspective
+            _itemInHand.transform.position = new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z);
+            _itemInHand.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
             IsEmpty = false;
             pickUpSound.Play();
         }
@@ -149,6 +153,8 @@ namespace _Scripts.Player
             if (IsEmpty) return;
             _itemInHand.transform.position = target.transform.position;
             _itemInHand.transform.parent = target.transform;
+            //Following line has been added so that items decrease in scale to emulate perspective
+            _itemInHand.transform.localScale = new Vector3(1, 1, 1);
             _itemInHand = null;
         }
     }

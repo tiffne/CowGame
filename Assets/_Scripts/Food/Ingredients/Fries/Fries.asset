@@ -22,5 +22,5 @@ MonoBehaviour:
   canCook: 1
   canMelt: 0
   timeToBlend: 0
-  timeToCook: 1.5
+  timeToCook: 5
   timeToMelt: 0
