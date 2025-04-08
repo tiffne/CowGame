@@ -4,18 +4,18 @@ using TMPro;
 public class WorkDayTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timeDisplay;
-    [SerializeField] private float dayDurationInMinutes;
+    [SerializeField] private float dayDurationInMinutes = 3f;
 
     private float currentTime; // 0 = 9 AM, 1 = 9 PM
     private bool isDayActive = false;
 
+    void Start()
+    {
+        StartDay();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponent<WorkDayTimer>().StartDay();
-        }
-
         if (!isDayActive) return;
 
         currentTime += Time.deltaTime / (dayDurationInMinutes * 60);

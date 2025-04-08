@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static _Scripts.Customer.Customer.PatienceState;
@@ -9,7 +10,10 @@ namespace _Scripts.Customer
 {
     public class CustomersManager : MonoBehaviour
     {
-        private static class LineOfCustomers
+        [SerializeField] private AudioSource customerEnterSound;
+        [SerializeField] private AudioSource customerDoneSound;
+        
+        public static class LineOfCustomers
         {
             private const int MaxLineSize = 3;
             public static List<GameObject> Line { get; } = new();
@@ -41,7 +45,14 @@ namespace _Scripts.Customer
             List<GameObject> customersToLeave = new();
             foreach (var customer in LineOfCustomers.Line)
             {
-                if (customer.GetComponent<Customer>().patienceLevel == (int)Done)
+                var cstmr = customer.GetComponent<Customer>();
+                if (cstmr.IsServed)
+                {
+                    MoneyManager.Instance.AddTip(cstmr);
+                    customersToLeave.Add(customer);
+                }
+
+                else if (cstmr.patienceLevel == (int)Done)
                 {
                     customersToLeave.Add(customer);
                 }
@@ -50,7 +61,9 @@ namespace _Scripts.Customer
             if (customersToLeave.Count == 0) return;
             foreach (var customer in customersToLeave)
             {
+                customerDoneSound.Play();
                 LineOfCustomers.RemoveCustomerFromLine(customer);
+                customer.transform.parent = null;
                 customer.GetComponent<Customer>().SayByeBye();
             }
 
@@ -61,16 +74,14 @@ namespace _Scripts.Customer
         {
             CanAddNewCustomer = false;
             yield return new WaitForSeconds(3);
+            customerEnterSound.Play();
             var tempCustomer = Instantiate(customerPrefab, transform, false);
             LineOfCustomers.AddCustomerToLine(tempCustomer);
 
-            for (int i = 0; i < LineOfCustomers.Line.Count; i++)
+            for (var i = 0; i < LineOfCustomers.Line.Count; i++)
             {
-                var SpriteRenderer = LineOfCustomers.Line[i].GetComponent<SpriteRenderer>();
-                if (SpriteRenderer != null)
-                {
-                    SpriteRenderer.sortingOrder = LineOfCustomers.Line.Count - 1 - i;
-                }
+                var zPos = 7 - 7 * i;
+                LineOfCustomers.Line[i].transform.position = new Vector3(transform.position.x, 1.4f, -10 + zPos);
             }
 
             CanAddNewCustomer = !LineOfCustomers.IsFull;

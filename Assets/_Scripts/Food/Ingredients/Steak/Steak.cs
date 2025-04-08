@@ -1,7 +1,7 @@
 using System.Collections;
 using _Scripts.Food.Ingredients._Ingredient;
 using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor.Searcher;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -20,7 +20,6 @@ namespace _Scripts.Food.Ingredients.Steak
         private Coroutine coroutine;
         private float amountOfTimeCooked;
         private float amountOfTimeBlended;
-
 
         private void Update()
         {
@@ -44,6 +43,8 @@ namespace _Scripts.Food.Ingredients.Steak
         private IEnumerator Cook()
         {
             CanCookAgain = false;
+            CanBlendAgain = false;
+
             while (amountOfTimeCooked < TimeToCook)
             {
                 yield return new WaitForSeconds(TimeInApplianceIncrement);
@@ -55,6 +56,7 @@ namespace _Scripts.Food.Ingredients.Steak
                 case State.Raw:
                     CurrentState = State.Cooked;
                     IsReady = true;
+                    
                     SpriteRenderer.sprite = ingredient.IngredientCookedSprite;
                     break;
                 case State.Cooked:

@@ -21,8 +21,9 @@ namespace _Scripts.Customer
         [SerializeField] private CustomersDatabase customersDatabase;
 
         public int patienceLevel = (int)PatienceState.Patient;
-        
-        private RecipeScriptableObject Order { get; set; }
+
+        public RecipeScriptableObject Order { get; private set; }
+        public bool IsServed { get; set; }
         public string Species => chosenAnimal.name;
         public float TipAmount => Order.Price * (3 - patienceLevel);
 

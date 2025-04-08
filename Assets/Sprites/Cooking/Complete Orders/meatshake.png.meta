@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 55e12f970cde34b5faf3b33962362e7d
+guid: 05107be9c0a09415694e62417059842f
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7077803882562699600
     second: meatshake_0
-  - first:
-      213: -1243616978859985947
-    second: meatshake_1
-  - first:
-      213: -6437423510481383564
-    second: meatshake_2
-  - first:
-      213: -5745391319961079911
-    second: meatshake_3
-  - first:
-      213: 3318910910483162185
-    second: meatshake_4
-  - first:
-      213: -2121030907462345181
-    second: meatshake_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,10 +129,10 @@ TextureImporter:
       name: meatshake_0
       rect:
         serializedVersion: 2
-        x: 743
-        y: 385
-        width: 1095
-        height: 2399
+        x: 572
+        y: 409
+        width: 1239
+        height: 2366
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,116 +143,6 @@ TextureImporter:
       bones: []
       spriteID: 0be38fd5ed696cd90800000000000000
       internalID: -7077803882562699600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meatshake_1
-      rect:
-        serializedVersion: 2
-        x: 1117
-        y: 258
-        width: 590
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e3f76a52f8cdbee0800000000000000
-      internalID: -1243616978859985947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meatshake_2
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 334
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47f42059c6da9a6a0800000000000000
-      internalID: -6437423510481383564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meatshake_3
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 265
-        width: 145
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99f6b1ee8054440b0800000000000000
-      internalID: -5745391319961079911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meatshake_4
-      rect:
-        serializedVersion: 2
-        x: 1093
-        y: 264
-        width: 25
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 944648483e32f0e20800000000000000
-      internalID: 3318910910483162185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: meatshake_5
-      rect:
-        serializedVersion: 2
-        x: 1704
-        y: 272
-        width: 13
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 32e151b90a59092e0800000000000000
-      internalID: -2121030907462345181
       vertices: []
       indices: 
       edges: []
@@ -287,11 +162,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       meatshake_0: -7077803882562699600
-      meatshake_1: -1243616978859985947
-      meatshake_2: -6437423510481383564
-      meatshake_3: -5745391319961079911
-      meatshake_4: 3318910910483162185
-      meatshake_5: -2121030907462345181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

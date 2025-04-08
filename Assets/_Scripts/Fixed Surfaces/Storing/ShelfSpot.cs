@@ -1,6 +1,6 @@
 using _Scripts.Fixed_Surfaces.Openable;
 using Unity.VisualScripting;
-using UnityEditorInternal;
+// using UnityEditorInternal;
 using UnityEngine;
 
 namespace _Scripts.Fixed_Surfaces.Storing
@@ -11,6 +11,8 @@ namespace _Scripts.Fixed_Surfaces.Storing
         [SerializeField] private GameObject steakPrefab;
         [SerializeField] private GameObject bunPrefab;
         [SerializeField] private GameObject pattyPrefab;
+        [SerializeField] private GameObject iceCreamPrefab;
+        [SerializeField] private GameObject friesPrefab;
 
         [SerializeField] private GameObject platePrefab;
         [SerializeField] private GameObject cupPrefab;
@@ -37,6 +39,14 @@ namespace _Scripts.Fixed_Surfaces.Storing
                 case "Buns":
                     temp = Instantiate(bunPrefab, transform.position, transform.rotation, transform);
                     temp.name = "Bun";
+                    return temp;
+                case "IceCreams":
+                    temp = Instantiate(iceCreamPrefab, transform.position, transform.rotation, transform);
+                    temp.name = "IceCream";
+                    return temp;
+                case "FryBag":
+                    temp = Instantiate(friesPrefab, transform.position, transform.rotation, transform);
+                    temp.name = "Fries";
                     return temp;
                 case "Plates":
                     temp = Instantiate(platePrefab, transform.position, transform.rotation, transform);
