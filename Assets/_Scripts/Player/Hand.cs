@@ -66,8 +66,7 @@ namespace _Scripts.Player
             switch (target.tag)
             {
                 case "Serving Spot":
-                    if (IsEmpty) GrabItem(target);
-                    else DropItem(target);
+                    DropItem(target);
                     break;
                 case "Shelf Spot":
                     if (IsEmpty) GrabItem(target.GetComponent<ShelfSpot>().GetRespectiveItem());
