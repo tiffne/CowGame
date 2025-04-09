@@ -15,15 +15,26 @@ namespace _Scripts.Food
         private RecipeScriptableObject _matchedRecipe;
         private readonly Dictionary<string, Sprite> _spritesDict = new();
         public bool IsReady { get; private set; }
+
+        public bool IsPerfect { get; private set; }
         public bool HasTableware { get; private set; }
 
         private new void Start()
         {
             base.Start();
+            IsPerfect = true;
             foreach (var recipe in recipes.Recipes)
             {
                 recipe.Ingredients.Sort();
                 _spritesDict[recipe.RecipeName] = recipe.RecipeSprite;
+                _spritesDict[recipe.RecipeName + "_rawA"] = recipe.RawASprite;
+                _spritesDict[recipe.RecipeName + "_burntA"] = recipe.BurntASprite;
+                _spritesDict[recipe.RecipeName + "_rawB"] = recipe.RawBSprite;
+                _spritesDict[recipe.RecipeName + "_burntB"] = recipe.BurntBSprite;
+                _spritesDict[recipe.RecipeName + "_rawAB"] = recipe.RawABSprite;
+                _spritesDict[recipe.RecipeName + "_burntAB"] = recipe.BurntABSprite;
+                _spritesDict[recipe.RecipeName + "_rawAburntB"] = recipe.RawABurntBSprite;
+                _spritesDict[recipe.RecipeName + "_burntArawB"] = recipe.BurntARawBSprite;
             }
         }
 
@@ -31,16 +42,107 @@ namespace _Scripts.Food
         {
             if (IsReady) return;
             if (!IsOrderComplete()) return;
+
+            int totalCookAmt = 0;
+            int totalCookable = 0;
+
+            int steakCookAmt = 0;
+
+            string cookState = "";
+
             for (var i = 0; i < transform.childCount; i++)
             {
                 var child = transform.GetChild(i).GetComponent<Ingredient>();
-                if (child.gameObject.name.Equals("Plate")) continue;
-                child.SayByeBye();
+                if (child.CanCook)
+                {
+                    totalCookable += 1;
+                    totalCookAmt += child.CookAmt;
+                }
+
+                if (child.gameObject.name.Equals("Steak"))
+                {
+                    steakCookAmt = child.CookAmt;
+                }
             }
 
-            name = _matchedRecipe.name;
-            transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name];
-            IsReady = true;
+            print("Total number of cookable ingredients is: " + totalCookable);
+
+            if (_matchedRecipe.name != "Meatshake")
+            {
+
+                if (totalCookable == 1)
+                {
+                    switch (totalCookAmt)
+                    {
+                        case 0:
+                            cookState = "_rawA";
+                            break;
+                        case 2:
+                            cookState = "_burntA";
+                            break;
+
+                    }
+                }
+
+                else if (totalCookable > 1)
+                {
+                    switch (totalCookAmt)
+                    {
+                        case 0:
+                            cookState = "_rawAB";
+                            break;
+
+                        case 1:
+                            if (steakCookAmt == 1)
+                            {
+                                cookState = "_rawB";
+                            }
+                            else cookState = "_rawA";
+                            break;
+
+                        case 2:
+                            if (steakCookAmt == 1)
+                            {
+                                cookState = "_rawAB";
+                            }
+                            else if (steakCookAmt == 2)
+                            {
+                                cookState = "_burntArawB";
+                            }
+                            else cookState = "_rawAburntB";
+                            break;
+
+                        case 3:
+                            if (steakCookAmt == 1)
+                            {
+                                cookState = "_burntB";
+                            }
+                            else cookState = "_burntA";
+                            break;
+
+                        case 4:
+                            cookState = "_burntAB";
+                            break;
+
+
+                    }
+                }
+
+
+
+                for (var i = 0; i < transform.childCount; i++)
+                {
+                    var child = transform.GetChild(i).GetComponent<Ingredient>();
+                    if (child.gameObject.name.Equals("Plate")) continue;
+                    child.SayByeBye();
+                }
+
+
+                if (cookState.Contains("A") || cookState.Contains("B")) IsPerfect = false;
+                name = _matchedRecipe.name;
+                transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name + cookState];
+                IsReady = true;
+            }
         }
 
         public void MergeIngredients(GameObject[] ingredients)

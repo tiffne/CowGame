@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63a2c91cfe1714ace9452de654c8b15f
+guid: 2f6b67358dadd44999dab186106323bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3653014598359821465
-    second: BurntSteakRawFriesIceCream_0
+      213: -7297625428564048160
+    second: rawSteakBurntFriesIceCream_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BurntSteakRawFriesIceCream_0
+      name: rawSteakBurntFriesIceCream_0
       rect:
         serializedVersion: 2
         x: 635
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99cad863c6d12b230800000000000000
-      internalID: 3653014598359821465
+      spriteID: 0e605925650a9ba90800000000000000
+      internalID: -7297625428564048160
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BurntSteakRawFriesIceCream_0: 3653014598359821465
+      rawSteakBurntFriesIceCream_0: -7297625428564048160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

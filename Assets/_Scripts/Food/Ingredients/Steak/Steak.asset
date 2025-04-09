@@ -17,7 +17,7 @@ MonoBehaviour:
   ingredientCookedSprite: {fileID: 3999090560222424582, guid: edb0603c60d614c84a49bce975b908a0, type: 3}
   ingredientBurnedSprite: {fileID: -4482867155660389777, guid: 49c77d6838bd64e3d96c7df71dac119f, type: 3}
   ingredientMeltedSprite: {fileID: 0}
-  isReady: 0
+  isReady: 1
   canBlend: 1
   canCook: 1
   canMelt: 0

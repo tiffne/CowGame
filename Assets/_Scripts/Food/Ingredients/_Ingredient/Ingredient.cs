@@ -23,6 +23,8 @@ namespace _Scripts.Food.Ingredients._Ingredient
         public bool CanCook { get; private set; }
         public bool CanMelt { get; private set; }
 
+        public int CookAmt { get; set; }
+
         protected float TimeToBlend { get; private set; }
         protected float TimeToCook { get; private set; }
         protected float TimeToMelt { get; private set; }

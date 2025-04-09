@@ -29,6 +29,9 @@ namespace _Scripts.Food.Ingredients._Ingredient
         [SerializeField] private bool canCook;
         public bool CanCook => canCook;
 
+        [SerializeField] private int cookAmt;
+        public int CookAmt => cookAmt;
+
         [SerializeField] private bool canMelt;
         public bool CanMelt => canMelt;
 
