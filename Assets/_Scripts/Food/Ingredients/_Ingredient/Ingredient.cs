@@ -1,4 +1,5 @@
 using System;
+using _Scripts.Player;
 using TMPro;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -17,7 +18,7 @@ namespace _Scripts.Food.Ingredients._Ingredient
         private Sprite _ingredientCookedSprite;
         private Sprite _ingredientBurnedSprite;
         private Sprite _ingredientMeltedSprite;
-
+        
         public bool CanBlend { get; protected set; }
         public bool CanCook { get; private set; }
         public bool CanMelt { get; private set; }
@@ -102,6 +103,10 @@ namespace _Scripts.Food.Ingredients._Ingredient
 
         private new void OnMouseOver()
         {
+            if (transform.parent.CompareTag("Pocket"))
+            {
+                Pocket.Inventory.OnMouseOver();
+            }
             base.OnMouseOver();
             if (transform.childCount == 1) GenerateNewOrder(transform.GetChild(0).gameObject);
         }

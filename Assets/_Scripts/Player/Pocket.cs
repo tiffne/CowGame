@@ -6,7 +6,7 @@ namespace _Scripts.Player
     [RequireComponent(typeof(BoxCollider))]
     public class Pocket : Container
     {
-        private Inventory inventory;
+        public static Inventory Inventory { get; private set; }
         private BoxCollider col;
 
         private new void Start()
@@ -15,7 +15,7 @@ namespace _Scripts.Player
             col = GetComponent<BoxCollider>();
             AmountLeft = 0;
             tag = "Pocket";
-            inventory = transform.parent.GetComponentInParent<Inventory>();
+            Inventory = transform.parent.GetComponentInParent<Inventory>();
         }
 
         private void Update()
@@ -25,7 +25,7 @@ namespace _Scripts.Player
 
         private new void OnMouseOver()
         {
-            inventory.OnMouseOver();
+            Inventory.OnMouseOver();
             base.OnMouseOver();
         }
     }
