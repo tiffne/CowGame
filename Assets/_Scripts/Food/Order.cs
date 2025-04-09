@@ -101,7 +101,7 @@ namespace _Scripts.Food
                         case 2:
                             if (steakCookAmt == 1)
                             {
-                                cookState = "_rawAB";
+                                cookState = "";
                             }
                             else if (steakCookAmt == 2)
                             {
