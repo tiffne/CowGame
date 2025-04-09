@@ -65,9 +65,7 @@ namespace _Scripts.Food
                 }
             }
 
-            print("Total number of cookable ingredients is: " + totalCookable);
-
-            if (_matchedRecipe.name != "Meatshake")
+            if (!_matchedRecipe.name.Equals("Meatshake"))
             {
 
                 if (totalCookable == 1)
@@ -127,10 +125,10 @@ namespace _Scripts.Food
 
                     }
                 }
+            }
 
 
-
-                for (var i = 0; i < transform.childCount; i++)
+            for (var i = 0; i < transform.childCount; i++)
                 {
                     var child = transform.GetChild(i).GetComponent<Ingredient>();
                     if (child.gameObject.name.Equals("Plate")) continue;
@@ -142,7 +140,7 @@ namespace _Scripts.Food
                 name = _matchedRecipe.name;
                 transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name + cookState];
                 IsReady = true;
-            }
+            
         }
 
         public void MergeIngredients(GameObject[] ingredients)
