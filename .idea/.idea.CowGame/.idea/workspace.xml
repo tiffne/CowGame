@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Food/Cup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Food/Cup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Complete Orders/milk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cooking/Complete Orders/milk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakBurnt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakBurnt.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakCooked.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakCooked.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakRaw.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cooking/Ingredients/Steak/steakRaw.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/IceCream/IceCream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/IceCream/IceCream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Steak/Steak.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +62,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Fix-Orders",
+    "git-widget-placeholder": "finish-customers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -148,6 +158,7 @@
       <workItem from="1743228329197" duration="271000" />
       <workItem from="1743263831579" duration="28481000" />
       <workItem from="1743440137936" duration="13061000" />
+      <workItem from="1744151156169" duration="4470000" />
     </task>
     <servers />
   </component>

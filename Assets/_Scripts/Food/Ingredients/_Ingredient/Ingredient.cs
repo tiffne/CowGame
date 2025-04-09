@@ -18,7 +18,7 @@ namespace _Scripts.Food.Ingredients._Ingredient
         private Sprite _ingredientBurnedSprite;
         private Sprite _ingredientMeltedSprite;
 
-        public bool CanBlend { get; private set; }
+        public bool CanBlend { get; protected set; }
         public bool CanCook { get; private set; }
         public bool CanMelt { get; private set; }
 
