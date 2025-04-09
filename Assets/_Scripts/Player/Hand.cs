@@ -2,7 +2,6 @@ using System;
 using _Scripts.Fixed_Surfaces.Storing;
 using _Scripts.Food;
 using _Scripts.Food.Ingredients._Ingredient;
-using UnityEditorInternal;
 using UnityEngine;
 
 namespace _Scripts.Player
@@ -67,8 +66,7 @@ namespace _Scripts.Player
             switch (target.tag)
             {
                 case "Serving Spot":
-                    if (IsEmpty) GrabItem(target);
-                    else DropItem(target);
+                    DropItem(target);
                     break;
                 case "Shelf Spot":
                     if (IsEmpty) GrabItem(target.GetComponent<ShelfSpot>().GetRespectiveItem());
@@ -79,26 +77,21 @@ namespace _Scripts.Player
                 case "Ingredient":
                 case "Order":
                     if (IsEmpty) GrabItem(target);
-                    else if (target.TryGetComponent<Ingredient>(out var ing3) &&
-                             _itemInHand.TryGetComponent<Order>(out var ord3))
+                    else if (target.TryGetComponent<Ingredient>(out var ing1) &&
+                             _itemInHand.TryGetComponent<Order>(out _))
                     {
-                        ing3.GenerateNewOrder(null);
+                        ing1.GenerateNewOrder(null);
                     }
                     else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
-                        // If item in hand is a Ready Ingredient OR Not Ready Order AND the target is not a complete order
-                        if (((_itemInHand.TryGetComponent<Order>(out var order1) && !order1.IsReady) ||
-                             (_itemInHand.TryGetComponent<Ingredient>(out var ing1) && ing1.IsReady)) &&
-                            !(target.TryGetComponent<Order>(out var order2) && order2.IsReady))
+                        var order1 = _itemInHand.GetComponent<Order>();
+                        var ing2 = _itemInHand.GetComponent<Ingredient>();
+                        if ((order1 && !order1.IsReady) || (ing2 && ing2.IsReady))
                         {
-                            if ((_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup") ||
-                                 (order1 != null && order1.HasTableware)) &&
-                                (order2 != null && order2.HasTableware || target.name.Equals("Plate") ||
-                                 target.name.Equals("Cup")))
-                            {
-                                return;
-                            }
-
+                            if (target.TryGetComponent<Order>(out var order2) && order2.IsReady) return;
+                            
+                            if (target.TryGetComponent<Ingredient>(out var ing3) && !ing3.IsReady) return;
+                            
                             DropItem(target);
                         }
                     }
@@ -132,7 +125,6 @@ namespace _Scripts.Player
                     }
 
                     break;
-      
             }
         }
 
@@ -142,7 +134,8 @@ namespace _Scripts.Player
             _itemInHand = target;
             _itemInHand.transform.parent = transform;
             //Following 2 lines have been adjusted so that 1) Items sit closer to center of paw, and 2) Items increase in scale to emulate perspective
-            _itemInHand.transform.position = new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z);
+            _itemInHand.transform.position =
+                new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z);
             _itemInHand.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
             IsEmpty = false;
             pickUpSound.Play();
