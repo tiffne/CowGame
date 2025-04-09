@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76e52f17bf58349a184ae9ba6eb44444, type: 3}
-  m_Name: SteakFrites
+  m_Name: Meatshake
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 8413865533782203572, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
-  - {fileID: 6817966371521193090, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
-  - {fileID: 6689063658414276856, guid: 55019bba377737a4590b38ba0108d6e4, type: 3}
-  recipeSprite: {fileID: 4278407022510576628, guid: 1073b44c85c084db8b19b9cbdc0f5341, type: 3}
-  price: 11.3
+  - {fileID: -944703377721567965, guid: fefd37b51563043449daa62a10244520, type: 3}
+  - {fileID: -6146253577723570913, guid: 7d2868d47dee3864bac36c1663f62144, type: 3}
+  - {fileID: 3625681684126240574, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
+  recipeSprite: {fileID: -7077803882562699600, guid: 05107be9c0a09415694e62417059842f, type: 3}
+  price: 4.7

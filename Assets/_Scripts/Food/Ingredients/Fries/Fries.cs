@@ -2,7 +2,7 @@ using System.Collections;
 using _Scripts.Food.Ingredients._Ingredient;
 using UnityEngine;
 
-namespace _Scripts.Food.Ingredients.Patty
+namespace _Scripts.Food.Ingredients.Fries
 {
     public class Fries : Ingredient
     {
