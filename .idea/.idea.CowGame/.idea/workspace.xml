@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Pocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Surfaces/Pocket.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/_Ingredient/Ingredient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Pocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Pocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/_Views/Counter/counter fg no milk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/_Views/Counter/counter fg no milk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Serving Spot/ServingSpot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Serving Spot/ServingSpot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Food/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/Hand.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "finish-customers",
+    "git-widget-placeholder": "Attempting__Raw+Burnt__Recipes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,6 +155,7 @@
       <workItem from="1743263831579" duration="28481000" />
       <workItem from="1743440137936" duration="13061000" />
       <workItem from="1744151156169" duration="7021000" />
+      <workItem from="1744338464118" duration="3224000" />
     </task>
     <servers />
   </component>

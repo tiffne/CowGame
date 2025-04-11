@@ -43,12 +43,12 @@ namespace _Scripts.Food.Ingredients.Fries
             {
                 case State.Raw:
                     CurrentState = State.Cooked;
-                    IsReady = true;
+                    CookAmt = 1;
                     SpriteRenderer.sprite = ingredient.IngredientCookedSprite;
                     break;
                 case State.Cooked:
                     CurrentState = State.Burned;
-                    IsReady = false;
+                    CookAmt = 2;
                     SpriteRenderer.sprite = ingredient.IngredientBurnedSprite;
                     break;
             }

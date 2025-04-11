@@ -125,6 +125,10 @@ namespace _Scripts.Player
                     }
 
                     break;
+                default:
+                    //display thought bubble
+                    //play noise
+                    break;
             }
         }
 
