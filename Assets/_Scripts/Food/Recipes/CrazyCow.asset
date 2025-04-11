@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: CrazyCow
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 8413865533782203572, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
-  - {fileID: 6817966371521193090, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
   - {fileID: 6689063658414276856, guid: 55019bba377737a4590b38ba0108d6e4, type: 3}
   - {fileID: -6146253577723570913, guid: 7d2868d47dee3864bac36c1663f62144, type: 3}
+  - {fileID: 8413865533782203572, guid: 82de9d1ed93b345078b0544f6a2f6187, type: 3}
+  - {fileID: 6817966371521193090, guid: 1b43b0f22461f4cffa0b053bf0357195, type: 3}
   recipeSprite: {fileID: 8783480922098690232, guid: b114328521ce445f2aae68d9cecf2034, type: 3}
   rawASprite: {fileID: 1291125811193065761, guid: 49e47f818d8084ba8827db35e258480b, type: 3}
   burntASprite: {fileID: -1510610166092387329, guid: 016b11cdee33d4a66bbc69c31ae74343, type: 3}

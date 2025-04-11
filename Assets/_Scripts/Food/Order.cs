@@ -129,17 +129,17 @@ namespace _Scripts.Food
 
 
             for (var i = 0; i < transform.childCount; i++)
-                {
-                    var child = transform.GetChild(i).GetComponent<Ingredient>();
-                    if (child.gameObject.name.Equals("Plate")) continue;
-                    child.SayByeBye();
-                }
+            {
+                var child = transform.GetChild(i).GetComponent<Ingredient>();
+                if (child.gameObject.name.Equals("Plate")) continue;
+                child.SayByeBye();
+            }
 
 
-                if (cookState.Contains("A") || cookState.Contains("B")) IsPerfect = false;
-                name = _matchedRecipe.name;
-                transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name + cookState];
-                IsReady = true;
+            if (cookState.Contains("A") || cookState.Contains("B")) IsPerfect = false;
+            name = _matchedRecipe.name;
+            transform.GetComponent<SpriteRenderer>().sprite = _spritesDict[name + cookState];
+            IsReady = true;
             
         }
 
