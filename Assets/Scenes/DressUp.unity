@@ -426,6 +426,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1257838011}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: CowClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &571484129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +594,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1257838011}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: LionClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &927032939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,6 +840,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1257838011}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: WolfClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228357826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,6 +1012,7 @@ GameObject:
   - component: {fileID: 1257838009}
   - component: {fileID: 1257838008}
   - component: {fileID: 1257838007}
+  - component: {fileID: 1257838011}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -1069,6 +1106,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1257838011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257838006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2441aa3e3f42a7c4891efa99a359e3ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cowSprite: {fileID: 2800000, guid: 0b3579e73452f4538b5972d7c6747ba8, type: 3}
+  predatorSprite: {fileID: 2800000, guid: f52b7ac9a7c50414e8397071b00cd70e, type: 3}
 --- !u!1 &1354725038
 GameObject:
   m_ObjectHideFlags: 0
