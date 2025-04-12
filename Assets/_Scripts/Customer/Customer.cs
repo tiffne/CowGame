@@ -19,6 +19,8 @@ namespace _Scripts.Customer
 
         [SerializeField] private RecipesDatabase recipesDatabase;
         [SerializeField] private CustomersDatabase customersDatabase;
+        [SerializeField] private GameObject speechBuble;
+        private SpriteRenderer speech;
 
         public int patienceLevel = (int)PatienceState.Patient;
 
@@ -43,6 +45,9 @@ namespace _Scripts.Customer
             customersAccessory = customersDatabase.Accessories[Random.Range(0, customersDatabase.Accessories.Count)];
             customersTop = customersDatabase.Tops[Random.Range(0, customersDatabase.Tops.Count)];
             Order = recipesDatabase.Recipes[Random.Range(0, recipesDatabase.Recipes.Count)];
+            speech = speechBuble.GetComponent<SpriteRenderer>();
+            speech.sprite = Order.RecipeSprite;
+            
             Debug.Log(Order.RecipeName);
 
             name = Species;
