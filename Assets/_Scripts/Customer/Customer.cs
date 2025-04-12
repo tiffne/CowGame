@@ -29,6 +29,7 @@ namespace _Scripts.Customer
         public string Species => chosenAnimal.name;
         public float TipAmount => Order.Price * (3 - patienceLevel);
 
+        private bool canLosePatience = true;
         private Sprite customerSprite;
         private Sprite customersAccessory;
         private Sprite customersTop;
@@ -116,6 +117,12 @@ namespace _Scripts.Customer
             }
         }
 
+        private void Update()
+        {
+            if (!canLosePatience) return;
+            StartCoroutine(LosePatience());
+        }
+
         public void DoSomething()
         {
             Debug.Log("Clicked, wait...");
@@ -125,7 +132,8 @@ namespace _Scripts.Customer
 
         private IEnumerator LosePatience()
         {
-            yield return new WaitForSeconds(2);
+            canLosePatience = false;
+            yield return new WaitForSeconds(10);
             switch (patienceLevel)
             {
                 case (int)PatienceState.Patient:
@@ -142,6 +150,7 @@ namespace _Scripts.Customer
             }
 
             patienceLevel++;
+            canLosePatience = true;
             Debug.Log($"I am {Enum.GetName(typeof(PatienceState), patienceLevel)}");
         }
     }

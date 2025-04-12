@@ -7115,7 +7115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpSound: {fileID: 1001794429}
-  thoughtBubble: {fileID: 0}
+  thoughtBubbleSound: {fileID: 2060039997}
   thoughtBubble: {fileID: 135635491}
 --- !u!4 &6693913808409054398
 Transform:
@@ -7145,7 +7145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpSound: {fileID: 1001794429}
-  thoughtBubble: {fileID: 0}
+  thoughtBubbleSound: {fileID: 2060039997}
   thoughtBubble: {fileID: 135635491}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
