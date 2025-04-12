@@ -33,6 +33,7 @@ namespace _Scripts.Player
         private bool thoughtBubbleActive = false;
 
         [SerializeField] private AudioSource pickUpSound;
+        [SerializeField] private AudioSource thoughtBubbleSound;
         [SerializeField] private GameObject thoughtBubble;
 
         private void Start()
@@ -205,6 +206,7 @@ namespace _Scripts.Player
             if (thoughtBubbleActive) yield break;
             thoughtBubble.SetActive(true);
             thoughtBubbleActive = true;
+            thoughtBubbleSound.Play();
             yield return new WaitForSeconds(2);
             thoughtBubble.SetActive(false);
             thoughtBubbleActive = false;
