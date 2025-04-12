@@ -7117,6 +7117,11 @@ MonoBehaviour:
   pickUpSound: {fileID: 1001794429}
   thoughtBubbleSound: {fileID: 168585055}
   thoughtBubble: {fileID: 135635491}
+  costumeHand: {fileID: 0}
+  costumeHandSprites:
+  - {fileID: 0}
+  - {fileID: -6825188231775435901, guid: 7a83da46383264e87ad14c32a1d68d05, type: 3}
+  - {fileID: -7498300657983950939, guid: 16320e2f9794c46d38d2825b5b07db3f, type: 3}
 --- !u!4 &6693913808409054398
 Transform:
   m_ObjectHideFlags: 0
@@ -7147,6 +7152,11 @@ MonoBehaviour:
   pickUpSound: {fileID: 1001794429}
   thoughtBubbleSound: {fileID: 168585055}
   thoughtBubble: {fileID: 135635491}
+  costumeHand: {fileID: 0}
+  costumeHandSprites:
+  - {fileID: 0}
+  - {fileID: -7221174131964558325, guid: af57f5ae42f1945d2b4be61d173ebafa, type: 3}
+  - {fileID: 8596179672037386828, guid: 1be945579eea54e34848ce9031a19848, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
