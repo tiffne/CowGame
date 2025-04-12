@@ -43,7 +43,7 @@ namespace _Scripts.Food.Ingredients.Steak
         private IEnumerator Cook()
         {
             CanCookAgain = false;
-            CanBlendAgain = false;
+            //CanBlendAgain = false;
 
             while (amountOfTimeCooked < TimeToCook)
             {
@@ -55,19 +55,19 @@ namespace _Scripts.Food.Ingredients.Steak
             {
                 case State.Raw:
                     CurrentState = State.Cooked;
-                    IsReady = true;
-                    
+                    CookAmt = 1;
+
                     SpriteRenderer.sprite = ingredient.IngredientCookedSprite;
                     break;
                 case State.Cooked:
                     CurrentState = State.Burned;
-                    IsReady = false;
+                    CookAmt = 2;
                     SpriteRenderer.sprite = ingredient.IngredientBurnedSprite;
                     break;
             }
 
             amountOfTimeCooked = 0.0f;
-
+            CanBlend = false;
             CanCookAgain = true;
         }
 

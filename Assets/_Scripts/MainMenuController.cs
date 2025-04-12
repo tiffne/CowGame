@@ -14,7 +14,7 @@ namespace _Scripts
 
         public void PlayGame()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("DressUp");
         }
 
         public void ExitGame()

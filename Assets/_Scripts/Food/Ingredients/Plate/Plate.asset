@@ -20,6 +20,7 @@ MonoBehaviour:
   isReady: 1
   canBlend: 0
   canCook: 0
+  cookAmt: 1
   canMelt: 0
   timeToBlend: 0
   timeToCook: 0

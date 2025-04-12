@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 using static _Scripts.Customer.Customer.PatienceState;
 
 namespace _Scripts.Customer
@@ -12,7 +9,7 @@ namespace _Scripts.Customer
     {
         [SerializeField] private AudioSource customerEnterSound;
         [SerializeField] private AudioSource customerDoneSound;
-        
+
         public static class LineOfCustomers
         {
             private const int MaxLineSize = 3;
@@ -27,6 +24,7 @@ namespace _Scripts.Customer
 
             public static void RemoveCustomerFromLine(GameObject customer)
             {
+                Debug.Log(customer.GetComponent<Customer>().patienceLevel);
                 Line.Remove(customer);
             }
         }
@@ -77,6 +75,7 @@ namespace _Scripts.Customer
             customerEnterSound.Play();
             var tempCustomer = Instantiate(customerPrefab, transform, false);
             LineOfCustomers.AddCustomerToLine(tempCustomer);
+
 
             for (var i = 0; i < LineOfCustomers.Line.Count; i++)
             {

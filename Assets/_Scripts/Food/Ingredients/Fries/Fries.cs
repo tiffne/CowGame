@@ -2,7 +2,7 @@ using System.Collections;
 using _Scripts.Food.Ingredients._Ingredient;
 using UnityEngine;
 
-namespace _Scripts.Food.Ingredients.Patty
+namespace _Scripts.Food.Ingredients.Fries
 {
     public class Fries : Ingredient
     {
@@ -43,12 +43,12 @@ namespace _Scripts.Food.Ingredients.Patty
             {
                 case State.Raw:
                     CurrentState = State.Cooked;
-                    IsReady = true;
+                    CookAmt = 1;
                     SpriteRenderer.sprite = ingredient.IngredientCookedSprite;
                     break;
                 case State.Cooked:
                     CurrentState = State.Burned;
-                    IsReady = false;
+                    CookAmt = 2;
                     SpriteRenderer.sprite = ingredient.IngredientBurnedSprite;
                     break;
             }

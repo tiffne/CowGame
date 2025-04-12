@@ -5,7 +5,5 @@ namespace _Scripts.Food.Ingredients.IceCream
 {
     public class IceCream : Ingredient
     {
-        Boolean melted = false;
-        //hello
     }
 }
