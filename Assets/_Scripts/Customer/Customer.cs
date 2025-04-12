@@ -15,21 +15,26 @@ namespace _Scripts.Customer
             Neutral = 1,
             Irritated = 2,
             Done = 3
-        } 
+        }
 
         [SerializeField] private RecipesDatabase recipesDatabase;
         [SerializeField] private CustomersDatabase customersDatabase;
-        [SerializeField] private GameObject speechBuble;
-        private SpriteRenderer speech;
+        [SerializeField] private GameObject speechOrderBubble;
+        [SerializeField] private GameObject speechEvaluationBubble;
 
-        public int patienceLevel = (int)PatienceState.Patient;
+        public SpriteRenderer speechOrder;
+        public SpriteRenderer speechEvaluation;
+
+        public int PatienceLevel { get; set; } = (int)PatienceState.Patient;
 
         public RecipeScriptableObject Order { get; private set; }
         public bool IsServed { get; set; }
         public string Species => chosenAnimal.name;
-        public float TipAmount => Order.Price * (3 - patienceLevel);
+        public float TipAmount => Order.Price * (3 - PatienceLevel);
 
         private bool canLosePatience = true;
+        public bool beingRemoved = false;
+        public bool hasTipped = false;
         private Sprite customerSprite;
         private Sprite customersAccessory;
         private Sprite customersTop;
@@ -46,9 +51,13 @@ namespace _Scripts.Customer
             customersAccessory = customersDatabase.Accessories[Random.Range(0, customersDatabase.Accessories.Count)];
             customersTop = customersDatabase.Tops[Random.Range(0, customersDatabase.Tops.Count)];
             Order = recipesDatabase.Recipes[Random.Range(0, recipesDatabase.Recipes.Count)];
-            speech = speechBuble.GetComponent<SpriteRenderer>();
-            speech.sprite = Order.RecipeSprite;
-            
+
+            speechOrder = speechOrderBubble.GetComponent<SpriteRenderer>();
+            speechOrder.sprite = Order.RecipeSprite;
+
+            speechEvaluation = speechEvaluationBubble.GetComponent<SpriteRenderer>();
+            speechEvaluationBubble.SetActive(false);
+
             Debug.Log(Order.RecipeName);
 
             name = Species;
@@ -123,18 +132,18 @@ namespace _Scripts.Customer
             StartCoroutine(LosePatience());
         }
 
-        public void DoSomething()
-        {
-            Debug.Log("Clicked, wait...");
-            StartCoroutine(LosePatience());
-        }
+        // public void DoSomething()
+        // {
+        //     Debug.Log("Clicked, wait...");
+        //     StartCoroutine(LosePatience());
+        // }
 
 
         private IEnumerator LosePatience()
         {
             canLosePatience = false;
             yield return new WaitForSeconds(10);
-            switch (patienceLevel)
+            switch (PatienceLevel)
             {
                 case (int)PatienceState.Patient:
                     bodySpriteRenderer.sprite = chosenAnimal.NeutralSprite;
@@ -145,13 +154,43 @@ namespace _Scripts.Customer
                     bodySpriteRenderer.color = Color.red;
                     break;
                 case (int)PatienceState.Irritated:
-                    Debug.Log("See you in hell!");
+                    // Debug.Log("See you in hell!");
                     break;
             }
 
-            patienceLevel++;
+            PatienceLevel++;
             canLosePatience = true;
-            Debug.Log($"I am {Enum.GetName(typeof(PatienceState), patienceLevel)}");
+            // Debug.Log($"I am {Enum.GetName(typeof(PatienceState), patienceLevel)}");
+        }
+
+        public IEnumerator ProvideFeedback()
+        {
+            if (beingRemoved) yield break;
+            beingRemoved = true;
+            speechOrderBubble.SetActive(false);
+            speechEvaluationBubble.SetActive(true);
+            var spriteColor = new Color();
+            switch (PatienceLevel)
+            {
+                case (int)PatienceState.Patient:
+                    spriteColor = Color.green;
+                    break;
+                case (int)PatienceState.Neutral:
+                    spriteColor = Color.yellow;
+                    break;
+                case (int)PatienceState.Irritated:
+                case (int)PatienceState.Done:
+                    spriteColor = Color.red;
+                    break;
+            }
+
+            if (PatienceLevel == (int)PatienceState.Done) speechEvaluationBubble.transform.Rotate(180, 0, 0);
+            speechEvaluation.color = spriteColor;
+
+            yield return new WaitForSeconds(2);
+            CustomersManager.LineOfCustomers.RemoveCustomerFromLine(gameObject);
+            transform.parent = null;
+            SayByeBye();
         }
     }
 }
