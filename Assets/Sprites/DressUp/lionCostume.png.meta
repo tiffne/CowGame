@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lionCostume_0: -6733298327450730443
+      lionCostume_1: 2851324418336468705
+      lionCostume_2: -397060663031002164
+      lionCostume_3: -4545056628670170429
+      lionCostume_4: 4598821074839018110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

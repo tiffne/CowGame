@@ -11,6 +11,24 @@ public class ButtonManager : MonoBehaviour
         Cursor.SetCursor(cowSprite, Vector2.zero, CursorMode.Auto);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+    }
+
+    public void PlayGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void LionClick()
     {
         Debug.Log("Lion Button Clicked");
