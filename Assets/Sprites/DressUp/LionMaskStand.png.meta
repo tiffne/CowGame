@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LionMaskStand_0: 5284664030835010189
+      LionMaskStand_1: 4456547280158042212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

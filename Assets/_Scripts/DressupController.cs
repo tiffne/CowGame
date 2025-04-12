@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _Scripts
 {
-    public class MainMenuController : MonoBehaviour
+    public class DressupController : MonoBehaviour
     {
         void Update()
         {
@@ -14,7 +14,7 @@ namespace _Scripts
 
         public void PlayGame()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("DressUp");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
         }
 
         public void ExitGame()
