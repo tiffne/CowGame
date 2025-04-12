@@ -53,7 +53,7 @@ namespace _Scripts.Customer
 
                 else if (cstmr.PatienceLevel == (int)Done)
                 {
-                    customersToLeave.Add(customer);
+                    if (!cstmr.beingRemoved) customersToLeave.Add(customer);
                 }
             }
 

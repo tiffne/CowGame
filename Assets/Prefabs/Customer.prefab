@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: -676444253
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6954032133794902763, guid: f7c6daca56b92449793c9960c27bb3be, type: 3}
+  m_Sprite: {fileID: 1993917615162150809, guid: 4c39df8540c0c4e9ab50aa82c449ba82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.048, y: 2.048}
+  m_Size: {x: 1.6666666, y: 1.6666666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -231,6 +231,8 @@ MonoBehaviour:
   speechEvaluationBubble: {fileID: 2158260486528083404}
   speechOrder: {fileID: 0}
   speechEvaluation: {fileID: 0}
+  beingRemoved: 0
+  hasTipped: 0
 --- !u!212 &8202631336111767619
 SpriteRenderer:
   m_ObjectHideFlags: 0

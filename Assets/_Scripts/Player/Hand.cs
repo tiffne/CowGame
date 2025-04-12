@@ -45,6 +45,8 @@ namespace _Scripts.Player
                 _ => throw new ArgumentException("Invalid hand name.")
             };
             thoughtBubble.SetActive(false);
+            
+            
         }
 
         private void Update()
