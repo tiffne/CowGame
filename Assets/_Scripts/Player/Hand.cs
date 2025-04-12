@@ -29,7 +29,7 @@ namespace _Scripts.Player
 
         private bool CanInteract { get; set; } = true;
         public int Index { get; private set; }
-        private GameObject _itemInHand;
+        private GameObject itemInHand;
         private bool thoughtBubbleActive = false;
 
         [SerializeField] private AudioSource pickUpSound;
@@ -89,20 +89,20 @@ namespace _Scripts.Player
                 case "Ingredient":
                 case "Order":
                     if (IsEmpty) GrabItem(target);
-                    else if ((_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup")) &&
+                    else if ((itemInHand.name.Equals("Plate") || itemInHand.name.Equals("Cup")) &&
                              (target.name.Equals("Plate") || target.name.Equals("Cup")))
                     {
                         StartCoroutine(EnableThoughtBubble());
                     }
                     else if (target.TryGetComponent<Ingredient>(out var ing1) &&
-                             _itemInHand.TryGetComponent<Order>(out _))
+                             itemInHand.TryGetComponent<Order>(out _))
                     {
                         ing1.GenerateNewOrder(null);
                     }
                     else if (target.transform.parent.CompareTag("AssemblySpot"))
                     {
-                        var order1 = _itemInHand.GetComponent<Order>();
-                        var ing2 = _itemInHand.GetComponent<Ingredient>();
+                        var order1 = itemInHand.GetComponent<Order>();
+                        var ing2 = itemInHand.GetComponent<Ingredient>();
                         if ((order1 && !order1.IsReady) || (ing2 && ing2.IsReady))
                         {
                             if (target.TryGetComponent<Order>(out var order2) && order2.IsReady)
@@ -131,8 +131,8 @@ namespace _Scripts.Player
 
                     break;
                 case "Pocket":
-                    if (!IsEmpty && (!_itemInHand.TryGetComponent<Order>(out var order3) || !order3.HasTableware)
-                                 && !(_itemInHand.name.Equals("Plate") || _itemInHand.name.Equals("Cup")))
+                    if (!IsEmpty && (!itemInHand.TryGetComponent<Order>(out var order3) || !order3.HasTableware)
+                                 && !(itemInHand.name.Equals("Plate") || itemInHand.name.Equals("Cup")))
                     {
                         DropItem(target);
                     }
@@ -151,7 +151,7 @@ namespace _Scripts.Player
                     break;
 
                 case "Burner":
-                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var foo) && foo.CanCook)
+                    if (!IsEmpty && itemInHand.TryGetComponent<Ingredient>(out var foo) && foo.CanCook)
                     {
                         DropItem(target);
                     }
@@ -162,7 +162,7 @@ namespace _Scripts.Player
 
                     break;
                 case "Blender":
-                    if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var boo) && boo.CanBlend)
+                    if (!IsEmpty && itemInHand.TryGetComponent<Ingredient>(out var boo) && boo.CanBlend)
                     {
                         DropItem(target);
                     }
@@ -181,12 +181,12 @@ namespace _Scripts.Player
         private void GrabItem(GameObject target)
         {
             if (!IsEmpty) return;
-            _itemInHand = target;
-            _itemInHand.transform.parent = transform;
+            itemInHand = target;
+            itemInHand.transform.parent = transform;
             //Following 2 lines have been adjusted so that 1) Items sit closer to center of paw, and 2) Items increase in scale to emulate perspective
-            _itemInHand.transform.position =
+            itemInHand.transform.position =
                 new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z);
-            _itemInHand.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+            itemInHand.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
             IsEmpty = false;
             pickUpSound.Play();
         }
@@ -194,11 +194,11 @@ namespace _Scripts.Player
         private void DropItem(GameObject target)
         {
             if (IsEmpty) return;
-            _itemInHand.transform.position = target.transform.position;
-            _itemInHand.transform.parent = target.transform;
+            itemInHand.transform.position = target.transform.position;
+            itemInHand.transform.parent = target.transform;
             //Following line has been added so that items decrease in scale to emulate perspective
-            _itemInHand.transform.localScale = new Vector3(1, 1, 1);
-            _itemInHand = null;
+            itemInHand.transform.localScale = new Vector3(1, 1, 1);
+            itemInHand = null;
         }
 
         private IEnumerator EnableThoughtBubble()
