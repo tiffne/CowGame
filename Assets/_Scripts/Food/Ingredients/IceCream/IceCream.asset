@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
+  m_Name: IceCream
+  m_EditorClassIdentifier: 
+  ingredientRawSprite: {fileID: -5755410639089308127, guid: 3f8a4e1e36d92486aa30d00643766e5d, type: 3}
+  ingredientBlendedSprite: {fileID: 0}
+  ingredientCookedSprite: {fileID: 0}
+  ingredientBurnedSprite: {fileID: 0}
+  ingredientMeltedSprite: {fileID: 2282252462763507936, guid: 5d04672ba8dc24815ad4aaaa28343739, type: 3}
+  isReady: 1
+  canBlend: 0
+  canCook: 0
+  cookAmt: 1
+  canMelt: 1
+  timeToBlend: 0
+  timeToCook: 0
+  timeToMelt: 4

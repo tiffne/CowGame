@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="" />
+    <list default="true" id="2543a8ea-fb71-4793-b4c3-257ff9365829" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CowGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +25,17 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:tiffne/CowGame.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/tiffne/CowGame.git&quot;,
     &quot;accountId&quot;: &quot;fda8e60e-51b3-4c80-af12-430c82da2140&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Burner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ingredients/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Order.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Pocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Customer/CustomersDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Fixed Surfaces/Assembly/AssemblySpot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Cheese/Cheese.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Food/Ingredients/Cup/Cup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Food/Recipes/RecipesDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Player/Thought.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Surface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,12 +55,13 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main-copy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;implement-speech-bubbles&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -120,6 +126,35 @@
       <workItem from="1741745380866" duration="3180000" />
       <workItem from="1741791482554" duration="3242000" />
       <workItem from="1741795861855" duration="117000" />
+      <workItem from="1741880751597" duration="32520000" />
+      <workItem from="1741992007875" duration="10869000" />
+      <workItem from="1742058349437" duration="124000" />
+      <workItem from="1742058502083" duration="10433000" />
+      <workItem from="1742133753618" duration="7063000" />
+      <workItem from="1742185063859" duration="3998000" />
+      <workItem from="1742243762367" duration="4717000" />
+      <workItem from="1742267302407" duration="93000" />
+      <workItem from="1742273833882" duration="2091000" />
+      <workItem from="1742352054349" duration="1791000" />
+      <workItem from="1742419358778" duration="311000" />
+      <workItem from="1742534655810" duration="508000" />
+      <workItem from="1742605566405" duration="2514000" />
+      <workItem from="1742832718422" duration="11942000" />
+      <workItem from="1743027240670" duration="14008000" />
+      <workItem from="1743090656866" duration="5166000" />
+      <workItem from="1743128412529" duration="5690000" />
+      <workItem from="1743166092404" duration="1383000" />
+      <workItem from="1743168820993" duration="635000" />
+      <workItem from="1743187547711" duration="4472000" />
+      <workItem from="1743209784691" duration="11967000" />
+      <workItem from="1743228012022" duration="133000" />
+      <workItem from="1743228329197" duration="271000" />
+      <workItem from="1743263831579" duration="28481000" />
+      <workItem from="1743440137936" duration="13061000" />
+      <workItem from="1744151156169" duration="7021000" />
+      <workItem from="1744338464118" duration="3224000" />
+      <workItem from="1744418873088" duration="6282000" />
+      <workItem from="1744469884237" duration="1356000" />
     </task>
     <servers />
   </component>
@@ -147,5 +182,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

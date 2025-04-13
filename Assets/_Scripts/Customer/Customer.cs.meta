@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 6f47725a35ae84dc586c0eb6b0e8f065
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - infoPool: {fileID: 11400000, guid: 1df59a969bba849f0a4be9eb8959118d, type: 2}
+  - recipesDatabase: {fileID: 11400000, guid: 042ce9276cb2e414e91d67883e85d02d, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,8 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: dd4f089694d698c4fa391333c9a598e8
   - enabled: 1
+    path: Assets/Scenes/DressUp.unity
+    guid: 1b1a63969d98aeb458af5348ffd073f4
+  - enabled: 1
+    path: Assets/Scenes/Open.unity
+    guid: 52d6d8fed5b559a4e9e09a9c1760137b
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/BadClosed.unity
+    guid: 3b7687f112766004c8b06ed1198f722c
+  - enabled: 1
+    path: Assets/Scenes/Closed.unity
+    guid: af765e588b315bc488f63ab332de91b7
+  - enabled: 1
+    path: Assets/Scenes/EOD.unity
+    guid: d2ead801f4c06814e980671f4dd537b1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 28d1ec53d3e4945d68ae0a173711348e, type: 3}
   m_UseUCBPForAssetBundles: 0

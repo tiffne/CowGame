@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
+  m_Name: Steak
+  m_EditorClassIdentifier: 
+  ingredientRawSprite: {fileID: -6894695900325857597, guid: 0146c9e6a02724dc4abcf2681fcb4de6, type: 3}
+  ingredientBlendedSprite: {fileID: 0}
+  ingredientCookedSprite: {fileID: 3999090560222424582, guid: edb0603c60d614c84a49bce975b908a0, type: 3}
+  ingredientBurnedSprite: {fileID: -4482867155660389777, guid: 49c77d6838bd64e3d96c7df71dac119f, type: 3}
+  ingredientMeltedSprite: {fileID: 0}
+  isReady: 1
+  canBlend: 1
+  canCook: 1
+  canMelt: 0
+  timeToBlend: 3
+  timeToCook: 8
+  timeToMelt: 0

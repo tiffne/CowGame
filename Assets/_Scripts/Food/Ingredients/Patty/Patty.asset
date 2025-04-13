@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
+  m_Name: Patty
+  m_EditorClassIdentifier: 
+  ingredientRawSprite: {fileID: -165381306550957385, guid: 4ffdc299a4f414df989476fe33cc4fff, type: 3}
+  ingredientBlendedSprite: {fileID: 0}
+  ingredientCookedSprite: {fileID: -5919778849487241949, guid: 51ab42ad9adac41319d7be08673ff5b2, type: 3}
+  ingredientBurnedSprite: {fileID: 2456094395991791998, guid: 08b990d1dbc094d41a5cf80044241b4f, type: 3}
+  ingredientMeltedSprite: {fileID: 0}
+  isReady: 1
+  canBlend: 0
+  canCook: 1
+  canMelt: 0
+  timeToBlend: 0
+  timeToCook: 6
+  timeToMelt: 0

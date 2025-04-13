@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdbf0288060742519309abf8e6203d1, type: 3}
+  m_Name: Tiger
+  m_EditorClassIdentifier: 
+  patientSprite: {fileID: -7460430754919478288, guid: 0470f0dcd2f784165b9b82f7f871b161, type: 3}
+  neutralSprite: {fileID: -3269917951233339418, guid: 258d7db0cb4764fc5a38cbaf39daa8e0, type: 3}
+  irritatedSprite: {fileID: -2620896396347144546, guid: 2cb0932ad21cc4d4d8da4c7536cc2958, type: 3}

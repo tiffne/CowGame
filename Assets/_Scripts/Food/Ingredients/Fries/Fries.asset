@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b663c2ae4854f14b97b82914a092a0, type: 3}
+  m_Name: Fries
+  m_EditorClassIdentifier: 
+  ingredientRawSprite: {fileID: 2153553212256038554, guid: 81d70175f4c2b1541963e3de035e076c, type: 3}
+  ingredientBlendedSprite: {fileID: 0}
+  ingredientCookedSprite: {fileID: -8081598367321323223, guid: 3766fe7c8d2956745b595267bc9d5619, type: 3}
+  ingredientBurnedSprite: {fileID: 4336071756851663693, guid: 81cca16225e984919a7e80a8d24036de, type: 3}
+  ingredientMeltedSprite: {fileID: 0}
+  isReady: 1
+  canBlend: 0
+  canCook: 1
+  canMelt: 0
+  timeToBlend: 0
+  timeToCook: 4
+  timeToMelt: 0

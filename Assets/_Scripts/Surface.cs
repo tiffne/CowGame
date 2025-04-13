@@ -1,4 +1,3 @@
-using System;
 using _Scripts.Player;
 using UnityEngine;
 
@@ -6,24 +5,30 @@ namespace _Scripts
 {
     public class Surface : MonoBehaviour
     {
-        private Hand _handLeft, _handRight;
+        protected Hand HandLeft;
+        protected Hand HandRight;
 
         protected void Start()
         {
-            _handLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
-            _handRight = GameObject.Find("Hand Right").GetComponent<Hand>();
+            HandLeft = GameObject.Find("Hand Left").GetComponent<Hand>();
+            HandRight = GameObject.Find("Hand Right").GetComponent<Hand>();
         }
         
         protected void OnMouseOver()
         {
-            if (Input.GetMouseButtonDown(_handLeft.Index))
+            if (Input.GetMouseButtonDown(HandLeft.Index))
             {
-                _handLeft.Interact(gameObject);
+                HandLeft.Interact(gameObject);
             }
-            else if (Input.GetMouseButtonDown(_handRight.Index))
+            else if (Input.GetMouseButtonDown(HandRight.Index))
             {
-                _handRight.Interact(gameObject);
+                HandRight.Interact(gameObject);
             }
+        }
+
+        public void SayByeBye()
+        {
+            Destroy(gameObject);
         }
     }
     

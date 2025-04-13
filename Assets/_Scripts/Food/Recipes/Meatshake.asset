@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e52f17bf58349a184ae9ba6eb44444, type: 3}
+  m_Name: Meatshake
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: -944703377721567965, guid: fefd37b51563043449daa62a10244520, type: 3}
+  - {fileID: -6146253577723570913, guid: 7d2868d47dee3864bac36c1663f62144, type: 3}
+  - {fileID: 3625681684126240574, guid: 7b6910c23fec64bcc8c0b7fe69c58fd8, type: 3}
+  recipeSprite: {fileID: -7077803882562699600, guid: 05107be9c0a09415694e62417059842f, type: 3}
+  rawASprite: {fileID: 0}
+  burntASprite: {fileID: 0}
+  rawBSprite: {fileID: 0}
+  burntBSprite: {fileID: 0}
+  rawABSprite: {fileID: 0}
+  burntABSprite: {fileID: 0}
+  price: 4.7

@@ -1,38 +1,43 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts.Player
 {
     public class PointOfView : MonoBehaviour
     {
-        [SerializeField] private Sprite sprite;
+        [SerializeField] private Texture2D sprite;
 
-        public Transform[] views;
-        float transitionSpeed = 5f;
+        [SerializeField] private Transform[] views;
+        private const float TransitionSpeed = 5.0f;
+        private int currentViewIndex;
+        [SerializeField] private AudioSource switchSound;
 
-        private int currentViewIndex = 0;
-
-        void Start()
+        private void Start()
         {
-            //Cursor.SetCursor(sprite.texture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(sprite, Vector2.zero, CursorMode.Auto);
         }
 
-        void Update()
+        private void Update()
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
 
-            if (scroll > 0f)
+            if (Input.GetKeyDown(KeyCode.E) || (scroll > 0f))
             {
+                switchSound.Play();
                 currentViewIndex = Mathf.Clamp(currentViewIndex + 1, 0, views.Length - 1);
             }
-            else if (scroll < 0f)
+            else if (Input.GetKeyDown(KeyCode.Q) || (scroll < 0f))
             {
+                switchSound.Play();
                 currentViewIndex = Mathf.Clamp(currentViewIndex - 1, 0, views.Length - 1);
             }
 
-            if (views.Length > 0 && views[currentViewIndex] != null)
+            if (views.Length > 0 && views[currentViewIndex])
             {
-                Quaternion targetRotation = Quaternion.LookRotation(views[currentViewIndex].position - transform.position);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * transitionSpeed);
+                Quaternion targetRotation =
+                    Quaternion.LookRotation(views[currentViewIndex].position - transform.position);
+                transform.rotation =
+                    Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * TransitionSpeed);
             }
         }
     }
