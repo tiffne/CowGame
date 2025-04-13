@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 using _Scripts.Customer;
 using TMPro;
 
@@ -12,6 +11,9 @@ public class MoneyManager : MonoBehaviour
     public static MoneyManager Instance { get; private set; }
     
     public float totalTips { get; private set; }
+    public int TotalServedCustomer { get; set; } = 0;
+    public int TotalLostCustomer { get; set; } = 0;
+    
     
     private void Awake()
     {

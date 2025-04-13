@@ -48,6 +48,8 @@ namespace _Scripts.Customer
                 {
                     MoneyManager.Instance.AddTip(cstmr);
                     customersToLeave.Add(customer);
+                    MoneyManager.Instance.TotalServedCustomer++;
+                    MoneyManager.Instance.TotalLostCustomer++;
                 }
 
                 else if (cstmr.patienceLevel == (int)Done)
