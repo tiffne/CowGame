@@ -40,7 +40,7 @@ public class ButtonManager : MonoBehaviour
             thoughtBubbleSound.Play();
             return;
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Open");
     }
 
     public void LionClick()

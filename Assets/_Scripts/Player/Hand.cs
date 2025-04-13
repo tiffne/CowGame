@@ -36,6 +36,9 @@ namespace _Scripts.Player
         [SerializeField] private AudioSource thoughtBubbleSound;
         [SerializeField] private GameObject thoughtBubble;
 
+        [SerializeField] private Sprite leftLionPaw;
+        [SerializeField] private Sprite leftWolfPaw;
+
         private void Start()
         {
             Index = transform.name switch
@@ -43,6 +46,14 @@ namespace _Scripts.Player
                 "Hand Left" => (int)Hands.Left,
                 "Hand Right" => (int)Hands.Right,
                 _ => throw new ArgumentException("Invalid hand name.")
+            };
+
+            var spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = ButtonManager.lastButtonClicked switch
+            {
+                "Wolf" => leftWolfPaw,
+                "Lion" => leftLionPaw,
+                _ => spriteRenderer.sprite
             };
             thoughtBubble.SetActive(false);
         }

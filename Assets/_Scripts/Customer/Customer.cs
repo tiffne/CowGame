@@ -30,7 +30,9 @@ namespace _Scripts.Customer
         public RecipeScriptableObject Order { get; private set; }
         public bool IsServed { get; set; }
         public string Species => chosenAnimal.name;
-        public float TipAmount => Order.Price * (3 - PatienceLevel);
+        public float TipAmount => ButtonManager.lastButtonClicked.Equals(Species)
+        ? Order.Price * (3 - PatienceLevel)
+        : Order.Price * (4 - PatienceLevel);
 
         private bool canLosePatience = true;
         public bool beingRemoved = false;
@@ -135,7 +137,7 @@ namespace _Scripts.Customer
         private IEnumerator LosePatience()
         {
             canLosePatience = false;
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(20);
             switch (PatienceLevel)
             {
                 case (int)PatienceState.Patient:
@@ -184,6 +186,11 @@ namespace _Scripts.Customer
             CustomersManager.LineOfCustomers.RemoveCustomerFromLine(gameObject);
             transform.parent = null;
             SayByeBye();
+
+            if (MoneyManager.Instance.TotalLostCustomer >= 5)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("BadClosed");
+            }
         }
     }
 }

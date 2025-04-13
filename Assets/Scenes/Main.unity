@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 674275809}
   - component: {fileID: 674275810}
   m_Layer: 0
-  m_Name: BGM
+  m_Name: _BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5538,8 +5538,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5440481d5cfb3fa4ebc825682b8774f0, type: 3}
-  m_Resource: {fileID: 8300000, guid: 5440481d5cfb3fa4ebc825682b8774f0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dde59101c00f8c24cb9795563b9eebdb, type: 3}
+  m_Resource: {fileID: 8300000, guid: dde59101c00f8c24cb9795563b9eebdb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7060,6 +7060,8 @@ MonoBehaviour:
   pickUpSound: {fileID: 1001794429}
   thoughtBubbleSound: {fileID: 168585055}
   thoughtBubble: {fileID: 135635491}
+  leftLionPaw: {fileID: 8596179672037386828, guid: 1be945579eea54e34848ce9031a19848, type: 3}
+  leftWolfPaw: {fileID: -7221174131964558325, guid: af57f5ae42f1945d2b4be61d173ebafa, type: 3}
 --- !u!4 &6693913808409054398
 Transform:
   m_ObjectHideFlags: 0
@@ -7090,6 +7092,8 @@ MonoBehaviour:
   pickUpSound: {fileID: 1001794429}
   thoughtBubbleSound: {fileID: 168585055}
   thoughtBubble: {fileID: 135635491}
+  leftLionPaw: {fileID: 8596179672037386828, guid: 1be945579eea54e34848ce9031a19848, type: 3}
+  leftWolfPaw: {fileID: -7221174131964558325, guid: af57f5ae42f1945d2b4be61d173ebafa, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

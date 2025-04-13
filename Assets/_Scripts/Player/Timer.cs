@@ -25,6 +25,7 @@ public class WorkDayTimer : MonoBehaviour
         if(currentTime >= 1f)
         {
             EndDay();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Closed");
         }
     }
 

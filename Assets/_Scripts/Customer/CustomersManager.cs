@@ -45,14 +45,20 @@ namespace _Scripts.Customer
                 var cstmr = customer.GetComponent<Customer>();
                 if (cstmr.IsServed)
                 {
-                    if (!cstmr.hasTipped) MoneyManager.Instance.AddTip(cstmr);
-                    cstmr.hasTipped = true;
+                    if (!cstmr.hasTipped)
+                    {
+                        MoneyManager.Instance.TotalServedCustomer++;
+                        MoneyManager.Instance.AddTip(cstmr);
+                        cstmr.hasTipped = true;
+                    }
                     if (!cstmr.beingRemoved) customersToLeave.Add(customer);
                 }
 
                 else if (cstmr.PatienceLevel == (int)Done)
                 {
-                    if (!cstmr.beingRemoved) customersToLeave.Add(customer);
+                    if (cstmr.beingRemoved) continue;
+                    MoneyManager.Instance.TotalLostCustomer++;
+                    customersToLeave.Add(customer);
                 }
             }
 
