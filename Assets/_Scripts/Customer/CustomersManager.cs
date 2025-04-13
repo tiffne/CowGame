@@ -24,7 +24,6 @@ namespace _Scripts.Customer
 
             public static void RemoveCustomerFromLine(GameObject customer)
             {
-                Debug.Log(customer.GetComponent<Customer>().patienceLevel);
                 Line.Remove(customer);
             }
         }
@@ -46,23 +45,22 @@ namespace _Scripts.Customer
                 var cstmr = customer.GetComponent<Customer>();
                 if (cstmr.IsServed)
                 {
-                    MoneyManager.Instance.AddTip(cstmr);
-                    customersToLeave.Add(customer);
+                    if (!cstmr.hasTipped) MoneyManager.Instance.AddTip(cstmr);
+                    cstmr.hasTipped = true;
+                    if (!cstmr.beingRemoved) customersToLeave.Add(customer);
                 }
 
-                else if (cstmr.patienceLevel == (int)Done)
+                else if (cstmr.PatienceLevel == (int)Done)
                 {
-                    customersToLeave.Add(customer);
+                    if (!cstmr.beingRemoved) customersToLeave.Add(customer);
                 }
             }
 
             if (customersToLeave.Count == 0) return;
             foreach (var customer in customersToLeave)
             {
+                StartCoroutine(customer.GetComponent<Customer>().ProvideFeedback());
                 customerDoneSound.Play();
-                LineOfCustomers.RemoveCustomerFromLine(customer);
-                customer.transform.parent = null;
-                customer.GetComponent<Customer>().SayByeBye();
             }
 
             CanAddNewCustomer = true;

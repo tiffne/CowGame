@@ -31,7 +31,7 @@ namespace _Scripts.Fixed_Surfaces.Serving_Spot
                 if (!customer.TryGetComponent<Customer.Customer>(out var cstmr) ||
                     !cstmr.Order.name.Equals(order.name)) continue;
                 //If portion of order is burnt or raw, patience level is reduced by 1. (Alexa)
-                if (!order.IsPerfect && cstmr.patienceLevel != 2) cstmr.patienceLevel++;
+                if (!order.IsPerfect && cstmr.PatienceLevel != 2) cstmr.PatienceLevel++;
 
                 cstmr.IsServed = true;
                 order.SayByeBye();

@@ -146,10 +146,6 @@ namespace _Scripts.Player
                     DropItem(target);
                     break;
 
-                case "Customer":
-                    target.GetComponent<Customer.Customer>().DoSomething();
-                    break;
-
                 case "Burner":
                     if (!IsEmpty && _itemInHand.TryGetComponent<Ingredient>(out var foo) && foo.CanCook)
                     {
