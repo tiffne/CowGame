@@ -1,16 +1,22 @@
+using System.Collections;
 using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {
-    public static string lastButtonClicked { get; private set; }
+    public static string lastButtonClicked { get; private set; } = "Cow";
 
     [SerializeField] private Texture2D cowSprite;
     [SerializeField] private  Texture2D predatorSprite;
+    [SerializeField] private AudioSource thoughtBubbleSound;
+    [SerializeField] private GameObject thoughtBubble;
+    private bool thoughtBubbleActive;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Cursor.SetCursor(cowSprite, Vector2.zero, CursorMode.Auto);
+        thoughtBubble.SetActive(false);
     }
 
     void Update()
@@ -20,15 +26,21 @@ public class ButtonManager : MonoBehaviour
             ExitGame();
         }
     }
-
-    public void PlayGame()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
-    }
-
+    
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void PlayGame()
+    {
+        if (lastButtonClicked.Equals("Cow"))
+        {
+            StartCoroutine(EnableThoughtBubble());
+            thoughtBubbleSound.Play();
+            return;
+        }
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
     }
 
     public void LionClick()
@@ -50,5 +62,15 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("Cow Button Clicked");
         lastButtonClicked = "Cow";
         Cursor.SetCursor(cowSprite, Vector2.zero, CursorMode.Auto);
+    }
+    
+    private IEnumerator EnableThoughtBubble()
+    {
+        if (thoughtBubbleActive) yield break;
+        thoughtBubble.SetActive(true);
+        thoughtBubbleActive = true;
+        yield return new WaitForSeconds(2);
+        thoughtBubble.SetActive(false);
+        thoughtBubbleActive = false;
     }
 }
