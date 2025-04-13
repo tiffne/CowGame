@@ -23,14 +23,14 @@ public class ButtonManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ExitGame();
+            Application.Quit();
         }
     }
     
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
+    // public void ExitGame()
+    // {
+    //     Application.Quit();
+    // }
 
     public void PlayGame()
     {
